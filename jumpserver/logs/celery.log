@@ -1,0 +1,1499 @@
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[0c750d9c-0411-4318-b8de-3321b5f76624]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[3c417ec9-b7f7-436a-82d5-4d26b3e433f4]  
+Received task: terminal.tasks.delete_terminal_status_period[03024d06-87ee-4863-82d5-d4e57509db69]  
+Received task: terminal.tasks.clean_orphan_session[1de15866-aa37-43f4-b8fd-47ada8a17a9b]  
+Received task: terminal.tasks.clean_expired_session_period[5468ea00-bf7e-45be-9951-fd41f16b8e5c]  
+Scaling up 1 processes.
+Task terminal.tasks.clean_orphan_session[1de15866-aa37-43f4-b8fd-47ada8a17a9b] succeeded in 0.06211611499020364s: None
+Task terminal.tasks.delete_terminal_status_period[03024d06-87ee-4863-82d5-d4e57509db69] succeeded in 0.09107257099822164s: None
+Task users.tasks.check_password_expired_periodic[0c750d9c-0411-4318-b8de-3321b5f76624] succeeded in 0.12902444800420199s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[3c417ec9-b7f7-436a-82d5-4d26b3e433f4] succeeded in 0.17631722500664182s: None
+5468ea00-bf7e-45be-9951-fd41f16b8e5c terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task terminal.tasks.clean_expired_session_period[5468ea00-bf7e-45be-9951-fd41f16b8e5c] succeeded in 0.011971158994128928s: None
+Scaling down 1 processes.
+Received task: terminal.tasks.clean_orphan_session[248470ea-0d86-4d00-8b5d-6352e9c8998e]  
+Task terminal.tasks.clean_orphan_session[248470ea-0d86-4d00-8b5d-6352e9c8998e] succeeded in 0.005019990989239886s: None
+Received task: terminal.tasks.clean_orphan_session[cf608112-f7b7-48e5-b54e-bf1fdf904668]  
+Task terminal.tasks.clean_orphan_session[cf608112-f7b7-48e5-b54e-bf1fdf904668] succeeded in 0.010635869999532588s: None
+Received task: users.tasks.write_login_log_async[969eb08a-ae03-4b51-93f3-62bc5018b155]  
+Received task: terminal.tasks.clean_orphan_session[9cab376a-1454-41e7-81a8-63a4a58e5fe5]  
+Task terminal.tasks.clean_orphan_session[9cab376a-1454-41e7-81a8-63a4a58e5fe5] succeeded in 0.004738916002679616s: None
+Task users.tasks.write_login_log_async[969eb08a-ae03-4b51-93f3-62bc5018b155] succeeded in 90.15676865298883s: None
+Received task: assets.tasks.update_assets_hardware_info_util[4114749a-7dec-479a-b7c7-39e13019008a]  
+Received task: assets.tasks.test_asset_connectivity_util[543eaffa-6295-4946-af54-c0ff1412ba0d]  
+Task assets.tasks.update_assets_hardware_info_util[4114749a-7dec-479a-b7c7-39e13019008a] succeeded in 0.002817230997607112s: {}
+Task assets.tasks.test_asset_connectivity_util[543eaffa-6295-4946-af54-c0ff1412ba0d] succeeded in 0.011368653998943046s: {}
+Received task: assets.tasks.push_system_user_to_assets[ac2e8526-7c7c-48d2-9237-0f8a6933f898]  
+Task assets.tasks.push_system_user_to_assets[ac2e8526-7c7c-48d2-9237-0f8a6933f898] succeeded in 0.0014349029952427372s: None
+Received task: assets.tasks.push_system_user_to_assets[8747262a-7ffa-4cbd-a79d-5f10a2eb99ab]  
+Task assets.tasks.push_system_user_to_assets[8747262a-7ffa-4cbd-a79d-5f10a2eb99ab] succeeded in 0.0011603400052990764s: None
+Received task: assets.tasks.push_system_user_to_assets[24e51da8-0bb5-4ce8-8b5a-b044543caa74]  
+Task assets.tasks.push_system_user_to_assets[24e51da8-0bb5-4ce8-8b5a-b044543caa74] succeeded in 0.001193087999126874s: None
+Received task: assets.tasks.push_system_user_to_assets[ec85c71b-85a8-4383-aeaa-211989f29705]  
+Task assets.tasks.push_system_user_to_assets[ec85c71b-85a8-4383-aeaa-211989f29705] succeeded in 0.0008903280104277655s: None
+Received task: assets.tasks.push_system_user_to_assets[a0adfa14-db8d-48c4-a666-e0fbf9ef1b62]  
+Task assets.tasks.push_system_user_to_assets[a0adfa14-db8d-48c4-a666-e0fbf9ef1b62] succeeded in 0.0011592549999477342s: None
+Received task: assets.tasks.push_system_user_to_assets[86c6a610-a94f-4daa-a873-169b82908aff]  
+Task assets.tasks.push_system_user_to_assets[86c6a610-a94f-4daa-a873-169b82908aff] succeeded in 0.0008670140086906031s: None
+Received task: assets.tasks.push_system_user_to_assets[50992655-5c9a-48fa-8afa-f44ab26da79b]  
+Task assets.tasks.push_system_user_to_assets[50992655-5c9a-48fa-8afa-f44ab26da79b] succeeded in 0.0014738110039616004s: None
+Received task: assets.tasks.push_system_user_to_assets[9c54afb5-7801-45b1-9fe5-04a701fb7886]  
+Task assets.tasks.push_system_user_to_assets[9c54afb5-7801-45b1-9fe5-04a701fb7886] succeeded in 0.0022331789950840175s: None
+Received task: assets.tasks.push_system_user_to_assets[dac8b300-91f9-4020-bfe7-8db8507a46fc]  
+Task assets.tasks.push_system_user_to_assets[dac8b300-91f9-4020-bfe7-8db8507a46fc] succeeded in 0.0010688460024539381s: None
+Received task: terminal.tasks.clean_orphan_session[337ae245-2c6d-47e9-bff8-6362eee373bd]  
+Task terminal.tasks.clean_orphan_session[337ae245-2c6d-47e9-bff8-6362eee373bd] succeeded in 0.007682939001824707s: None
+Received task: terminal.tasks.clean_orphan_session[0e9d07ff-b7bd-4dcc-affc-afd783a32e25]  
+Task terminal.tasks.clean_orphan_session[0e9d07ff-b7bd-4dcc-affc-afd783a32e25] succeeded in 0.005469167997944169s: None
+Received task: assets.tasks.push_system_user_to_assets[a8747000-2cb7-4c0f-8e66-1a9300235ec1]  
+Task assets.tasks.push_system_user_to_assets[a8747000-2cb7-4c0f-8e66-1a9300235ec1] succeeded in 0.0012155209988122806s: None
+Received task: assets.tasks.update_assets_hardware_info_util[1172701d-9700-4b4b-bd0e-5cb650e82db5]  
+Received task: assets.tasks.test_asset_connectivity_util[c38987a4-bc52-43ff-b961-c78ba465d988]  
+2019-03-06 13:07:00 任务开始: 测试资产可连接性
+2019-03-06 13:07:00 任务开始: 更新资产硬件信息
+PLAY [更新资产硬件信息] ****************************************************************
+PLAY [测试资产可连接性] ****************************************************************
+TASK [ping] ********************************************************************
+TASK [setup] *******************************************************************
+ok: [192.168.127.130]
+2019-03-06 13:07:02 任务结束
+Task assets.tasks.test_asset_connectivity_util[c38987a4-bc52-43ff-b961-c78ba465d988] succeeded in 1.942597322005895s: {'contacted': {'192.168.127.130': {'ping': {...}}}, 'dark': {}, 'success': True}
+ok: [192.168.127.130]
+2019-03-06 13:07:02 任务结束
+Task assets.tasks.update_assets_hardware_info_util[1172701d-9700-4b4b-bd0e-5cb650e82db5] succeeded in 2.203077411992126s: ({'ok': {'192.168.127.130': {...}}, 'failed': {}, 'unreachable': {}, 'skippe': {}}, {'contacted': {'192.168.127.130': {...}}, 'dark': {}, 'success': True})
+Received task: assets.tasks.push_system_user_to_assets[815a44e9-8ffd-45b7-8fe6-fa30f6ffa7c4]  
+Task assets.tasks.push_system_user_to_assets[815a44e9-8ffd-45b7-8fe6-fa30f6ffa7c4] succeeded in 0.0022523770021507517s: None
+Received task: terminal.tasks.delete_terminal_status_period[7bf5dc45-901a-4850-8dad-f0a8b77639ce]  
+Received task: assets.tasks.test_admin_user_connectivity_period[800c8d04-4e82-4821-a55e-4facbf20f62d]  
+Task terminal.tasks.delete_terminal_status_period[7bf5dc45-901a-4850-8dad-f0a8b77639ce] succeeded in 0.010228832994471304s: None
+2019-03-06 13:12:36 任务开始: 定期测试管理账号可连接性: linux
+Received task: terminal.tasks.clean_orphan_session[f52cfafe-6312-48ba-bec4-0726670b4079]  
+Task terminal.tasks.clean_orphan_session[f52cfafe-6312-48ba-bec4-0726670b4079] succeeded in 0.006750150001607835s: None
+PLAY [定期测试管理账号可连接性: linux] *****************************************************
+TASK [ping] ********************************************************************
+ok: [192.168.127.130]
+2019-03-06 13:12:37 任务结束
+Task assets.tasks.test_admin_user_connectivity_period[800c8d04-4e82-4821-a55e-4facbf20f62d] succeeded in 0.9294132700015325s: None
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[b5d15b90-2972-4f64-99cc-9a26913982f5]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[0be9a001-aaac-4bc5-b1f5-900bc4b47c94]  
+Received task: terminal.tasks.delete_terminal_status_period[eda1371e-107e-4e9a-84a2-56a0f43d4b65]  
+Received task: terminal.tasks.clean_orphan_session[22e8553e-b7e8-4949-b9f1-3b9733000fb4]  
+Received task: terminal.tasks.clean_expired_session_period[5a59399b-a39a-4d6d-b255-09b21a3e25f1]  
+Scaling up 1 processes.
+Task users.tasks.check_password_expired_periodic[b5d15b90-2972-4f64-99cc-9a26913982f5] succeeded in 0.21906766398751643s: None
+Task terminal.tasks.delete_terminal_status_period[eda1371e-107e-4e9a-84a2-56a0f43d4b65] succeeded in 0.08607367599324789s: None
+Task terminal.tasks.clean_orphan_session[22e8553e-b7e8-4949-b9f1-3b9733000fb4] succeeded in 0.08652487999643199s: None
+5a59399b-a39a-4d6d-b255-09b21a3e25f1 terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task terminal.tasks.clean_expired_session_period[5a59399b-a39a-4d6d-b255-09b21a3e25f1] succeeded in 0.01510994198906701s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[0be9a001-aaac-4bc5-b1f5-900bc4b47c94] succeeded in 0.6170742829999654s: None
+Scaling down 1 processes.
+Received task: terminal.tasks.clean_orphan_session[c039e7b8-3836-4abc-ace1-dc1b28bd3b60]  
+Task terminal.tasks.clean_orphan_session[c039e7b8-3836-4abc-ace1-dc1b28bd3b60] succeeded in 0.008618665000540204s: None
+Received task: common.tasks.send_mail_async[0ebb3774-4ffa-474e-b624-474139eaaa26]  
+Sending mail error: [Errno -2] Name or service not known
+Task common.tasks.send_mail_async[0ebb3774-4ffa-474e-b624-474139eaaa26] succeeded in 17.43914290900284s: None
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[9c3134c8-ac4c-4612-b695-7d65d2e8b457]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[c0e50196-9176-4d8c-b0ff-a0d82a6b0ec0]  
+Received task: terminal.tasks.delete_terminal_status_period[e634d30a-62a7-4717-8c37-136a3f172440]  
+Received task: terminal.tasks.clean_orphan_session[23ecdc5e-5883-41cc-9f49-47bd00092853]  
+Task terminal.tasks.delete_terminal_status_period[e634d30a-62a7-4717-8c37-136a3f172440] succeeded in 0.0729316279903287s: None
+Task users.tasks.check_password_expired_periodic[9c3134c8-ac4c-4612-b695-7d65d2e8b457] succeeded in 0.21019358299963642s: None
+Received task: terminal.tasks.clean_expired_session_period[0083d73a-8ffb-4093-a59e-d710d2c47a01]  
+Scaling up 1 processes.
+0083d73a-8ffb-4093-a59e-d710d2c47a01 terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task terminal.tasks.clean_orphan_session[23ecdc5e-5883-41cc-9f49-47bd00092853] succeeded in 0.01940265399753116s: None
+Task terminal.tasks.clean_expired_session_period[0083d73a-8ffb-4093-a59e-d710d2c47a01] succeeded in 0.0386666080012219s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[c0e50196-9176-4d8c-b0ff-a0d82a6b0ec0] succeeded in 0.4896460479940288s: None
+Scaling down 1 processes.
+Received task: users.tasks.write_login_log_async[d1ce8789-453e-4727-a41e-e3746a5d8a55]  
+Task users.tasks.write_login_log_async[d1ce8789-453e-4727-a41e-e3746a5d8a55] succeeded in 90.192673595011s: None
+Received task: users.tasks.write_login_log_async[c701db79-e9cc-4a71-bdab-6b6e26c9bcb4]  
+Received task: assets.tasks.push_system_user_to_assets[11eaac5d-3b16-403c-96db-231d79ce750e]  
+Task assets.tasks.push_system_user_to_assets[11eaac5d-3b16-403c-96db-231d79ce750e] succeeded in 0.0013675609952770174s: None
+Task users.tasks.write_login_log_async[c701db79-e9cc-4a71-bdab-6b6e26c9bcb4] succeeded in 90.25716899700637s: None
+Received task: users.tasks.write_login_log_async[93310b32-1926-4f2d-bfc9-47ff8ae6fbcf]  
+Task users.tasks.write_login_log_async[93310b32-1926-4f2d-bfc9-47ff8ae6fbcf] succeeded in 90.2816738190013s: None
+Received task: users.tasks.write_login_log_async[699076b7-7ce2-45f5-8fde-fdab8c0e41eb]  
+Received task: users.tasks.write_login_log_async[bf786432-d5a3-49d1-80a0-4aeee4c66339]  
+Received task: terminal.tasks.clean_orphan_session[607ca0c4-8b88-450f-bed8-333a5d92542d]  
+Task terminal.tasks.clean_orphan_session[607ca0c4-8b88-450f-bed8-333a5d92542d] succeeded in 0.010339394997572526s: None
+Task users.tasks.write_login_log_async[699076b7-7ce2-45f5-8fde-fdab8c0e41eb] succeeded in 90.13106698400225s: None
+Task users.tasks.write_login_log_async[bf786432-d5a3-49d1-80a0-4aeee4c66339] succeeded in 90.11154409700248s: None
+Received task: terminal.tasks.clean_orphan_session[8e801a35-473b-4af4-92e5-34b78c2ca06d]  
+Task terminal.tasks.clean_orphan_session[8e801a35-473b-4af4-92e5-34b78c2ca06d] succeeded in 0.005216850011493079s: None
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[dd5a8910-b849-46bc-8435-4993b235f0c0]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[3cba915c-9ab6-4688-987b-effe82993bcf]  
+Received task: terminal.tasks.delete_terminal_status_period[4ed7c717-050b-45b0-8bfe-37422985d747]  
+Received task: terminal.tasks.clean_orphan_session[46d5db0f-56bf-488d-9569-b234c6f738c2]  
+Task terminal.tasks.delete_terminal_status_period[4ed7c717-050b-45b0-8bfe-37422985d747] succeeded in 0.08040592900943011s: None
+Task users.tasks.check_password_expired_periodic[dd5a8910-b849-46bc-8435-4993b235f0c0] succeeded in 0.18014522301382385s: None
+Received task: terminal.tasks.clean_expired_session_period[1956a1fa-ca57-45df-8c43-a4fd7bd27688]  
+Scaling up 1 processes.
+1956a1fa-ca57-45df-8c43-a4fd7bd27688 terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task terminal.tasks.clean_expired_session_period[1956a1fa-ca57-45df-8c43-a4fd7bd27688] succeeded in 0.016993892000755295s: None
+Task terminal.tasks.clean_orphan_session[46d5db0f-56bf-488d-9569-b234c6f738c2] succeeded in 0.07235036800557282s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[3cba915c-9ab6-4688-987b-effe82993bcf] succeeded in 0.6394313589989906s: None
+Scaling down 1 processes.
+Received task: assets.tasks.test_admin_user_connectivity_period[9305aec3-a94f-4975-8a82-45b2028f35b3]  
+2019-03-06 14:12:36 任务开始: 定期测试管理账号可连接性: linux
+PLAY [定期测试管理账号可连接性: linux] *****************************************************
+TASK [ping] ********************************************************************
+ok: [192.168.127.130]
+2019-03-06 14:12:37 任务结束
+Task assets.tasks.test_admin_user_connectivity_period[9305aec3-a94f-4975-8a82-45b2028f35b3] succeeded in 1.0170496110076783s: None
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[ba6adc80-9565-4923-a055-305dc943fe01]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[0c249518-506b-4deb-88bb-0ddec13b7db8]  
+Received task: terminal.tasks.delete_terminal_status_period[0bc3e189-186b-43ba-a009-a1ff5790ac96]  
+Task terminal.tasks.delete_terminal_status_period[0bc3e189-186b-43ba-a009-a1ff5790ac96] succeeded in 0.08065919199725613s: None
+Received task: terminal.tasks.clean_orphan_session[e62c0110-65df-4ed1-9f62-ab6b9fd583d1]  
+Received task: terminal.tasks.clean_expired_session_period[186e10b1-4b77-4773-836f-1713f2f392c6]  
+186e10b1-4b77-4773-836f-1713f2f392c6 terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task terminal.tasks.clean_orphan_session[e62c0110-65df-4ed1-9f62-ab6b9fd583d1] succeeded in 0.04641244999947958s: None
+Task users.tasks.check_password_expired_periodic[ba6adc80-9565-4923-a055-305dc943fe01] succeeded in 0.32709171999886166s: None
+Task terminal.tasks.clean_expired_session_period[186e10b1-4b77-4773-836f-1713f2f392c6] succeeded in 0.0942955000064103s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[0c249518-506b-4deb-88bb-0ddec13b7db8] succeeded in 0.746098407995305s: None
+Received task: terminal.tasks.clean_orphan_session[0ca2f9b5-318d-4e68-b212-9240b3d7cfe0]  
+Task terminal.tasks.clean_orphan_session[0ca2f9b5-318d-4e68-b212-9240b3d7cfe0] succeeded in 0.005700882989913225s: None
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[f8a2832b-9ba3-4d1c-932f-bb8888e4f9a2]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[ce3cb2a8-3269-46a1-b8f1-100bcd2e9fb7]  
+Received task: terminal.tasks.delete_terminal_status_period[8b813bc5-fa9b-4e2a-9692-986718f82353]  
+Received task: terminal.tasks.clean_orphan_session[128d26ac-97d2-4482-a6f9-e618b1288491]  
+Task terminal.tasks.delete_terminal_status_period[8b813bc5-fa9b-4e2a-9692-986718f82353] succeeded in 0.0561583660019096s: None
+Received task: terminal.tasks.clean_expired_session_period[b2cddd7a-33f4-481c-804e-62529b2a2b20]  
+Scaling up 1 processes.
+Task users.tasks.check_password_expired_periodic[f8a2832b-9ba3-4d1c-932f-bb8888e4f9a2] succeeded in 0.10709649199270643s: None
+b2cddd7a-33f4-481c-804e-62529b2a2b20 terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task terminal.tasks.clean_orphan_session[128d26ac-97d2-4482-a6f9-e618b1288491] succeeded in 0.07564576200093143s: None
+Task terminal.tasks.clean_expired_session_period[b2cddd7a-33f4-481c-804e-62529b2a2b20] succeeded in 0.07734580199758057s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[ce3cb2a8-3269-46a1-b8f1-100bcd2e9fb7] succeeded in 0.8088096580031561s: None
+Scaling down 1 processes.
+Received task: terminal.tasks.clean_orphan_session[dad13537-35c0-4b94-b053-540177023307]  
+Task terminal.tasks.clean_orphan_session[dad13537-35c0-4b94-b053-540177023307] succeeded in 0.0073743690008996055s: None
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[077b620d-cdb0-4226-8adc-f27ad29de2ac]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[a97687ad-0f97-4176-8df6-e4e3a0307237]  
+Received task: terminal.tasks.delete_terminal_status_period[600d7281-2799-4486-a2eb-f7af7d6ed4b3]  
+Received task: terminal.tasks.clean_orphan_session[393b7c31-c080-411d-a4db-ef4d9dbec55e]  
+Task terminal.tasks.delete_terminal_status_period[600d7281-2799-4486-a2eb-f7af7d6ed4b3] succeeded in 0.07949581200955436s: None
+Received task: terminal.tasks.clean_expired_session_period[14d178fc-529d-4c6c-9dee-8f1458d1e198]  
+Scaling up 1 processes.
+Task users.tasks.check_password_expired_periodic[077b620d-cdb0-4226-8adc-f27ad29de2ac] succeeded in 0.16343580500688404s: None
+14d178fc-529d-4c6c-9dee-8f1458d1e198 terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task terminal.tasks.clean_orphan_session[393b7c31-c080-411d-a4db-ef4d9dbec55e] succeeded in 0.03227982700627763s: None
+Task terminal.tasks.clean_expired_session_period[14d178fc-529d-4c6c-9dee-8f1458d1e198] succeeded in 0.05003883900644723s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[a97687ad-0f97-4176-8df6-e4e3a0307237] succeeded in 0.30592244399304036s: None
+Scaling down 1 processes.
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[5967a4b1-a2ae-4008-ad96-9bbe90430967]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[e7c03fa9-f5e5-4e37-a115-b34f0995ffaa]  
+Received task: terminal.tasks.delete_terminal_status_period[0caa0004-f35a-4fb5-b662-4970362c1cc0]  
+Task users.tasks.check_password_expired_periodic[5967a4b1-a2ae-4008-ad96-9bbe90430967] succeeded in 0.04880814399803057s: None
+Received task: terminal.tasks.clean_orphan_session[a41a2960-2bbf-4107-b2ae-ea3fc9d0a3ce]  
+Received task: terminal.tasks.clean_expired_session_period[fd20fef2-2ab9-4d32-909d-619c9ff88873]  
+fd20fef2-2ab9-4d32-909d-619c9ff88873 terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task terminal.tasks.clean_orphan_session[a41a2960-2bbf-4107-b2ae-ea3fc9d0a3ce] succeeded in 0.019910739007173106s: None
+Task terminal.tasks.clean_expired_session_period[fd20fef2-2ab9-4d32-909d-619c9ff88873] succeeded in 0.021740525000495836s: None
+Task terminal.tasks.delete_terminal_status_period[0caa0004-f35a-4fb5-b662-4970362c1cc0] succeeded in 0.07216933999734465s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[e7c03fa9-f5e5-4e37-a115-b34f0995ffaa] succeeded in 0.5817703479988268s: None
+Received task: users.tasks.write_login_log_async[491f94f2-88c8-4198-b4a2-810e7865405b]  
+Task users.tasks.write_login_log_async[491f94f2-88c8-4198-b4a2-810e7865405b] succeeded in 90.13150759199925s: None
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[38a59ba3-665d-4bc9-a7eb-e7146e2b3ace]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[af52b551-71a7-48e8-8f8d-a0e72abf6afa]  
+Received task: terminal.tasks.delete_terminal_status_period[cc316858-f00d-4478-b456-9ea5cdbbebae]  
+Received task: terminal.tasks.clean_orphan_session[a088e14c-474e-47cf-a012-9d751bad01e4]  
+Received task: terminal.tasks.clean_expired_session_period[d915db85-3243-4dc5-b7fa-587fe21a1998]  
+Scaling up 1 processes.
+Task terminal.tasks.delete_terminal_status_period[cc316858-f00d-4478-b456-9ea5cdbbebae] succeeded in 0.06924103300843854s: None
+Task terminal.tasks.clean_orphan_session[a088e14c-474e-47cf-a012-9d751bad01e4] succeeded in 0.08277981799619738s: None
+Task users.tasks.check_password_expired_periodic[38a59ba3-665d-4bc9-a7eb-e7146e2b3ace] succeeded in 0.1524468080024235s: None
+d915db85-3243-4dc5-b7fa-587fe21a1998 terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task terminal.tasks.clean_expired_session_period[d915db85-3243-4dc5-b7fa-587fe21a1998] succeeded in 0.082558964000782s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[af52b551-71a7-48e8-8f8d-a0e72abf6afa] succeeded in 0.7009615449933335s: None
+Scaling down 1 processes.
+Received task: assets.tasks.test_admin_user_connectivity_period[da81c57b-9a30-40e0-a1fa-47feece37b7a]  
+2019-03-06 15:12:36 任务开始: 定期测试管理账号可连接性: linux
+PLAY [定期测试管理账号可连接性: linux] *****************************************************
+TASK [ping] ********************************************************************
+ok: [192.168.127.130]
+2019-03-06 15:12:37 任务结束
+Task assets.tasks.test_admin_user_connectivity_period[da81c57b-9a30-40e0-a1fa-47feece37b7a] succeeded in 0.9958992169995327s: None
+Received task: users.tasks.write_login_log_async[84c9dfc9-bbf5-4d19-8a2c-8ec31d0dea5e]  
+Received task: users.tasks.write_login_log_async[a141722e-3d95-4246-b7e5-6c4e24911b27]  
+Received task: users.tasks.write_login_log_async[bfd1b6b9-5f49-41fd-878f-0bacd4171be3]  
+Task users.tasks.write_login_log_async[84c9dfc9-bbf5-4d19-8a2c-8ec31d0dea5e] succeeded in 90.13541992599494s: None
+Task users.tasks.write_login_log_async[a141722e-3d95-4246-b7e5-6c4e24911b27] succeeded in 90.12482038399321s: None
+Received task: users.tasks.write_login_log_async[e394139f-d201-4346-9427-2f7d2efafd9a]  
+Task users.tasks.write_login_log_async[bfd1b6b9-5f49-41fd-878f-0bacd4171be3] succeeded in 90.28047615499236s: None
+Task users.tasks.write_login_log_async[e394139f-d201-4346-9427-2f7d2efafd9a] succeeded in 90.1668222139997s: None
+Received task: terminal.tasks.clean_orphan_session[11a6a0c7-0f66-444c-80c4-cfbe70d09d32]  
+Task terminal.tasks.clean_orphan_session[11a6a0c7-0f66-444c-80c4-cfbe70d09d32] succeeded in 0.010188708998612128s: None
+Received task: terminal.tasks.clean_orphan_session[9c12629b-f3ae-4bdb-b1e5-773e240ce0e9]  
+Task terminal.tasks.clean_orphan_session[9c12629b-f3ae-4bdb-b1e5-773e240ce0e9] succeeded in 0.005051280008046888s: None
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[2e77860a-3aef-4d33-829a-d33bcc47f2f3]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[182c20da-927c-436a-921a-844abbfb4012]  
+Received task: terminal.tasks.delete_terminal_status_period[3b590205-e5e8-4998-9f87-791c4f0955cd]  
+Received task: terminal.tasks.clean_orphan_session[24c98a26-141e-435b-bb5b-86aac2f029c8]  
+Task terminal.tasks.clean_orphan_session[24c98a26-141e-435b-bb5b-86aac2f029c8] succeeded in 0.019858125990140252s: None
+Received task: terminal.tasks.clean_expired_session_period[494b769d-6afa-4a66-82c7-a40c2a10f76d]  
+Scaling up 1 processes.
+Task terminal.tasks.delete_terminal_status_period[3b590205-e5e8-4998-9f87-791c4f0955cd] succeeded in 0.12240042100893334s: None
+494b769d-6afa-4a66-82c7-a40c2a10f76d terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task users.tasks.check_password_expired_periodic[2e77860a-3aef-4d33-829a-d33bcc47f2f3] succeeded in 0.155708576014149s: None
+Task terminal.tasks.clean_expired_session_period[494b769d-6afa-4a66-82c7-a40c2a10f76d] succeeded in 0.015032185998279601s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[182c20da-927c-436a-921a-844abbfb4012] succeeded in 0.8493288680037949s: None
+Scaling down 1 processes.
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[2fee23da-92fa-4a8c-a30c-271413df6aff]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[eede4fcc-0414-4393-bd76-376fe5975b42]  
+Received task: terminal.tasks.delete_terminal_status_period[6dc0e4bb-a699-461e-8ebb-eab3022b007f]  
+Task users.tasks.check_password_expired_periodic[2fee23da-92fa-4a8c-a30c-271413df6aff] succeeded in 0.14231657900381833s: None
+Received task: terminal.tasks.clean_orphan_session[956e92d2-a7ca-4c3a-9b41-3c73abb5ecf1]  
+Task terminal.tasks.delete_terminal_status_period[6dc0e4bb-a699-461e-8ebb-eab3022b007f] succeeded in 0.08036320901010185s: None
+Received task: terminal.tasks.clean_expired_session_period[2a8d046e-55eb-418c-ba04-2a821a66c3fe]  
+Scaling up 1 processes.
+2a8d046e-55eb-418c-ba04-2a821a66c3fe terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task terminal.tasks.clean_orphan_session[956e92d2-a7ca-4c3a-9b41-3c73abb5ecf1] succeeded in 0.039013361994875595s: None
+Task terminal.tasks.clean_expired_session_period[2a8d046e-55eb-418c-ba04-2a821a66c3fe] succeeded in 0.08644809199904557s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[eede4fcc-0414-4393-bd76-376fe5975b42] succeeded in 0.7396268360025715s: None
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[bc31da60-21a6-449d-b834-a243e0e8ecbd]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[0b62867b-f8be-40d3-80b5-6da4c68fdb29]  
+Received task: terminal.tasks.delete_terminal_status_period[eb2b4b16-d42a-404e-9f00-c123a3fb02ae]  
+Received task: terminal.tasks.clean_orphan_session[fe3f3154-93df-4af7-a67a-f7c012da7ad1]  
+Received task: terminal.tasks.clean_expired_session_period[68394cc2-387d-4458-8059-6cdf3513a69c]  
+Scaling up 1 processes.
+Task terminal.tasks.clean_orphan_session[fe3f3154-93df-4af7-a67a-f7c012da7ad1] succeeded in 0.07054983499983791s: None
+Task terminal.tasks.delete_terminal_status_period[eb2b4b16-d42a-404e-9f00-c123a3fb02ae] succeeded in 0.09313249299884774s: None
+Task users.tasks.check_password_expired_periodic[bc31da60-21a6-449d-b834-a243e0e8ecbd] succeeded in 0.33218944900727365s: None
+68394cc2-387d-4458-8059-6cdf3513a69c terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task terminal.tasks.clean_expired_session_period[68394cc2-387d-4458-8059-6cdf3513a69c] succeeded in 0.08974399299768265s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[0b62867b-f8be-40d3-80b5-6da4c68fdb29] succeeded in 0.7955302810005378s: None
+Received task: users.tasks.write_login_log_async[06b754fb-2e25-493d-b5eb-541ae319143a]  
+Scaling down 1 processes.
+Task users.tasks.write_login_log_async[06b754fb-2e25-493d-b5eb-541ae319143a] succeeded in 90.13389624700358s: None
+Received task: users.tasks.write_login_log_async[f94de9f8-a42d-4c2b-b3dc-ec805b366922]  
+Received task: users.tasks.write_login_log_async[8b3836b8-7776-4343-90e2-1de500ecbac4]  
+Task users.tasks.write_login_log_async[f94de9f8-a42d-4c2b-b3dc-ec805b366922] succeeded in 90.13282665899897s: None
+Task users.tasks.write_login_log_async[8b3836b8-7776-4343-90e2-1de500ecbac4] succeeded in 90.11928290399374s: None
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[39548bf7-15af-460b-a9e8-942213cbe290]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[98eca9d6-b44b-497a-a0b6-ceed204513dd]  
+Received task: terminal.tasks.delete_terminal_status_period[72e48cd8-9525-4b3f-b017-58b1dbb941f4]  
+Received task: terminal.tasks.clean_orphan_session[3bdc2feb-12c5-44ee-8911-0923c8ac21d0]  
+Task terminal.tasks.delete_terminal_status_period[72e48cd8-9525-4b3f-b017-58b1dbb941f4] succeeded in 0.04894522999529727s: None
+Task users.tasks.check_password_expired_periodic[39548bf7-15af-460b-a9e8-942213cbe290] succeeded in 0.13666110699705314s: None
+Received task: terminal.tasks.clean_expired_session_period[a0bda162-5155-40fa-9c45-971ecee961f6]  
+Scaling up 1 processes.
+a0bda162-5155-40fa-9c45-971ecee961f6 terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task terminal.tasks.clean_expired_session_period[a0bda162-5155-40fa-9c45-971ecee961f6] succeeded in 0.052852392007480375s: None
+Task terminal.tasks.clean_orphan_session[3bdc2feb-12c5-44ee-8911-0923c8ac21d0] succeeded in 0.09788558899890631s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[98eca9d6-b44b-497a-a0b6-ceed204513dd] succeeded in 0.7614844789932249s: None
+Scaling down 1 processes.
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[5c70b0a3-acaf-4830-b5d5-c49759322537]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[5c1b7713-6414-472d-8d3c-530100a9f299]  
+Received task: terminal.tasks.delete_terminal_status_period[ee4696b3-efdd-4f39-8705-d321dff2462c]  
+Received task: terminal.tasks.clean_orphan_session[8bfbd623-97dd-4f52-b076-0ef001583491]  
+Task terminal.tasks.delete_terminal_status_period[ee4696b3-efdd-4f39-8705-d321dff2462c] succeeded in 0.07559266600583214s: None
+Received task: terminal.tasks.clean_expired_session_period[d5f2ebc6-3877-490d-bafb-5078a5bee15d]  
+Scaling up 1 processes.
+Task users.tasks.check_password_expired_periodic[5c70b0a3-acaf-4830-b5d5-c49759322537] succeeded in 0.19399289700959343s: None
+d5f2ebc6-3877-490d-bafb-5078a5bee15d terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task terminal.tasks.clean_orphan_session[8bfbd623-97dd-4f52-b076-0ef001583491] succeeded in 0.06181059801019728s: None
+Task terminal.tasks.clean_expired_session_period[d5f2ebc6-3877-490d-bafb-5078a5bee15d] succeeded in 0.10866352300217841s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[5c1b7713-6414-472d-8d3c-530100a9f299] succeeded in 0.651445841009263s: None
+Scaling down 1 processes.
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+/opt/py3/lib64/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[f13f0bd9-8bc8-4c8a-89c2-38d185719509]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[3797a151-b60a-4d54-be66-1fe005578604]  
+Received task: terminal.tasks.delete_terminal_status_period[3786536a-b1fb-4d78-8693-6ae2f838552d]  
+Received task: terminal.tasks.clean_orphan_session[b9072333-17f3-47d7-b29f-1bd8785db381]  
+Received task: terminal.tasks.clean_expired_session_period[bd004498-edac-4ea3-9df5-b5540f84cbae]  
+Scaling up 1 processes.
+Task terminal.tasks.clean_orphan_session[b9072333-17f3-47d7-b29f-1bd8785db381] succeeded in 0.07635441099409945s: None
+Task terminal.tasks.delete_terminal_status_period[3786536a-b1fb-4d78-8693-6ae2f838552d] succeeded in 0.08214492299885023s: None
+Task users.tasks.check_password_expired_periodic[f13f0bd9-8bc8-4c8a-89c2-38d185719509] succeeded in 0.27428751200204715s: None
+bd004498-edac-4ea3-9df5-b5540f84cbae terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task terminal.tasks.clean_expired_session_period[bd004498-edac-4ea3-9df5-b5540f84cbae] succeeded in 0.013868334994185716s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[3797a151-b60a-4d54-be66-1fe005578604] succeeded in 0.455082657004823s: None
+Received task: users.tasks.write_login_log_async[4e8250b4-ad48-46a5-92e3-51ce9684d116]  
+Scaling down 1 processes.
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+/opt/py3/lib64/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[f52479a0-dec9-4615-8e27-ed6a51740a24]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[7a4e309e-b884-41e5-bfdb-e0436fc7c719]  
+Received task: terminal.tasks.delete_terminal_status_period[042ffab2-89b2-4e86-b0e9-af2a9541c84c]  
+Received task: terminal.tasks.clean_orphan_session[e7bd2381-727d-45ed-9204-5cea99a8d393]  
+Task terminal.tasks.clean_orphan_session[e7bd2381-727d-45ed-9204-5cea99a8d393] succeeded in 0.0691632939997362s: None
+Received task: terminal.tasks.clean_expired_session_period[cba25002-a2bd-40bf-9f5f-d0739e43d513]  
+Scaling up 1 processes.
+Task users.tasks.check_password_expired_periodic[f52479a0-dec9-4615-8e27-ed6a51740a24] succeeded in 0.2970803420030279s: None
+Task terminal.tasks.delete_terminal_status_period[042ffab2-89b2-4e86-b0e9-af2a9541c84c] succeeded in 0.1398440019984264s: None
+cba25002-a2bd-40bf-9f5f-d0739e43d513 terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task terminal.tasks.clean_expired_session_period[cba25002-a2bd-40bf-9f5f-d0739e43d513] succeeded in 0.07499804699909873s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[7a4e309e-b884-41e5-bfdb-e0436fc7c719] succeeded in 0.6421450780035229s: None
+Received task: users.tasks.write_login_log_async[42fa1d42-2a90-44ab-a88f-9fcd85fdae6e]  
+Received task: users.tasks.write_login_log_async[ffa9e8ad-3395-43eb-89e8-48fb9ef5085e]  
+Scaling down 1 processes.
+Task users.tasks.write_login_log_async[42fa1d42-2a90-44ab-a88f-9fcd85fdae6e] succeeded in 90.1302722190012s: None
+Task users.tasks.write_login_log_async[ffa9e8ad-3395-43eb-89e8-48fb9ef5085e] succeeded in 90.26179812000191s: None
+Received task: terminal.tasks.clean_orphan_session[711bfbdc-0518-4f94-b1cd-3c1b900332d6]  
+Task terminal.tasks.clean_orphan_session[711bfbdc-0518-4f94-b1cd-3c1b900332d6] succeeded in 0.004584308990160935s: None
+Received task: assets.tasks.test_admin_user_connectivity_period[1e843dd6-42b7-45a9-a8e5-d83ca1d36e09]  
+2019-03-06 16:12:36 任务开始: 定期测试管理账号可连接性: linux
+PLAY [定期测试管理账号可连接性: linux] *****************************************************
+TASK [ping] ********************************************************************
+ok: [192.168.127.130]
+2019-03-06 16:12:37 任务结束
+Task assets.tasks.test_admin_user_connectivity_period[1e843dd6-42b7-45a9-a8e5-d83ca1d36e09] succeeded in 1.0371387659979519s: None
+Received task: terminal.tasks.clean_orphan_session[ad8ef34e-ef96-4b0b-8492-1081e7b37ead]  
+Task terminal.tasks.clean_orphan_session[ad8ef34e-ef96-4b0b-8492-1081e7b37ead] succeeded in 0.004732782996143214s: None
+Received task: terminal.tasks.clean_orphan_session[2f208a6f-6d1b-4b04-9185-ef4ef9c7bc1f]  
+Task terminal.tasks.clean_orphan_session[2f208a6f-6d1b-4b04-9185-ef4ef9c7bc1f] succeeded in 0.005808602989418432s: None
+Received task: terminal.tasks.clean_orphan_session[95fd08d7-2716-427b-9ee3-e065aba2a5c1]  
+Task terminal.tasks.clean_orphan_session[95fd08d7-2716-427b-9ee3-e065aba2a5c1] succeeded in 0.0068223220005165786s: None
+Received task: terminal.tasks.clean_orphan_session[59603824-0264-4cd9-a416-ada2a5f68006]  
+Task terminal.tasks.clean_orphan_session[59603824-0264-4cd9-a416-ada2a5f68006] succeeded in 0.005967726014205255s: None
+Received task: terminal.tasks.delete_terminal_status_period[14b1e83e-6c4b-4ed9-87fe-3ce63079af7c]  
+Task terminal.tasks.delete_terminal_status_period[14b1e83e-6c4b-4ed9-87fe-3ce63079af7c] succeeded in 0.008319464002852328s: None
+Received task: terminal.tasks.clean_orphan_session[6bf4e428-9f49-4d9d-9bab-26ed60000e52]  
+Task terminal.tasks.clean_orphan_session[6bf4e428-9f49-4d9d-9bab-26ed60000e52] succeeded in 0.005462740009534173s: None
+Received task: terminal.tasks.clean_orphan_session[ef085d1a-d2c0-4d0f-a7aa-8763af6ad059]  
+Task terminal.tasks.clean_orphan_session[ef085d1a-d2c0-4d0f-a7aa-8763af6ad059] succeeded in 0.007026626990409568s: None
+Received task: users.tasks.write_login_log_async[a288b485-75aa-4cbe-a3df-c2b35a009cf9]  
+Received task: users.tasks.write_login_log_async[9c952393-67c0-400a-aef3-0b17bce3746e]  
+Received task: users.tasks.write_login_log_async[60036704-557b-4877-a7a6-45fbc4b43802]  
+Received task: assets.tasks.test_admin_user_connectivity_period[7666dbb4-6b73-4f14-90f6-5364ccffecd6]  
+2019-03-06 17:12:36 任务开始: 定期测试管理账号可连接性: linux
+PLAY [定期测试管理账号可连接性: linux] *****************************************************
+TASK [ping] ********************************************************************
+ok: [192.168.127.130]
+2019-03-06 17:12:38 任务结束
+Task assets.tasks.test_admin_user_connectivity_period[7666dbb4-6b73-4f14-90f6-5364ccffecd6] succeeded in 1.9835693880013423s: None
+Task users.tasks.write_login_log_async[a288b485-75aa-4cbe-a3df-c2b35a009cf9] succeeded in 90.11264775499876s: None
+Task users.tasks.write_login_log_async[9c952393-67c0-400a-aef3-0b17bce3746e] succeeded in 90.12554486900626s: None
+Task users.tasks.write_login_log_async[60036704-557b-4877-a7a6-45fbc4b43802] succeeded in 90.12942479099729s: None
+Received task: terminal.tasks.clean_orphan_session[c24d2775-b801-4875-a3fb-56e69e2f86f9]  
+Task terminal.tasks.clean_orphan_session[c24d2775-b801-4875-a3fb-56e69e2f86f9] succeeded in 0.004443170997546986s: None
+Received task: terminal.tasks.clean_orphan_session[60a67e11-71c8-45b1-bc35-864bf7af05f8]  
+Task terminal.tasks.clean_orphan_session[60a67e11-71c8-45b1-bc35-864bf7af05f8] succeeded in 0.005079727008705959s: None
+Received task: terminal.tasks.clean_orphan_session[d75a738a-feb7-4266-b305-69dadb434aa3]  
+Task terminal.tasks.clean_orphan_session[d75a738a-feb7-4266-b305-69dadb434aa3] succeeded in 0.0057325199886690825s: None
+Received task: terminal.tasks.clean_orphan_session[f2bc8a25-197f-486d-92ce-c0cc50d4731a]  
+Task terminal.tasks.clean_orphan_session[f2bc8a25-197f-486d-92ce-c0cc50d4731a] succeeded in 0.006788932005292736s: None
+Received task: terminal.tasks.delete_terminal_status_period[5ffbd3c3-df91-44d6-9112-5c97a46763c5]  
+Task terminal.tasks.delete_terminal_status_period[5ffbd3c3-df91-44d6-9112-5c97a46763c5] succeeded in 0.007811161005520262s: None
+Received task: terminal.tasks.clean_orphan_session[ff88c8b6-0067-4728-b640-351a98d1278c]  
+Task terminal.tasks.clean_orphan_session[ff88c8b6-0067-4728-b640-351a98d1278c] succeeded in 0.00581708199752029s: None
+Received task: terminal.tasks.clean_orphan_session[50fbdaff-962f-4684-a690-39223a26ec70]  
+Task terminal.tasks.clean_orphan_session[50fbdaff-962f-4684-a690-39223a26ec70] succeeded in 0.005899273004615679s: None
+Received task: assets.tasks.test_admin_user_connectivity_period[360f701c-8db6-44a1-8324-6eeb7ddb2223]  
+2019-03-06 18:12:36 任务开始: 定期测试管理账号可连接性: linux
+PLAY [定期测试管理账号可连接性: linux] *****************************************************
+TASK [ping] ********************************************************************
+ok: [192.168.127.130]
+2019-03-06 18:12:37 任务结束
+Task assets.tasks.test_admin_user_connectivity_period[360f701c-8db6-44a1-8324-6eeb7ddb2223] succeeded in 1.0766763190040365s: None
+Received task: terminal.tasks.clean_orphan_session[6f5c0256-2205-43f0-a035-0517f819b21e]  
+Task terminal.tasks.clean_orphan_session[6f5c0256-2205-43f0-a035-0517f819b21e] succeeded in 0.005941950992564671s: None
+Received task: terminal.tasks.clean_orphan_session[41a75e71-786a-47e9-8198-711662d836a1]  
+Task terminal.tasks.clean_orphan_session[41a75e71-786a-47e9-8198-711662d836a1] succeeded in 0.005039840005338192s: None
+Received task: terminal.tasks.clean_orphan_session[7d5516be-a5de-4d87-ad98-4f0f01a51b7f]  
+Task terminal.tasks.clean_orphan_session[7d5516be-a5de-4d87-ad98-4f0f01a51b7f] succeeded in 0.006665813009021804s: None
+Received task: terminal.tasks.clean_orphan_session[30699246-1013-47d1-9727-4186c6a0000e]  
+Task terminal.tasks.clean_orphan_session[30699246-1013-47d1-9727-4186c6a0000e] succeeded in 0.00524428000790067s: None
+Received task: terminal.tasks.delete_terminal_status_period[cd68d872-857b-453f-b84e-7686432ce4d8]  
+Task terminal.tasks.delete_terminal_status_period[cd68d872-857b-453f-b84e-7686432ce4d8] succeeded in 0.006066228001145646s: None
+Received task: terminal.tasks.clean_orphan_session[6fb9f5f0-e67c-48c8-bd96-bf9bc420a1c6]  
+Task terminal.tasks.clean_orphan_session[6fb9f5f0-e67c-48c8-bd96-bf9bc420a1c6] succeeded in 0.005579129996476695s: None
+Received task: terminal.tasks.clean_orphan_session[6c08a85b-e479-41a5-978b-890ba5338b26]  
+Task terminal.tasks.clean_orphan_session[6c08a85b-e479-41a5-978b-890ba5338b26] succeeded in 0.007038986004772596s: None
+Received task: assets.tasks.test_admin_user_connectivity_period[ba58b421-5183-4780-8d6a-a3e9a322177f]  
+2019-03-06 19:12:36 任务开始: 定期测试管理账号可连接性: linux
+PLAY [定期测试管理账号可连接性: linux] *****************************************************
+TASK [ping] ********************************************************************
+ok: [192.168.127.130]
+2019-03-06 19:12:37 任务结束
+Task assets.tasks.test_admin_user_connectivity_period[ba58b421-5183-4780-8d6a-a3e9a322177f] succeeded in 0.86520448999363s: None
+Received task: terminal.tasks.clean_orphan_session[0a98f927-857a-4915-9da2-8c75f27a3ad5]  
+Task terminal.tasks.clean_orphan_session[0a98f927-857a-4915-9da2-8c75f27a3ad5] succeeded in 0.0061726839921902865s: None
+Received task: terminal.tasks.clean_orphan_session[2344fb2d-05db-4315-b4dd-c91e619b80c3]  
+Task terminal.tasks.clean_orphan_session[2344fb2d-05db-4315-b4dd-c91e619b80c3] succeeded in 0.0053202110138954595s: None
+Received task: terminal.tasks.clean_orphan_session[52b12c02-5af4-4638-9387-a8778358b9a5]  
+Task terminal.tasks.clean_orphan_session[52b12c02-5af4-4638-9387-a8778358b9a5] succeeded in 0.005306937004206702s: None
+Received task: terminal.tasks.clean_orphan_session[c649b7e5-11ba-4a7b-b2ff-ca2bb221d0c1]  
+Task terminal.tasks.clean_orphan_session[c649b7e5-11ba-4a7b-b2ff-ca2bb221d0c1] succeeded in 0.0055184730008477345s: None
+Received task: terminal.tasks.delete_terminal_status_period[e1374127-7960-4763-9648-43b0279a8a9e]  
+Task terminal.tasks.delete_terminal_status_period[e1374127-7960-4763-9648-43b0279a8a9e] succeeded in 0.0060795310128014535s: None
+Received task: terminal.tasks.clean_orphan_session[cb07fc9f-be8c-46a6-9e45-60c7c4567888]  
+Task terminal.tasks.clean_orphan_session[cb07fc9f-be8c-46a6-9e45-60c7c4567888] succeeded in 0.005238556012045592s: None
+Received task: terminal.tasks.clean_orphan_session[07d759fb-4fac-41b1-aad6-6a9e607ac6be]  
+Task terminal.tasks.clean_orphan_session[07d759fb-4fac-41b1-aad6-6a9e607ac6be] succeeded in 0.0064018779958132654s: None
+Received task: assets.tasks.test_admin_user_connectivity_period[4b8cdb38-064a-4ded-a1c4-aebc3ebd0adc]  
+2019-03-06 20:12:36 任务开始: 定期测试管理账号可连接性: linux
+PLAY [定期测试管理账号可连接性: linux] *****************************************************
+TASK [ping] ********************************************************************
+ok: [192.168.127.130]
+2019-03-06 20:12:37 任务结束
+Task assets.tasks.test_admin_user_connectivity_period[4b8cdb38-064a-4ded-a1c4-aebc3ebd0adc] succeeded in 0.8122767970053246s: None
+Received task: terminal.tasks.clean_orphan_session[3e0e13ba-9e14-4371-a0aa-bbe04f24ea1f]  
+Task terminal.tasks.clean_orphan_session[3e0e13ba-9e14-4371-a0aa-bbe04f24ea1f] succeeded in 0.006258929002797231s: None
+Received task: terminal.tasks.clean_orphan_session[2f1af4be-795d-4133-ab0d-68523f4c758e]  
+Task terminal.tasks.clean_orphan_session[2f1af4be-795d-4133-ab0d-68523f4c758e] succeeded in 0.005605168989859521s: None
+Received task: terminal.tasks.clean_orphan_session[8660cadf-37a7-431f-b649-98252b08f5d4]  
+Task terminal.tasks.clean_orphan_session[8660cadf-37a7-431f-b649-98252b08f5d4] succeeded in 0.006292267993558198s: None
+Received task: terminal.tasks.clean_orphan_session[4d86e1cd-9ce8-4ca3-b802-050f4c4bd5d7]  
+Task terminal.tasks.clean_orphan_session[4d86e1cd-9ce8-4ca3-b802-050f4c4bd5d7] succeeded in 0.005465555004775524s: None
+Received task: terminal.tasks.delete_terminal_status_period[214282a1-b0b1-4c88-be4a-8b110d99e4cc]  
+Task terminal.tasks.delete_terminal_status_period[214282a1-b0b1-4c88-be4a-8b110d99e4cc] succeeded in 0.013777975997072645s: None
+Received task: terminal.tasks.clean_orphan_session[5c3f7ef7-e23a-497a-8a4c-e6c25ec79ba3]  
+Task terminal.tasks.clean_orphan_session[5c3f7ef7-e23a-497a-8a4c-e6c25ec79ba3] succeeded in 0.0046295720094349235s: None
+Received task: terminal.tasks.clean_orphan_session[a7f09e6b-641d-4177-8d28-77394f7eaa2e]  
+Task terminal.tasks.clean_orphan_session[a7f09e6b-641d-4177-8d28-77394f7eaa2e] succeeded in 0.005826562992297113s: None
+Received task: assets.tasks.test_admin_user_connectivity_period[9c389ad4-763a-4f1d-a3bb-61a1f5bd1302]  
+2019-03-06 21:12:36 任务开始: 定期测试管理账号可连接性: linux
+PLAY [定期测试管理账号可连接性: linux] *****************************************************
+TASK [ping] ********************************************************************
+ok: [192.168.127.130]
+2019-03-06 21:12:37 任务结束
+Task assets.tasks.test_admin_user_connectivity_period[9c389ad4-763a-4f1d-a3bb-61a1f5bd1302] succeeded in 1.1902049479976995s: None
+Received task: terminal.tasks.clean_orphan_session[12d25ba9-8b4b-4165-b65d-58bcc291016d]  
+Task terminal.tasks.clean_orphan_session[12d25ba9-8b4b-4165-b65d-58bcc291016d] succeeded in 0.004293608988518827s: None
+Received task: terminal.tasks.clean_orphan_session[83055b64-cfa7-428f-a47c-cb33b528ccaa]  
+Task terminal.tasks.clean_orphan_session[83055b64-cfa7-428f-a47c-cb33b528ccaa] succeeded in 0.004571194003801793s: None
+Received task: terminal.tasks.clean_orphan_session[00ee8019-9b04-416d-8e8c-ae4778b36772]  
+Task terminal.tasks.clean_orphan_session[00ee8019-9b04-416d-8e8c-ae4778b36772] succeeded in 0.004439236989128403s: None
+Received task: terminal.tasks.clean_orphan_session[3ad75629-bd4e-4dd8-ac95-1bd3286e485f]  
+Task terminal.tasks.clean_orphan_session[3ad75629-bd4e-4dd8-ac95-1bd3286e485f] succeeded in 0.004245040996465832s: None
+Received task: terminal.tasks.delete_terminal_status_period[08ca6f1c-eccf-4035-9e61-bb1a89d088c4]  
+Task terminal.tasks.delete_terminal_status_period[08ca6f1c-eccf-4035-9e61-bb1a89d088c4] succeeded in 0.004859407999902032s: None
+Received task: terminal.tasks.clean_orphan_session[b842dfb6-acce-4699-bdaf-8dd2b67a6a46]  
+Task terminal.tasks.clean_orphan_session[b842dfb6-acce-4699-bdaf-8dd2b67a6a46] succeeded in 0.006812129999161698s: None
+Received task: terminal.tasks.clean_orphan_session[1afd3388-c9ce-4cdc-9f41-68add54aa219]  
+Task terminal.tasks.clean_orphan_session[1afd3388-c9ce-4cdc-9f41-68add54aa219] succeeded in 0.0045967659971211106s: None
+Received task: assets.tasks.test_admin_user_connectivity_period[7bd4063d-ca2c-483e-a21e-27f57cf29e27]  
+2019-03-06 22:12:36 任务开始: 定期测试管理账号可连接性: linux
+PLAY [定期测试管理账号可连接性: linux] *****************************************************
+TASK [ping] ********************************************************************
+ok: [192.168.127.130]
+2019-03-06 22:12:39 任务结束
+Task assets.tasks.test_admin_user_connectivity_period[7bd4063d-ca2c-483e-a21e-27f57cf29e27] succeeded in 2.828897069004597s: None
+Received task: terminal.tasks.clean_orphan_session[13d9b5d2-f171-4ddb-8c35-c8505418d093]  
+Task terminal.tasks.clean_orphan_session[13d9b5d2-f171-4ddb-8c35-c8505418d093] succeeded in 0.005329852006980218s: None
+Received task: terminal.tasks.clean_orphan_session[e6748be1-320b-4f41-9010-2577459cd249]  
+Task terminal.tasks.clean_orphan_session[e6748be1-320b-4f41-9010-2577459cd249] succeeded in 0.006960050988709554s: None
+Received task: terminal.tasks.clean_orphan_session[f6401df7-dc30-4ef1-87a8-4e503993dfcb]  
+Task terminal.tasks.clean_orphan_session[f6401df7-dc30-4ef1-87a8-4e503993dfcb] succeeded in 0.005312597000738606s: None
+Received task: terminal.tasks.clean_orphan_session[45f4c2a6-5f59-46fa-b29c-269fed2cf42a]  
+Task terminal.tasks.clean_orphan_session[45f4c2a6-5f59-46fa-b29c-269fed2cf42a] succeeded in 0.003704442991875112s: None
+Received task: terminal.tasks.delete_terminal_status_period[071350b4-c4d1-4124-9374-1fe16264cda4]  
+Task terminal.tasks.delete_terminal_status_period[071350b4-c4d1-4124-9374-1fe16264cda4] succeeded in 0.006193470995640382s: None
+Received task: terminal.tasks.clean_orphan_session[eb6701f1-606d-4b57-aea5-1eae3e7589db]  
+Task terminal.tasks.clean_orphan_session[eb6701f1-606d-4b57-aea5-1eae3e7589db] succeeded in 0.0043446909985505044s: None
+Received task: terminal.tasks.clean_orphan_session[256b9c20-488a-47d1-b840-d35f4a21cadc]  
+Task terminal.tasks.clean_orphan_session[256b9c20-488a-47d1-b840-d35f4a21cadc] succeeded in 0.00425607999204658s: None
+Received task: assets.tasks.test_admin_user_connectivity_period[5cbca1ed-fe3b-461f-abf5-dc3a97caa87a]  
+2019-03-06 23:12:36 任务开始: 定期测试管理账号可连接性: linux
+PLAY [定期测试管理账号可连接性: linux] *****************************************************
+TASK [ping] ********************************************************************
+ok: [192.168.127.130]
+2019-03-06 23:12:37 任务结束
+Task assets.tasks.test_admin_user_connectivity_period[5cbca1ed-fe3b-461f-abf5-dc3a97caa87a] succeeded in 0.8659630379988812s: None
+Received task: terminal.tasks.clean_orphan_session[33556f82-7cc1-493a-ab4b-1b422bc62a29]  
+Task terminal.tasks.clean_orphan_session[33556f82-7cc1-493a-ab4b-1b422bc62a29] succeeded in 0.006010648998199031s: None
+Received task: terminal.tasks.clean_orphan_session[e4be0b3b-06d1-4e32-aaa6-a229e2637dc5]  
+Task terminal.tasks.clean_orphan_session[e4be0b3b-06d1-4e32-aaa6-a229e2637dc5] succeeded in 0.0042236469889758155s: None
+Received task: terminal.tasks.clean_orphan_session[c5f1acd6-de12-42ed-967c-603ec9af6fae]  
+Task terminal.tasks.clean_orphan_session[c5f1acd6-de12-42ed-967c-603ec9af6fae] succeeded in 0.004611780008417554s: None
+Received task: terminal.tasks.clean_orphan_session[8dfe98d5-c8ec-4b6c-8f25-97f0d6435736]  
+Task terminal.tasks.clean_orphan_session[8dfe98d5-c8ec-4b6c-8f25-97f0d6435736] succeeded in 0.0043584090017247945s: None
+Received task: terminal.tasks.delete_terminal_status_period[2b525b67-b247-4cdf-a028-c17e0653da35]  
+Task terminal.tasks.delete_terminal_status_period[2b525b67-b247-4cdf-a028-c17e0653da35] succeeded in 0.004641698993509635s: None
+Received task: terminal.tasks.clean_orphan_session[904647ce-136b-4e38-9e89-4ebcc282c295]  
+Task terminal.tasks.clean_orphan_session[904647ce-136b-4e38-9e89-4ebcc282c295] succeeded in 0.004826697011594661s: None
+Received task: terminal.tasks.clean_orphan_session[13a347eb-af27-4d33-8c4c-8f739ddf5ba4]  
+Task terminal.tasks.clean_orphan_session[13a347eb-af27-4d33-8c4c-8f739ddf5ba4] succeeded in 0.0051987010083394125s: None
+Received task: assets.tasks.test_admin_user_connectivity_period[4dc15b1c-cdb3-4e48-a959-16f8ee8860f1]  
+2019-03-07 00:12:36 任务开始: 定期测试管理账号可连接性: linux
+PLAY [定期测试管理账号可连接性: linux] *****************************************************
+TASK [ping] ********************************************************************
+ok: [192.168.127.130]
+2019-03-07 00:12:37 任务结束
+Task assets.tasks.test_admin_user_connectivity_period[4dc15b1c-cdb3-4e48-a959-16f8ee8860f1] succeeded in 0.8939491549972445s: None
+Received task: terminal.tasks.clean_orphan_session[2f4ca30f-55b6-40ad-a76d-3de37e361e4d]  
+Task terminal.tasks.clean_orphan_session[2f4ca30f-55b6-40ad-a76d-3de37e361e4d] succeeded in 0.005920198003877886s: None
+Received task: terminal.tasks.clean_orphan_session[a92030d2-d2d5-43ad-96e4-845b83341aab]  
+Task terminal.tasks.clean_orphan_session[a92030d2-d2d5-43ad-96e4-845b83341aab] succeeded in 0.005194959987420589s: None
+Received task: terminal.tasks.clean_orphan_session[f5e21732-03c4-4a3a-a898-02ccfadd3019]  
+Task terminal.tasks.clean_orphan_session[f5e21732-03c4-4a3a-a898-02ccfadd3019] succeeded in 0.004257208987837657s: None
+Received task: terminal.tasks.clean_orphan_session[45775d37-ac84-47ab-8e7b-079b03cd5771]  
+Task terminal.tasks.clean_orphan_session[45775d37-ac84-47ab-8e7b-079b03cd5771] succeeded in 0.004932848998578265s: None
+Received task: terminal.tasks.delete_terminal_status_period[92a7e232-b2e0-484b-bbf3-ecfb24e9246a]  
+Task terminal.tasks.delete_terminal_status_period[92a7e232-b2e0-484b-bbf3-ecfb24e9246a] succeeded in 0.0049225469992961735s: None
+Received task: terminal.tasks.clean_orphan_session[3ecc5a94-2fe9-4ea3-9c6e-656d9a4f3002]  
+Task terminal.tasks.clean_orphan_session[3ecc5a94-2fe9-4ea3-9c6e-656d9a4f3002] succeeded in 0.004207441001199186s: None
+Received task: terminal.tasks.clean_orphan_session[bfbe79c8-1602-4a16-8073-1792263cd545]  
+Task terminal.tasks.clean_orphan_session[bfbe79c8-1602-4a16-8073-1792263cd545] succeeded in 0.004318922001402825s: None
+Received task: assets.tasks.test_admin_user_connectivity_period[42b1ad1e-df39-4fe5-b36f-3881dcdd3521]  
+2019-03-07 01:12:36 任务开始: 定期测试管理账号可连接性: linux
+PLAY [定期测试管理账号可连接性: linux] *****************************************************
+TASK [ping] ********************************************************************
+ok: [192.168.127.130]
+2019-03-07 01:12:38 任务结束
+Task assets.tasks.test_admin_user_connectivity_period[42b1ad1e-df39-4fe5-b36f-3881dcdd3521] succeeded in 1.7685406490054447s: None
+Received task: terminal.tasks.clean_orphan_session[cab2b364-b8a9-465e-bc3d-459b1a2451bf]  
+Task terminal.tasks.clean_orphan_session[cab2b364-b8a9-465e-bc3d-459b1a2451bf] succeeded in 0.012375042992061935s: None
+Received task: terminal.tasks.clean_orphan_session[0895cda9-cac1-4541-b878-099c66e0a2c1]  
+Task terminal.tasks.clean_orphan_session[0895cda9-cac1-4541-b878-099c66e0a2c1] succeeded in 0.006304672991973348s: None
+Received task: terminal.tasks.clean_orphan_session[590b6ddb-42cb-4fa5-8c48-9593fc3d92ad]  
+Task terminal.tasks.clean_orphan_session[590b6ddb-42cb-4fa5-8c48-9593fc3d92ad] succeeded in 0.005117666005389765s: None
+Received task: terminal.tasks.clean_orphan_session[7fbc8ea0-d8fd-47f4-bc71-cc257caef32d]  
+Task terminal.tasks.clean_orphan_session[7fbc8ea0-d8fd-47f4-bc71-cc257caef32d] succeeded in 0.011389293998945504s: None
+Received task: terminal.tasks.delete_terminal_status_period[8d9ef1ed-f538-437b-a79e-f2bee8e04d54]  
+Task terminal.tasks.delete_terminal_status_period[8d9ef1ed-f538-437b-a79e-f2bee8e04d54] succeeded in 0.005138173990417272s: None
+Received task: terminal.tasks.clean_orphan_session[f27533c6-ee9d-4799-b4d7-f800db8974dc]  
+Task terminal.tasks.clean_orphan_session[f27533c6-ee9d-4799-b4d7-f800db8974dc] succeeded in 0.00440078999963589s: None
+Received task: terminal.tasks.clean_orphan_session[059b7783-2066-4ce0-8bde-3883ebb45c97]  
+Task terminal.tasks.clean_orphan_session[059b7783-2066-4ce0-8bde-3883ebb45c97] succeeded in 0.0050327380013186485s: None
+Received task: assets.tasks.test_admin_user_connectivity_period[c4194c98-905b-486a-8649-edfc8d07087d]  
+2019-03-07 02:12:36 任务开始: 定期测试管理账号可连接性: linux
+PLAY [定期测试管理账号可连接性: linux] *****************************************************
+TASK [ping] ********************************************************************
+ok: [192.168.127.130]
+2019-03-07 02:12:37 任务结束
+Task assets.tasks.test_admin_user_connectivity_period[c4194c98-905b-486a-8649-edfc8d07087d] succeeded in 1.067766987005598s: None
+Received task: terminal.tasks.clean_orphan_session[4f61fc09-3cf6-4963-828e-c6753b3e218b]  
+Task terminal.tasks.clean_orphan_session[4f61fc09-3cf6-4963-828e-c6753b3e218b] succeeded in 0.005120476009324193s: None
+Received task: terminal.tasks.clean_orphan_session[183dfa71-6da8-42ea-a127-e8c3f8afb1fc]  
+Task terminal.tasks.clean_orphan_session[183dfa71-6da8-42ea-a127-e8c3f8afb1fc] succeeded in 0.006015883991494775s: None
+Received task: terminal.tasks.clean_orphan_session[401e500d-6e09-43a4-ac90-78f2318a21b4]  
+Task terminal.tasks.clean_orphan_session[401e500d-6e09-43a4-ac90-78f2318a21b4] succeeded in 0.004282402005628683s: None
+Received task: terminal.tasks.clean_orphan_session[1b5e60f5-f792-4264-bcee-3bf156e6ab8d]  
+Task terminal.tasks.clean_orphan_session[1b5e60f5-f792-4264-bcee-3bf156e6ab8d] succeeded in 0.005342203003237955s: None
+Received task: terminal.tasks.delete_terminal_status_period[1b61ad71-47f7-4677-8ae5-c44467fa9821]  
+Task terminal.tasks.delete_terminal_status_period[1b61ad71-47f7-4677-8ae5-c44467fa9821] succeeded in 0.005319607997080311s: None
+Received task: terminal.tasks.clean_orphan_session[4c9f9aad-a21c-400c-addd-9471ea7e1aa4]  
+Task terminal.tasks.clean_orphan_session[4c9f9aad-a21c-400c-addd-9471ea7e1aa4] succeeded in 0.00452327799575869s: None
+Received task: terminal.tasks.clean_orphan_session[ba4df878-3c9b-4007-ba15-43580a2f5e9b]  
+Task terminal.tasks.clean_orphan_session[ba4df878-3c9b-4007-ba15-43580a2f5e9b] succeeded in 0.004226522010867484s: None
+Received task: assets.tasks.test_admin_user_connectivity_period[ff8c8e2b-9aad-48c6-9305-4423f9a6fdeb]  
+2019-03-07 03:12:36 任务开始: 定期测试管理账号可连接性: linux
+PLAY [定期测试管理账号可连接性: linux] *****************************************************
+TASK [ping] ********************************************************************
+ok: [192.168.127.130]
+2019-03-07 03:12:37 任务结束
+Task assets.tasks.test_admin_user_connectivity_period[ff8c8e2b-9aad-48c6-9305-4423f9a6fdeb] succeeded in 0.807368759997189s: None
+Received task: terminal.tasks.clean_orphan_session[683f3c9d-be5b-4513-a769-68ba11cd07d5]  
+Task terminal.tasks.clean_orphan_session[683f3c9d-be5b-4513-a769-68ba11cd07d5] succeeded in 0.00420159098575823s: None
+Received task: terminal.tasks.clean_orphan_session[b0fb1ab1-b02c-492c-addd-0148b6177bc5]  
+Task terminal.tasks.clean_orphan_session[b0fb1ab1-b02c-492c-addd-0148b6177bc5] succeeded in 0.00626396200095769s: None
+Received task: terminal.tasks.clean_orphan_session[2236939c-2fbe-40a6-8160-8948c0d88d08]  
+Task terminal.tasks.clean_orphan_session[2236939c-2fbe-40a6-8160-8948c0d88d08] succeeded in 0.005006059989682399s: None
+Received task: terminal.tasks.clean_orphan_session[8a28a2ac-8098-4277-b0b7-ac987519bb86]  
+Task terminal.tasks.clean_orphan_session[8a28a2ac-8098-4277-b0b7-ac987519bb86] succeeded in 0.004231875005643815s: None
+Received task: terminal.tasks.delete_terminal_status_period[4f9b1335-9fae-4d73-882e-2bf36fdec335]  
+Task terminal.tasks.delete_terminal_status_period[4f9b1335-9fae-4d73-882e-2bf36fdec335] succeeded in 0.004668731999117881s: None
+Received task: terminal.tasks.clean_orphan_session[a2661468-d02f-4aa6-82cd-81dceed7b847]  
+Task terminal.tasks.clean_orphan_session[a2661468-d02f-4aa6-82cd-81dceed7b847] succeeded in 0.004241761009325273s: None
+Received task: celery.backend_cleanup[a7739256-f5de-45a5-8a59-5b249059764a]  
+Task celery.backend_cleanup[a7739256-f5de-45a5-8a59-5b249059764a] succeeded in 0.0007514619937865064s: None
+Received task: terminal.tasks.clean_orphan_session[7d1820b2-f633-4c59-82e1-d2bfdea51eef]  
+Task terminal.tasks.clean_orphan_session[7d1820b2-f633-4c59-82e1-d2bfdea51eef] succeeded in 0.004463142002350651s: None
+Received task: assets.tasks.test_admin_user_connectivity_period[ace6c058-8ccb-42e7-80f2-22372d9ec1e5]  
+2019-03-07 04:12:36 任务开始: 定期测试管理账号可连接性: linux
+PLAY [定期测试管理账号可连接性: linux] *****************************************************
+TASK [ping] ********************************************************************
+ok: [192.168.127.130]
+2019-03-07 04:12:37 任务结束
+Task assets.tasks.test_admin_user_connectivity_period[ace6c058-8ccb-42e7-80f2-22372d9ec1e5] succeeded in 0.9388347089989111s: None
+Received task: terminal.tasks.clean_orphan_session[fac301bb-970b-4d81-83c4-85bb52d71c69]  
+Task terminal.tasks.clean_orphan_session[fac301bb-970b-4d81-83c4-85bb52d71c69] succeeded in 0.004135410999879241s: None
+Received task: terminal.tasks.clean_orphan_session[51e22dfc-7fca-4db3-8fb2-d972508a0e03]  
+Task terminal.tasks.clean_orphan_session[51e22dfc-7fca-4db3-8fb2-d972508a0e03] succeeded in 0.004607564987963997s: None
+Received task: terminal.tasks.clean_orphan_session[814e3fe0-0376-4518-83d6-8e0d1bc2a067]  
+Task terminal.tasks.clean_orphan_session[814e3fe0-0376-4518-83d6-8e0d1bc2a067] succeeded in 0.0047104650002438575s: None
+Received task: terminal.tasks.clean_orphan_session[f1c7183c-e07d-442a-9c5d-ed763e76876f]  
+Task terminal.tasks.clean_orphan_session[f1c7183c-e07d-442a-9c5d-ed763e76876f] succeeded in 0.004183664001175202s: None
+Received task: terminal.tasks.delete_terminal_status_period[9a713f1b-731c-4e08-bad1-bbfeba5ba603]  
+Task terminal.tasks.delete_terminal_status_period[9a713f1b-731c-4e08-bad1-bbfeba5ba603] succeeded in 0.0067917549749836326s: None
+Received task: terminal.tasks.clean_orphan_session[b998731e-4518-4f96-9dea-c30201c5be85]  
+Task terminal.tasks.clean_orphan_session[b998731e-4518-4f96-9dea-c30201c5be85] succeeded in 0.005061723000835627s: None
+Received task: terminal.tasks.clean_orphan_session[2a5a9985-47f2-4dc5-9f46-b610ba1bd724]  
+Task terminal.tasks.clean_orphan_session[2a5a9985-47f2-4dc5-9f46-b610ba1bd724] succeeded in 0.0046721250109840184s: None
+Received task: assets.tasks.test_admin_user_connectivity_period[e2bfb377-90e0-4bc6-9a5c-56697ef1de84]  
+2019-03-07 05:12:36 任务开始: 定期测试管理账号可连接性: linux
+PLAY [定期测试管理账号可连接性: linux] *****************************************************
+TASK [ping] ********************************************************************
+ok: [192.168.127.130]
+2019-03-07 05:12:37 任务结束
+Task assets.tasks.test_admin_user_connectivity_period[e2bfb377-90e0-4bc6-9a5c-56697ef1de84] succeeded in 0.8990341640019324s: None
+Received task: terminal.tasks.clean_orphan_session[60338783-9b17-4323-bb48-3de26cddc258]  
+Task terminal.tasks.clean_orphan_session[60338783-9b17-4323-bb48-3de26cddc258] succeeded in 0.0051610119990073144s: None
+Received task: terminal.tasks.clean_orphan_session[2f7e52d8-83c8-42c1-aec1-2a9862718d3a]  
+Task terminal.tasks.clean_orphan_session[2f7e52d8-83c8-42c1-aec1-2a9862718d3a] succeeded in 0.004572187986923382s: None
+Received task: terminal.tasks.clean_orphan_session[be0d4b3b-9556-4ba6-b35a-e5962f3116e5]  
+Task terminal.tasks.clean_orphan_session[be0d4b3b-9556-4ba6-b35a-e5962f3116e5] succeeded in 0.0044970730086788535s: None
+Received task: terminal.tasks.clean_orphan_session[62ea1af3-14d3-4762-9509-b6b6005e836f]  
+Task terminal.tasks.clean_orphan_session[62ea1af3-14d3-4762-9509-b6b6005e836f] succeeded in 0.004413119022501633s: None
+Received task: terminal.tasks.delete_terminal_status_period[e2e03e25-c3c4-4e19-8100-83083c19cb84]  
+Task terminal.tasks.delete_terminal_status_period[e2e03e25-c3c4-4e19-8100-83083c19cb84] succeeded in 0.00481595000019297s: None
+Received task: terminal.tasks.clean_orphan_session[c40864fd-c0ec-4247-b9bc-23115882c178]  
+Task terminal.tasks.clean_orphan_session[c40864fd-c0ec-4247-b9bc-23115882c178] succeeded in 0.005567446991335601s: None
+Received task: terminal.tasks.clean_orphan_session[876f9fee-00a3-4902-bb03-0977eea03ad7]  
+Task terminal.tasks.clean_orphan_session[876f9fee-00a3-4902-bb03-0977eea03ad7] succeeded in 0.004198454000288621s: None
+Received task: assets.tasks.test_admin_user_connectivity_period[004f8629-c2d4-482e-8759-cad687f13031]  
+2019-03-07 06:12:36 任务开始: 定期测试管理账号可连接性: linux
+PLAY [定期测试管理账号可连接性: linux] *****************************************************
+TASK [ping] ********************************************************************
+ok: [192.168.127.130]
+2019-03-07 06:12:38 任务结束
+Task assets.tasks.test_admin_user_connectivity_period[004f8629-c2d4-482e-8759-cad687f13031] succeeded in 1.8854762669943739s: None
+Received task: terminal.tasks.clean_orphan_session[0f022afc-9c9a-4a87-8593-e21a3dca0c21]  
+Task terminal.tasks.clean_orphan_session[0f022afc-9c9a-4a87-8593-e21a3dca0c21] succeeded in 0.004091059003258124s: None
+Received task: terminal.tasks.clean_orphan_session[d9ced645-d8a1-4cc8-a19e-cd8e67dbc3eb]  
+Task terminal.tasks.clean_orphan_session[d9ced645-d8a1-4cc8-a19e-cd8e67dbc3eb] succeeded in 0.005885842983843759s: None
+Received task: terminal.tasks.clean_orphan_session[42344c21-94ce-408d-b89c-4a02158e30ea]  
+Task terminal.tasks.clean_orphan_session[42344c21-94ce-408d-b89c-4a02158e30ea] succeeded in 0.004142285994021222s: None
+Received task: terminal.tasks.clean_orphan_session[82e29d6d-2279-4db1-87c3-d55f38b66a97]  
+Task terminal.tasks.clean_orphan_session[82e29d6d-2279-4db1-87c3-d55f38b66a97] succeeded in 0.005729981989134103s: None
+Received task: terminal.tasks.delete_terminal_status_period[9b461170-0618-44db-bce4-100b603dd30e]  
+Task terminal.tasks.delete_terminal_status_period[9b461170-0618-44db-bce4-100b603dd30e] succeeded in 0.0043539990147110075s: None
+Received task: terminal.tasks.clean_orphan_session[bcca889d-feed-40c0-b28d-271a7240edb4]  
+Task terminal.tasks.clean_orphan_session[bcca889d-feed-40c0-b28d-271a7240edb4] succeeded in 0.005127522978000343s: None
+Received task: terminal.tasks.clean_orphan_session[73ac8813-b164-4701-8702-e4a385394a44]  
+Task terminal.tasks.clean_orphan_session[73ac8813-b164-4701-8702-e4a385394a44] succeeded in 0.004949741996824741s: None
+Received task: assets.tasks.test_admin_user_connectivity_period[3765b07e-f0df-4d1b-881a-d9848cf047ef]  
+2019-03-07 07:12:36 任务开始: 定期测试管理账号可连接性: linux
+PLAY [定期测试管理账号可连接性: linux] *****************************************************
+TASK [ping] ********************************************************************
+ok: [192.168.127.130]
+2019-03-07 07:12:37 任务结束
+Task assets.tasks.test_admin_user_connectivity_period[3765b07e-f0df-4d1b-881a-d9848cf047ef] succeeded in 1.3985597100108862s: None
+Received task: terminal.tasks.clean_orphan_session[e846d91e-910b-442b-adbf-059860737342]  
+Task terminal.tasks.clean_orphan_session[e846d91e-910b-442b-adbf-059860737342] succeeded in 0.005614585010334849s: None
+Received task: terminal.tasks.clean_orphan_session[1df082ae-ad50-4cf7-84bd-84a583b588c1]  
+Task terminal.tasks.clean_orphan_session[1df082ae-ad50-4cf7-84bd-84a583b588c1] succeeded in 0.004553620994556695s: None
+Received task: terminal.tasks.clean_orphan_session[bb913a2c-98c6-4e2b-8bb9-9ff91a821279]  
+Task terminal.tasks.clean_orphan_session[bb913a2c-98c6-4e2b-8bb9-9ff91a821279] succeeded in 0.00435293500777334s: None
+Received task: terminal.tasks.clean_orphan_session[b9c99771-8935-462e-ac11-f9baf6cc3025]  
+Task terminal.tasks.clean_orphan_session[b9c99771-8935-462e-ac11-f9baf6cc3025] succeeded in 0.006062646978534758s: None
+Received task: terminal.tasks.delete_terminal_status_period[c500fb11-c5b8-4afb-8190-9e69315e0945]  
+Task terminal.tasks.delete_terminal_status_period[c500fb11-c5b8-4afb-8190-9e69315e0945] succeeded in 0.0046299819950945675s: None
+Received task: terminal.tasks.clean_orphan_session[40d632bb-580d-4e22-a6bb-6092f168905f]  
+Task terminal.tasks.clean_orphan_session[40d632bb-580d-4e22-a6bb-6092f168905f] succeeded in 0.004100189020391554s: None
+Received task: terminal.tasks.clean_orphan_session[eb29efe7-f43f-43c1-9c6e-4b475d0b1e58]  
+Task terminal.tasks.clean_orphan_session[eb29efe7-f43f-43c1-9c6e-4b475d0b1e58] succeeded in 0.004297455016057938s: None
+Received task: assets.tasks.test_admin_user_connectivity_period[e675d46e-4cda-4fe6-b79f-f494cb37cd15]  
+2019-03-07 08:12:36 任务开始: 定期测试管理账号可连接性: linux
+PLAY [定期测试管理账号可连接性: linux] *****************************************************
+TASK [ping] ********************************************************************
+ok: [192.168.127.130]
+2019-03-07 08:12:38 任务结束
+Task assets.tasks.test_admin_user_connectivity_period[e675d46e-4cda-4fe6-b79f-f494cb37cd15] succeeded in 2.3080668649927247s: None
+Received task: terminal.tasks.clean_orphan_session[a100e117-851e-447e-95bb-178c1da0e32b]  
+Task terminal.tasks.clean_orphan_session[a100e117-851e-447e-95bb-178c1da0e32b] succeeded in 0.004519240988884121s: None
+Received task: terminal.tasks.clean_orphan_session[f303c5dd-6628-4e66-a6ce-db95ed92ef9e]  
+Task terminal.tasks.clean_orphan_session[f303c5dd-6628-4e66-a6ce-db95ed92ef9e] succeeded in 0.004352531977929175s: None
+Received task: terminal.tasks.clean_orphan_session[c8fc2a9c-be8f-4040-bbd9-22606fe7f2f6]  
+Task terminal.tasks.clean_orphan_session[c8fc2a9c-be8f-4040-bbd9-22606fe7f2f6] succeeded in 0.005708729004254565s: None
+Received task: terminal.tasks.clean_orphan_session[fe3b2989-8f1e-4506-a395-c76b4affc8fa]  
+Task terminal.tasks.clean_orphan_session[fe3b2989-8f1e-4506-a395-c76b4affc8fa] succeeded in 0.0041425460076425225s: None
+Received task: terminal.tasks.delete_terminal_status_period[dbfa9ea3-5e27-455f-8cf0-c301fa16ca62]  
+Task terminal.tasks.delete_terminal_status_period[dbfa9ea3-5e27-455f-8cf0-c301fa16ca62] succeeded in 0.00703359700855799s: None
+Received task: terminal.tasks.clean_orphan_session[46bb543c-22ae-49be-8a7d-9668c234d9b5]  
+Task terminal.tasks.clean_orphan_session[46bb543c-22ae-49be-8a7d-9668c234d9b5] succeeded in 0.003973405982833356s: None
+Received task: terminal.tasks.clean_orphan_session[f886a661-3509-4fff-ba0e-a65eecf13e95]  
+Task terminal.tasks.clean_orphan_session[f886a661-3509-4fff-ba0e-a65eecf13e95] succeeded in 0.00425171697861515s: None
+Received task: assets.tasks.test_admin_user_connectivity_period[1cdd228f-7bb7-439a-aa51-76e01c4c7219]  
+2019-03-07 09:12:36 任务开始: 定期测试管理账号可连接性: linux
+PLAY [定期测试管理账号可连接性: linux] *****************************************************
+TASK [ping] ********************************************************************
+ok: [192.168.127.130]
+2019-03-07 09:12:37 任务结束
+Task assets.tasks.test_admin_user_connectivity_period[1cdd228f-7bb7-439a-aa51-76e01c4c7219] succeeded in 0.9212862080021296s: None
+Received task: terminal.tasks.clean_orphan_session[19da8054-3e60-426b-bee6-eedd439edeb5]  
+Task terminal.tasks.clean_orphan_session[19da8054-3e60-426b-bee6-eedd439edeb5] succeeded in 0.004362779000075534s: None
+Received task: terminal.tasks.clean_orphan_session[16da7532-6277-4e0a-8f84-70d6de60c159]  
+Task terminal.tasks.clean_orphan_session[16da7532-6277-4e0a-8f84-70d6de60c159] succeeded in 0.004391170019516721s: None
+Received task: terminal.tasks.clean_orphan_session[be920a00-cf14-4e95-93c3-277b2dd7e114]  
+Task terminal.tasks.clean_orphan_session[be920a00-cf14-4e95-93c3-277b2dd7e114] succeeded in 0.00419773900648579s: None
+Received task: terminal.tasks.clean_orphan_session[8b9c4b5f-88cb-43b8-9408-7db3cd5c528a]  
+Task terminal.tasks.clean_orphan_session[8b9c4b5f-88cb-43b8-9408-7db3cd5c528a] succeeded in 0.004630442010238767s: None
+Received task: terminal.tasks.delete_terminal_status_period[a0d55edb-58fb-4119-bd7b-991112f90a3a]  
+Task terminal.tasks.delete_terminal_status_period[a0d55edb-58fb-4119-bd7b-991112f90a3a] succeeded in 0.006716879986925051s: None
+Received task: terminal.tasks.clean_orphan_session[9bb95b20-e1f3-4c2a-8a83-a9988291aedc]  
+Task terminal.tasks.clean_orphan_session[9bb95b20-e1f3-4c2a-8a83-a9988291aedc] succeeded in 0.0045553999952971935s: None
+Received task: users.tasks.check_password_expired[91d55514-14de-487d-beb9-7fe1b6a0d083]  
+Task users.tasks.check_password_expired[91d55514-14de-487d-beb9-7fe1b6a0d083] succeeded in 0.007052571017993614s: None
+Received task: terminal.tasks.clean_orphan_session[42c11c33-1317-4490-b487-4f17d528ec0b]  
+Task terminal.tasks.clean_orphan_session[42c11c33-1317-4490-b487-4f17d528ec0b] succeeded in 0.004723965015728027s: None
+Received task: assets.tasks.test_admin_user_connectivity_period[86425ef2-543a-4c07-95d7-1ca1cf393177]  
+2019-03-07 10:12:36 任务开始: 定期测试管理账号可连接性: linux
+PLAY [定期测试管理账号可连接性: linux] *****************************************************
+TASK [ping] ********************************************************************
+ok: [192.168.127.130]
+2019-03-07 10:12:38 任务结束
+Task assets.tasks.test_admin_user_connectivity_period[86425ef2-543a-4c07-95d7-1ca1cf393177] succeeded in 2.049470375990495s: None
+Received task: terminal.tasks.clean_orphan_session[d1e6f436-47a8-412b-ac25-cfa561576a9f]  
+Task terminal.tasks.clean_orphan_session[d1e6f436-47a8-412b-ac25-cfa561576a9f] succeeded in 0.004986807005479932s: None
+Received task: terminal.tasks.clean_orphan_session[77427975-62aa-4754-a000-6841862fe35c]  
+Task terminal.tasks.clean_orphan_session[77427975-62aa-4754-a000-6841862fe35c] succeeded in 0.005386684002587572s: None
+Received task: terminal.tasks.clean_orphan_session[18531102-4d3e-4d97-a1a9-9646f8b1a01a]  
+Task terminal.tasks.clean_orphan_session[18531102-4d3e-4d97-a1a9-9646f8b1a01a] succeeded in 0.0047209690092131495s: None
+Received task: users.tasks.write_login_log_async[76f6911a-2d2a-4a85-bebc-8634ff12cc3e]  
+Task users.tasks.write_login_log_async[76f6911a-2d2a-4a85-bebc-8634ff12cc3e] succeeded in 90.27931242599152s: None
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+/opt/py3/lib64/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[6d4d682b-fa04-46c1-abf3-f93b04f70c3c]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[8ae50842-804b-46b7-85f8-033e6fe353e1]  
+Received task: terminal.tasks.delete_terminal_status_period[8bff51a0-3c14-4b5e-be8b-cbb968aa062e]  
+Received task: terminal.tasks.clean_orphan_session[dcd0e6c8-e0e8-4018-8086-7499ee7c8675]  
+Received task: terminal.tasks.clean_expired_session_period[e0dc3462-71c4-4d8b-9c3d-c7557f90961f]  
+Scaling up 1 processes.
+Task terminal.tasks.delete_terminal_status_period[8bff51a0-3c14-4b5e-be8b-cbb968aa062e] succeeded in 0.6144622709999794s: None
+Task users.tasks.check_password_expired_periodic[6d4d682b-fa04-46c1-abf3-f93b04f70c3c] succeeded in 1.162551274000009s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[8ae50842-804b-46b7-85f8-033e6fe353e1] succeeded in 2.4402181449999887s: None
+e0dc3462-71c4-4d8b-9c3d-c7557f90961f terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task terminal.tasks.clean_expired_session_period[e0dc3462-71c4-4d8b-9c3d-c7557f90961f] succeeded in 0.339622238000004s: None
+Task terminal.tasks.clean_orphan_session[dcd0e6c8-e0e8-4018-8086-7499ee7c8675] succeeded in 0.4833354330000077s: None
+Scaling down 1 processes.
+Received task: users.tasks.write_login_log_async[fda6cd2a-fe5a-4276-a59b-3cd115028c64]  
+Received task: users.tasks.write_login_log_async[ab443219-547c-402a-9b3c-91e15abb969e]  
+Task users.tasks.write_login_log_async[fda6cd2a-fe5a-4276-a59b-3cd115028c64] succeeded in 90.28561272600001s: None
+Task users.tasks.write_login_log_async[ab443219-547c-402a-9b3c-91e15abb969e] succeeded in 90.22830898400002s: None
+Received task: users.tasks.write_login_log_async[02fd1d92-8517-44b7-9ff2-1169da9ffc94]  
+Received task: terminal.tasks.clean_orphan_session[0caed550-edae-41e9-aa38-d60ce7cd57f1]  
+Task terminal.tasks.clean_orphan_session[0caed550-edae-41e9-aa38-d60ce7cd57f1] succeeded in 0.004917939999927512s: None
+Task users.tasks.write_login_log_async[02fd1d92-8517-44b7-9ff2-1169da9ffc94] succeeded in 90.27904650999994s: None
+Received task: terminal.tasks.clean_orphan_session[dedb9c4c-e692-4234-bb8c-e299e64400b6]  
+Task terminal.tasks.clean_orphan_session[dedb9c4c-e692-4234-bb8c-e299e64400b6] succeeded in 0.054856666999967274s: None
+Received task: assets.tasks.test_admin_user_connectivity_period[2beaaae7-75cd-4918-b151-22661ad068c9]  
+2019-03-07 11:12:36 任务开始: 定期测试管理账号可连接性: linux
+PLAY [定期测试管理账号可连接性: linux] *****************************************************
+TASK [ping] ********************************************************************
+ok: [192.168.127.130]
+2019-03-07 11:12:38 任务结束
+Task assets.tasks.test_admin_user_connectivity_period[2beaaae7-75cd-4918-b151-22661ad068c9] succeeded in 2.3159690940001383s: None
+Received task: terminal.tasks.clean_orphan_session[954fc06f-0f35-4081-ac46-ae6da568bfd3]  
+Task terminal.tasks.clean_orphan_session[954fc06f-0f35-4081-ac46-ae6da568bfd3] succeeded in 0.005780898000011803s: None
+Received task: terminal.tasks.clean_orphan_session[5eb14e82-d3bb-4ffd-ba97-78739ffb0762]  
+Task terminal.tasks.clean_orphan_session[5eb14e82-d3bb-4ffd-ba97-78739ffb0762] succeeded in 0.005092102000162413s: None
+Received task: terminal.tasks.clean_orphan_session[af3cd704-2dd0-425f-b649-0b9cc1e4d0d4]  
+Task terminal.tasks.clean_orphan_session[af3cd704-2dd0-425f-b649-0b9cc1e4d0d4] succeeded in 0.0055226059998858545s: None
+Received task: terminal.tasks.delete_terminal_status_period[487037ca-7a1c-4ed0-a6d8-97d6322bfb83]  
+Task terminal.tasks.delete_terminal_status_period[487037ca-7a1c-4ed0-a6d8-97d6322bfb83] succeeded in 0.006254583000099956s: None
+Received task: terminal.tasks.clean_orphan_session[3646e7fc-028a-4ef1-ab15-1c2b4ab4c069]  
+Task terminal.tasks.clean_orphan_session[3646e7fc-028a-4ef1-ab15-1c2b4ab4c069] succeeded in 0.00635822599997482s: None
+Received task: terminal.tasks.clean_orphan_session[3020aebc-b89a-44ce-8340-4425f20f929e]  
+Task terminal.tasks.clean_orphan_session[3020aebc-b89a-44ce-8340-4425f20f929e] succeeded in 0.005718522000279336s: None
+Received task: users.tasks.write_login_log_async[024778e8-056d-4d39-9331-ce78cdcb56bf]  
+Task users.tasks.write_login_log_async[024778e8-056d-4d39-9331-ce78cdcb56bf] succeeded in 90.14274538000063s: None
+Received task: terminal.tasks.clean_orphan_session[cf562044-d64c-473b-90b6-e4a3541c40f0]  
+Task terminal.tasks.clean_orphan_session[cf562044-d64c-473b-90b6-e4a3541c40f0] succeeded in 0.004530066000370425s: None
+Received task: assets.tasks.test_admin_user_connectivity_period[51650e76-2a5f-4919-a9be-8e8baa90056a]  
+2019-03-07 12:12:36 任务开始: 定期测试管理账号可连接性: linux
+PLAY [定期测试管理账号可连接性: linux] *****************************************************
+TASK [ping] ********************************************************************
+ok: [192.168.127.130]
+2019-03-07 12:12:38 任务结束
+Task assets.tasks.test_admin_user_connectivity_period[51650e76-2a5f-4919-a9be-8e8baa90056a] succeeded in 1.8239216919992032s: None
+Received task: terminal.tasks.clean_orphan_session[d611b706-95fa-44fe-8c5c-4340e1c1850f]  
+Task terminal.tasks.clean_orphan_session[d611b706-95fa-44fe-8c5c-4340e1c1850f] succeeded in 0.006298845999481273s: None
+Received task: terminal.tasks.clean_orphan_session[25559dc1-9314-49ae-882d-0683a315272a]  
+Task terminal.tasks.clean_orphan_session[25559dc1-9314-49ae-882d-0683a315272a] succeeded in 0.0056058310001390055s: None
+Received task: terminal.tasks.clean_orphan_session[2cb4b6e9-d152-46f9-a1ae-12873d63c9dc]  
+Task terminal.tasks.clean_orphan_session[2cb4b6e9-d152-46f9-a1ae-12873d63c9dc] succeeded in 0.004879572000390908s: None
+Received task: users.tasks.write_login_log_async[7f1aaf27-29d0-4ebc-b5b6-963d3bfb1e4c]  
+Task users.tasks.write_login_log_async[7f1aaf27-29d0-4ebc-b5b6-963d3bfb1e4c] succeeded in 90.12119860100029s: None
+Received task: terminal.tasks.delete_terminal_status_period[165711a5-000b-4d0c-9a5b-037cc7590cfc]  
+Task terminal.tasks.delete_terminal_status_period[165711a5-000b-4d0c-9a5b-037cc7590cfc] succeeded in 0.006291345999670739s: None
+Received task: terminal.tasks.clean_orphan_session[b4958f2e-d08e-4c6b-b457-21977258e012]  
+Task terminal.tasks.clean_orphan_session[b4958f2e-d08e-4c6b-b457-21977258e012] succeeded in 0.004863201999796729s: None
+Received task: terminal.tasks.clean_orphan_session[6f19a7da-8e8f-4e29-8425-7af06404ee56]  
+Task terminal.tasks.clean_orphan_session[6f19a7da-8e8f-4e29-8425-7af06404ee56] succeeded in 0.0057052069996643695s: None
+Received task: terminal.tasks.clean_orphan_session[ebf7be1e-98b6-4c20-aa41-9a2060136970]  
+Task terminal.tasks.clean_orphan_session[ebf7be1e-98b6-4c20-aa41-9a2060136970] succeeded in 0.007040443999358104s: None
+Received task: assets.tasks.test_admin_user_connectivity_period[edae7c93-ed5d-460c-811c-1129d0e35224]  
+2019-03-07 13:12:37 任务开始: 定期测试管理账号可连接性: linux
+PLAY [定期测试管理账号可连接性: linux] *****************************************************
+TASK [ping] ********************************************************************
+ok: [192.168.127.130]
+2019-03-07 13:12:40 任务结束
+Task assets.tasks.test_admin_user_connectivity_period[edae7c93-ed5d-460c-811c-1129d0e35224] succeeded in 3.816571966999618s: None
+Received task: terminal.tasks.clean_orphan_session[4af6f7c9-73d1-40a7-a4b2-b6d53f23627e]  
+Task terminal.tasks.clean_orphan_session[4af6f7c9-73d1-40a7-a4b2-b6d53f23627e] succeeded in 0.005207629999858909s: None
+Received task: terminal.tasks.clean_orphan_session[7aaffbbb-ef2f-461b-94a6-9a4e6e915679]  
+Task terminal.tasks.clean_orphan_session[7aaffbbb-ef2f-461b-94a6-9a4e6e915679] succeeded in 0.0069129980001889635s: None
+Received task: terminal.tasks.clean_orphan_session[336f05a0-9e35-4214-8918-2dabd3def627]  
+Task terminal.tasks.clean_orphan_session[336f05a0-9e35-4214-8918-2dabd3def627] succeeded in 0.04232213899922499s: None
+Received task: terminal.tasks.delete_terminal_status_period[898f6fc1-67c0-4a7a-b1ee-ab490f09ed3d]  
+Task terminal.tasks.delete_terminal_status_period[898f6fc1-67c0-4a7a-b1ee-ab490f09ed3d] succeeded in 0.04533641000125499s: None
+Received task: terminal.tasks.clean_orphan_session[70c0f986-3bb1-452a-9586-1443789c1b74]  
+Task terminal.tasks.clean_orphan_session[70c0f986-3bb1-452a-9586-1443789c1b74] succeeded in 0.1879659990008804s: None
+Received task: terminal.tasks.clean_orphan_session[d59d0df1-7908-4b5c-b924-0e9921c30eba]  
+Task terminal.tasks.clean_orphan_session[d59d0df1-7908-4b5c-b924-0e9921c30eba] succeeded in 0.006122713999502594s: None
+Received task: terminal.tasks.clean_orphan_session[aef1d968-1c76-41b6-b17b-d9f24fe70f64]  
+Task terminal.tasks.clean_orphan_session[aef1d968-1c76-41b6-b17b-d9f24fe70f64] succeeded in 0.006160723998618778s: None
+Received task: assets.tasks.test_admin_user_connectivity_period[2fcee009-86fb-408e-9279-fab1f4a475f8]  
+2019-03-07 14:12:36 任务开始: 定期测试管理账号可连接性: linux
+PLAY [定期测试管理账号可连接性: linux] *****************************************************
+TASK [ping] ********************************************************************
+ok: [192.168.127.130]
+2019-03-07 14:12:37 任务结束
+Task assets.tasks.test_admin_user_connectivity_period[2fcee009-86fb-408e-9279-fab1f4a475f8] succeeded in 0.9424036950003938s: None
+Received task: terminal.tasks.clean_orphan_session[0ee31338-c4d1-4983-af0d-4fb31f665076]  
+Task terminal.tasks.clean_orphan_session[0ee31338-c4d1-4983-af0d-4fb31f665076] succeeded in 0.05959113800054183s: None
+Received task: terminal.tasks.clean_orphan_session[b8da602c-aead-49f8-bc4a-01b454f5c6f6]  
+Task terminal.tasks.clean_orphan_session[b8da602c-aead-49f8-bc4a-01b454f5c6f6] succeeded in 0.005940910001299926s: None
+Received task: users.tasks.write_login_log_async[da225127-f7fd-4c91-ad94-c63b2cbad4bb]  
+Received task: users.tasks.write_login_log_async[b968c78b-1bc0-4d4a-9762-d23d847c98a3]  
+Received task: users.tasks.write_login_log_async[3209ef4e-d9a6-4cfb-bb52-fa76d1b602a5]  
+Task users.tasks.write_login_log_async[da225127-f7fd-4c91-ad94-c63b2cbad4bb] succeeded in 90.42169009799909s: None
+Task users.tasks.write_login_log_async[b968c78b-1bc0-4d4a-9762-d23d847c98a3] succeeded in 90.50114294599916s: None
+Task users.tasks.write_login_log_async[3209ef4e-d9a6-4cfb-bb52-fa76d1b602a5] succeeded in 92.32695982199948s: None
+Received task: terminal.tasks.clean_orphan_session[3c3f9e5a-a671-4ae2-a736-21def945c6f0]  
+Task terminal.tasks.clean_orphan_session[3c3f9e5a-a671-4ae2-a736-21def945c6f0] succeeded in 0.05992806200083578s: None
+Received task: terminal.tasks.delete_terminal_status_period[b3f78952-250f-406a-84fc-75bb9cd7cf9b]  
+Task terminal.tasks.delete_terminal_status_period[b3f78952-250f-406a-84fc-75bb9cd7cf9b] succeeded in 0.0049627719999989495s: None
+Received task: terminal.tasks.clean_orphan_session[b93934b2-e3dd-44ae-87da-9360e04c0c7c]  
+Task terminal.tasks.clean_orphan_session[b93934b2-e3dd-44ae-87da-9360e04c0c7c] succeeded in 0.00430765899909602s: None
+Received task: terminal.tasks.clean_orphan_session[c1a90987-ccdb-478f-9fa8-d459d0ad7729]  
+Task terminal.tasks.clean_orphan_session[c1a90987-ccdb-478f-9fa8-d459d0ad7729] succeeded in 0.006467175000580028s: None
+Received task: terminal.tasks.clean_orphan_session[4d486164-7ee1-4903-a3ba-6ddfc548baba]  
+Task terminal.tasks.clean_orphan_session[4d486164-7ee1-4903-a3ba-6ddfc548baba] succeeded in 0.006159964001199114s: None
+Received task: assets.tasks.test_admin_user_connectivity_period[c38cadb5-a6a8-45ec-8d66-ccfe9938aa77]  
+2019-03-07 15:12:36 任务开始: 定期测试管理账号可连接性: linux
+PLAY [定期测试管理账号可连接性: linux] *****************************************************
+TASK [ping] ********************************************************************
+ok: [192.168.127.130]
+2019-03-07 15:12:37 任务结束
+Task assets.tasks.test_admin_user_connectivity_period[c38cadb5-a6a8-45ec-8d66-ccfe9938aa77] succeeded in 1.0683850959994743s: None
+Received task: terminal.tasks.clean_orphan_session[c31a930c-ca65-43c6-9fc6-eb59a173245d]  
+Task terminal.tasks.clean_orphan_session[c31a930c-ca65-43c6-9fc6-eb59a173245d] succeeded in 0.05317447899869876s: None
+Received task: terminal.tasks.clean_orphan_session[6569089c-adb5-4503-9c51-9ff394891f49]  
+Task terminal.tasks.clean_orphan_session[6569089c-adb5-4503-9c51-9ff394891f49] succeeded in 0.0056964260002132505s: None
+Received task: terminal.tasks.clean_orphan_session[fc967ae5-c27b-4521-9bd3-34ce3f216448]  
+Task terminal.tasks.clean_orphan_session[fc967ae5-c27b-4521-9bd3-34ce3f216448] succeeded in 0.006685473999823444s: None
+Received task: terminal.tasks.delete_terminal_status_period[4dae19d2-9ce0-482b-bd44-6f4a99f77026]  
+Task terminal.tasks.delete_terminal_status_period[4dae19d2-9ce0-482b-bd44-6f4a99f77026] succeeded in 0.0069270679996407125s: None
+Received task: terminal.tasks.clean_orphan_session[f5258b2b-83ad-4683-bba3-9d650335eaf5]  
+Task terminal.tasks.clean_orphan_session[f5258b2b-83ad-4683-bba3-9d650335eaf5] succeeded in 0.048645219998434186s: None
+Received task: terminal.tasks.clean_orphan_session[363785b7-3a01-4013-a550-4f221c63451d]  
+Task terminal.tasks.clean_orphan_session[363785b7-3a01-4013-a550-4f221c63451d] succeeded in 0.006893257999763591s: None
+Received task: terminal.tasks.clean_orphan_session[85ceca20-aa78-4642-9926-9379ace46d1b]  
+Task terminal.tasks.clean_orphan_session[85ceca20-aa78-4642-9926-9379ace46d1b] succeeded in 0.005534127998544136s: None
+Received task: assets.tasks.test_admin_user_connectivity_period[b5c2b2cc-acb3-41ec-aac0-704b10153b2f]  
+2019-03-07 16:12:36 任务开始: 定期测试管理账号可连接性: linux
+PLAY [定期测试管理账号可连接性: linux] *****************************************************
+TASK [ping] ********************************************************************
+ok: [192.168.127.130]
+2019-03-07 16:12:49 任务结束
+Task assets.tasks.test_admin_user_connectivity_period[b5c2b2cc-acb3-41ec-aac0-704b10153b2f] succeeded in 13.330844104002608s: None
+Received task: terminal.tasks.clean_orphan_session[b9f826a2-cb22-46d3-ab71-436434adbf6d]  
+Task terminal.tasks.clean_orphan_session[b9f826a2-cb22-46d3-ab71-436434adbf6d] succeeded in 0.004815719999896828s: None
+Received task: terminal.tasks.clean_orphan_session[1245714d-8dd3-4c2a-a214-2c12c1bbad0b]  
+Task terminal.tasks.clean_orphan_session[1245714d-8dd3-4c2a-a214-2c12c1bbad0b] succeeded in 0.0052760090002266224s: None
+Received task: terminal.tasks.clean_orphan_session[571817e0-a093-47f6-993e-cd1f130be7e4]  
+Task terminal.tasks.clean_orphan_session[571817e0-a093-47f6-993e-cd1f130be7e4] succeeded in 0.006883471000037389s: None
+Received task: terminal.tasks.delete_terminal_status_period[6c02cfd3-0ed5-4307-9498-2c7963d2144f]  
+Task terminal.tasks.delete_terminal_status_period[6c02cfd3-0ed5-4307-9498-2c7963d2144f] succeeded in 0.005865937000635313s: None
+Received task: terminal.tasks.clean_orphan_session[b8ff13f5-90f6-41d1-ad3b-a489c0a5e32f]  
+Task terminal.tasks.clean_orphan_session[b8ff13f5-90f6-41d1-ad3b-a489c0a5e32f] succeeded in 0.06137427599969669s: None
+Received task: terminal.tasks.clean_orphan_session[028cc2da-39d1-414a-989f-70b18755e31b]  
+Task terminal.tasks.clean_orphan_session[028cc2da-39d1-414a-989f-70b18755e31b] succeeded in 0.005859835997398477s: None
+Received task: terminal.tasks.clean_orphan_session[67828bbc-869a-4bbc-86a8-a0b491a4e8b0]  
+Task terminal.tasks.clean_orphan_session[67828bbc-869a-4bbc-86a8-a0b491a4e8b0] succeeded in 0.03217063599731773s: None
+Received task: assets.tasks.test_admin_user_connectivity_period[2f3035ba-e991-4cb2-9da1-384ceaf0c566]  
+2019-03-07 17:12:36 任务开始: 定期测试管理账号可连接性: linux
+PLAY [定期测试管理账号可连接性: linux] *****************************************************
+TASK [ping] ********************************************************************
+ok: [192.168.127.130]
+2019-03-07 17:12:52 任务结束
+Task assets.tasks.test_admin_user_connectivity_period[2f3035ba-e991-4cb2-9da1-384ceaf0c566] succeeded in 16.067542312001024s: None
+Received task: terminal.tasks.clean_orphan_session[03f9d7e5-2977-423e-9a61-e944d0abb8a1]  
+Task terminal.tasks.clean_orphan_session[03f9d7e5-2977-423e-9a61-e944d0abb8a1] succeeded in 0.0554158990016731s: None
+Received task: terminal.tasks.clean_orphan_session[bb8f6186-b336-4623-ab3f-cb885ffb1f96]  
+Task terminal.tasks.clean_orphan_session[bb8f6186-b336-4623-ab3f-cb885ffb1f96] succeeded in 0.00867992200073786s: None
+Received task: terminal.tasks.clean_orphan_session[fb965e46-214c-4483-ba3e-90a946a47027]  
+Task terminal.tasks.clean_orphan_session[fb965e46-214c-4483-ba3e-90a946a47027] succeeded in 0.006444464001106098s: None
+Received task: terminal.tasks.delete_terminal_status_period[78da89e9-9a77-4200-b915-ba704695631d]  
+Task terminal.tasks.delete_terminal_status_period[78da89e9-9a77-4200-b915-ba704695631d] succeeded in 0.007404813997709425s: None
+Received task: terminal.tasks.clean_orphan_session[2ce97433-e066-43f7-bb42-ef8750548a26]  
+Task terminal.tasks.clean_orphan_session[2ce97433-e066-43f7-bb42-ef8750548a26] succeeded in 0.004781952000485035s: None
+Received task: terminal.tasks.clean_orphan_session[5ee87d4e-5220-4074-bccf-2584398acbce]  
+Task terminal.tasks.clean_orphan_session[5ee87d4e-5220-4074-bccf-2584398acbce] succeeded in 0.005253179999272106s: None
+Received task: terminal.tasks.clean_orphan_session[5b3bca4c-2a32-456b-8956-16c817d59d15]  
+Task terminal.tasks.clean_orphan_session[5b3bca4c-2a32-456b-8956-16c817d59d15] succeeded in 0.005536447999475058s: None
+Received task: assets.tasks.test_admin_user_connectivity_period[a46bd6f8-f726-436f-b38d-905235b64836]  
+2019-03-07 18:12:36 任务开始: 定期测试管理账号可连接性: linux
+PLAY [定期测试管理账号可连接性: linux] *****************************************************
+TASK [ping] ********************************************************************
+ok: [192.168.127.130]
+2019-03-07 18:12:47 任务结束
+Task assets.tasks.test_admin_user_connectivity_period[a46bd6f8-f726-436f-b38d-905235b64836] succeeded in 10.878649083002529s: None
+Received task: terminal.tasks.clean_orphan_session[c9a95788-8622-4674-aa79-25fba43c9473]  
+Task terminal.tasks.clean_orphan_session[c9a95788-8622-4674-aa79-25fba43c9473] succeeded in 0.029520255997340428s: None
+Received task: terminal.tasks.clean_orphan_session[0fcdf758-a34a-4f91-8351-87b14c8a43ca]  
+Task terminal.tasks.clean_orphan_session[0fcdf758-a34a-4f91-8351-87b14c8a43ca] succeeded in 0.005344400000467431s: None
+Received task: terminal.tasks.clean_orphan_session[fda4a257-6033-4de0-a770-42c34c356010]  
+Task terminal.tasks.clean_orphan_session[fda4a257-6033-4de0-a770-42c34c356010] succeeded in 0.005724253998778295s: None
+Received task: terminal.tasks.delete_terminal_status_period[13f18616-95d4-419a-85ef-f3a3f02c1c43]  
+Task terminal.tasks.delete_terminal_status_period[13f18616-95d4-419a-85ef-f3a3f02c1c43] succeeded in 0.007261052000103518s: None
+Received task: terminal.tasks.clean_orphan_session[e66fad6c-4fd7-4b45-bae9-a6181d7d0194]  
+Task terminal.tasks.clean_orphan_session[e66fad6c-4fd7-4b45-bae9-a6181d7d0194] succeeded in 0.005442838999442756s: None
+Received task: terminal.tasks.clean_orphan_session[2188b8f8-ecb3-4a3b-8176-9f7f716d09a2]  
+Task terminal.tasks.clean_orphan_session[2188b8f8-ecb3-4a3b-8176-9f7f716d09a2] succeeded in 0.004947303998051211s: None
+Received task: terminal.tasks.clean_orphan_session[82e17e69-8cb7-4261-9270-ef5364c984eb]  
+Task terminal.tasks.clean_orphan_session[82e17e69-8cb7-4261-9270-ef5364c984eb] succeeded in 0.06015731899969978s: None
+Received task: assets.tasks.test_admin_user_connectivity_period[66677b74-c26b-478b-b156-1380a4a0f38a]  
+2019-03-07 19:12:36 任务开始: 定期测试管理账号可连接性: linux
+PLAY [定期测试管理账号可连接性: linux] *****************************************************
+TASK [ping] ********************************************************************
+ok: [192.168.127.130]
+2019-03-07 19:12:47 任务结束
+Task assets.tasks.test_admin_user_connectivity_period[66677b74-c26b-478b-b156-1380a4a0f38a] succeeded in 10.79305558499982s: None
+Received task: terminal.tasks.clean_orphan_session[47970ff5-1c2f-47a4-af0a-529d0087e924]  
+Task terminal.tasks.clean_orphan_session[47970ff5-1c2f-47a4-af0a-529d0087e924] succeeded in 0.05612711399953696s: None
+Received task: terminal.tasks.clean_orphan_session[788ba1b0-587e-4da9-b80c-87cb32dd27ff]  
+Task terminal.tasks.clean_orphan_session[788ba1b0-587e-4da9-b80c-87cb32dd27ff] succeeded in 0.00682779499766184s: None
+Received task: terminal.tasks.clean_orphan_session[25497918-8642-423b-91c8-0bfaf52e7677]  
+Task terminal.tasks.clean_orphan_session[25497918-8642-423b-91c8-0bfaf52e7677] succeeded in 0.05945411599896033s: None
+Received task: terminal.tasks.delete_terminal_status_period[6ab43ed3-aaf6-4202-8810-9a66e0c2d39c]  
+Task terminal.tasks.delete_terminal_status_period[6ab43ed3-aaf6-4202-8810-9a66e0c2d39c] succeeded in 0.06491302899667062s: None
+Received task: terminal.tasks.clean_orphan_session[11fb005b-3734-46ab-8c32-20ad4832aa9a]  
+Task terminal.tasks.clean_orphan_session[11fb005b-3734-46ab-8c32-20ad4832aa9a] succeeded in 1.1359523099999933s: None
+Received task: terminal.tasks.clean_orphan_session[66685be5-1ce3-4346-9a27-6c05bbb9e1ee]  
+Task terminal.tasks.clean_orphan_session[66685be5-1ce3-4346-9a27-6c05bbb9e1ee] succeeded in 0.06057372000213945s: None
+Received task: terminal.tasks.clean_orphan_session[40f1f80e-b64b-43c4-9f44-59bf98eb16da]  
+Task terminal.tasks.clean_orphan_session[40f1f80e-b64b-43c4-9f44-59bf98eb16da] succeeded in 0.061916434999147896s: None
+Received task: assets.tasks.test_admin_user_connectivity_period[22b99640-a9ac-4320-97d5-ca3c4451d808]  
+2019-03-07 20:12:36 任务开始: 定期测试管理账号可连接性: linux
+PLAY [定期测试管理账号可连接性: linux] *****************************************************
+TASK [ping] ********************************************************************
+ok: [192.168.127.130]
+2019-03-07 20:12:47 任务结束
+Task assets.tasks.test_admin_user_connectivity_period[22b99640-a9ac-4320-97d5-ca3c4451d808] succeeded in 11.432399227996939s: None
+Received task: terminal.tasks.clean_orphan_session[8337c19b-f701-47e9-a5ff-e8754a1baab7]  
+Task terminal.tasks.clean_orphan_session[8337c19b-f701-47e9-a5ff-e8754a1baab7] succeeded in 0.07526785100344568s: None
+Received task: terminal.tasks.clean_orphan_session[7470f308-fd12-4447-89b3-734c58d67d37]  
+Task terminal.tasks.clean_orphan_session[7470f308-fd12-4447-89b3-734c58d67d37] succeeded in 0.00509274700016249s: None
+Received task: terminal.tasks.clean_orphan_session[bdb430fd-415e-4c39-ace2-22ba73e4ef4a]  
+Task terminal.tasks.clean_orphan_session[bdb430fd-415e-4c39-ace2-22ba73e4ef4a] succeeded in 0.006882647001475561s: None
+Received task: terminal.tasks.delete_terminal_status_period[7e6b6ef3-2d73-497f-a4eb-139ccdc5ec4f]  
+Task terminal.tasks.delete_terminal_status_period[7e6b6ef3-2d73-497f-a4eb-139ccdc5ec4f] succeeded in 0.005872645000636112s: None
+Received task: terminal.tasks.clean_orphan_session[d7033221-c347-4603-adbc-9a1fb5552c71]  
+Task terminal.tasks.clean_orphan_session[d7033221-c347-4603-adbc-9a1fb5552c71] succeeded in 0.0592355859989766s: None
+Received task: terminal.tasks.clean_orphan_session[863ca045-d0eb-4333-bc5d-3a545107cb22]  
+Task terminal.tasks.clean_orphan_session[863ca045-d0eb-4333-bc5d-3a545107cb22] succeeded in 0.006479884003056213s: None
+Received task: terminal.tasks.clean_orphan_session[b1a5885f-9fbd-4e04-85e1-8e2e774d472d]  
+Task terminal.tasks.clean_orphan_session[b1a5885f-9fbd-4e04-85e1-8e2e774d472d] succeeded in 0.07486990400502691s: None
+Received task: assets.tasks.test_admin_user_connectivity_period[6b858eb3-412d-4f37-838b-ba0eb86778b7]  
+2019-03-07 21:12:36 任务开始: 定期测试管理账号可连接性: linux
+PLAY [定期测试管理账号可连接性: linux] *****************************************************
+TASK [ping] ********************************************************************
+ok: [192.168.127.130]
+2019-03-07 21:12:47 任务结束
+Task assets.tasks.test_admin_user_connectivity_period[6b858eb3-412d-4f37-838b-ba0eb86778b7] succeeded in 10.841892072996416s: None
+Received task: terminal.tasks.clean_orphan_session[59d59557-f358-4f4f-b407-9c240a99b0d1]  
+Task terminal.tasks.clean_orphan_session[59d59557-f358-4f4f-b407-9c240a99b0d1] succeeded in 0.05836872100189794s: None
+Received task: terminal.tasks.clean_orphan_session[10fd4518-4f4b-46dd-824c-ec94db0c9865]  
+Task terminal.tasks.clean_orphan_session[10fd4518-4f4b-46dd-824c-ec94db0c9865] succeeded in 0.0069711079995613545s: None
+Received task: terminal.tasks.clean_orphan_session[594a7111-5448-4fbd-9324-93da09dbde93]  
+Task terminal.tasks.clean_orphan_session[594a7111-5448-4fbd-9324-93da09dbde93] succeeded in 0.06086189600318903s: None
+Received task: terminal.tasks.delete_terminal_status_period[037221e9-456c-431d-af5b-4da64a19bfbb]  
+Task terminal.tasks.delete_terminal_status_period[037221e9-456c-431d-af5b-4da64a19bfbb] succeeded in 0.006078313999751117s: None
+Received task: terminal.tasks.clean_orphan_session[2a74488e-0e9d-4551-bd8d-c711951d0736]  
+Task terminal.tasks.clean_orphan_session[2a74488e-0e9d-4551-bd8d-c711951d0736] succeeded in 0.05596060800598934s: None
+Received task: terminal.tasks.clean_orphan_session[111fcb39-e434-4282-a9e2-bacb4cbbbbdd]  
+Task terminal.tasks.clean_orphan_session[111fcb39-e434-4282-a9e2-bacb4cbbbbdd] succeeded in 0.00593751000269549s: None
+Received task: terminal.tasks.clean_orphan_session[9d1b40b8-2f10-491f-a64a-2e27c20a496c]  
+Task terminal.tasks.clean_orphan_session[9d1b40b8-2f10-491f-a64a-2e27c20a496c] succeeded in 0.06255120000423631s: None
+Received task: assets.tasks.test_admin_user_connectivity_period[b7060860-2ecd-4d05-9af1-8b87a07126c8]  
+2019-03-07 22:12:36 任务开始: 定期测试管理账号可连接性: linux
+PLAY [定期测试管理账号可连接性: linux] *****************************************************
+TASK [ping] ********************************************************************
+ok: [192.168.127.130]
+2019-03-07 22:12:47 任务结束
+Task assets.tasks.test_admin_user_connectivity_period[b7060860-2ecd-4d05-9af1-8b87a07126c8] succeeded in 10.821757335004804s: None
+Received task: terminal.tasks.clean_orphan_session[9b4ef253-8733-4096-be67-4e2a3a8fe73f]  
+Task terminal.tasks.clean_orphan_session[9b4ef253-8733-4096-be67-4e2a3a8fe73f] succeeded in 0.005889316002139822s: None
+Received task: terminal.tasks.clean_orphan_session[58c71dd5-42e8-455b-8dfd-d772c7a2e0be]  
+Task terminal.tasks.clean_orphan_session[58c71dd5-42e8-455b-8dfd-d772c7a2e0be] succeeded in 0.006447837004088797s: None
+Received task: terminal.tasks.clean_orphan_session[1fea1a7d-2314-44d1-a68b-a0b57b791f3c]  
+Task terminal.tasks.clean_orphan_session[1fea1a7d-2314-44d1-a68b-a0b57b791f3c] succeeded in 0.005674436004483141s: None
+Received task: terminal.tasks.delete_terminal_status_period[7a575af4-4458-46ba-a754-aa2f53422759]  
+Task terminal.tasks.delete_terminal_status_period[7a575af4-4458-46ba-a754-aa2f53422759] succeeded in 0.007360056995821651s: None
+Received task: terminal.tasks.clean_orphan_session[e811f6f5-b4a9-4778-8efb-c29b99b02c90]  
+Task terminal.tasks.clean_orphan_session[e811f6f5-b4a9-4778-8efb-c29b99b02c90] succeeded in 0.0575122040027054s: None
+Received task: terminal.tasks.clean_orphan_session[3df35997-28c9-492c-96e3-4e2d90405ccd]  
+Task terminal.tasks.clean_orphan_session[3df35997-28c9-492c-96e3-4e2d90405ccd] succeeded in 0.0048301930000889115s: None
+Received task: terminal.tasks.clean_orphan_session[ec3f7b03-d061-4d65-a1b6-1a69b84bd559]  
+Task terminal.tasks.clean_orphan_session[ec3f7b03-d061-4d65-a1b6-1a69b84bd559] succeeded in 0.005736841005273163s: None
+Received task: assets.tasks.test_admin_user_connectivity_period[88b2599b-8acd-4a41-9b5b-a3eb53bd7343]  
+2019-03-07 23:12:36 任务开始: 定期测试管理账号可连接性: linux
+PLAY [定期测试管理账号可连接性: linux] *****************************************************
+TASK [ping] ********************************************************************
+ok: [192.168.127.130]
+2019-03-07 23:12:47 任务结束
+Task assets.tasks.test_admin_user_connectivity_period[88b2599b-8acd-4a41-9b5b-a3eb53bd7343] succeeded in 10.870950896998693s: None
+Received task: terminal.tasks.clean_orphan_session[43fb978e-e4c0-4a09-a02d-31cef09c0589]  
+Task terminal.tasks.clean_orphan_session[43fb978e-e4c0-4a09-a02d-31cef09c0589] succeeded in 0.006183901998156216s: None
+Received task: terminal.tasks.clean_orphan_session[596329de-5648-42a8-9fe3-38343de8ca27]  
+Task terminal.tasks.clean_orphan_session[596329de-5648-42a8-9fe3-38343de8ca27] succeeded in 0.005810538001242094s: None
+Received task: terminal.tasks.clean_orphan_session[2dd0a17d-a42b-4f4f-ba79-17f43d421b42]  
+Task terminal.tasks.clean_orphan_session[2dd0a17d-a42b-4f4f-ba79-17f43d421b42] succeeded in 0.05142860599880805s: None
+Received task: terminal.tasks.delete_terminal_status_period[8e8bb456-8d46-41d4-9be6-d94a202e6769]  
+Task terminal.tasks.delete_terminal_status_period[8e8bb456-8d46-41d4-9be6-d94a202e6769] succeeded in 0.007640489995537791s: None
+Received task: terminal.tasks.clean_orphan_session[33541b75-dd46-4df0-9698-6f96ae9242fc]  
+Task terminal.tasks.clean_orphan_session[33541b75-dd46-4df0-9698-6f96ae9242fc] succeeded in 0.004946152002958115s: None
+Received task: terminal.tasks.clean_orphan_session[a1685c12-83a1-4a30-b637-da8aab3a9aa9]  
+Task terminal.tasks.clean_orphan_session[a1685c12-83a1-4a30-b637-da8aab3a9aa9] succeeded in 0.005839921999722719s: None
+Received task: terminal.tasks.clean_orphan_session[1b358587-885e-410a-902d-fe83dede2d76]  
+Task terminal.tasks.clean_orphan_session[1b358587-885e-410a-902d-fe83dede2d76] succeeded in 0.053385044004244264s: None
+Received task: assets.tasks.test_admin_user_connectivity_period[a2c04f86-9e35-4eb6-b533-4d1c45c1425b]  
+2019-03-08 00:12:36 任务开始: 定期测试管理账号可连接性: linux
+PLAY [定期测试管理账号可连接性: linux] *****************************************************
+TASK [ping] ********************************************************************
+ok: [192.168.127.130]
+2019-03-08 00:12:37 任务结束
+Task assets.tasks.test_admin_user_connectivity_period[a2c04f86-9e35-4eb6-b533-4d1c45c1425b] succeeded in 0.9279861760005588s: None
+Received task: terminal.tasks.clean_orphan_session[4a4710c3-01d3-4209-8303-71e929d2d7b2]  
+Task terminal.tasks.clean_orphan_session[4a4710c3-01d3-4209-8303-71e929d2d7b2] succeeded in 0.0052007790000061505s: None
+Received task: terminal.tasks.clean_orphan_session[7729a901-cba0-4e59-9bf2-8ba7756398e2]  
+Task terminal.tasks.clean_orphan_session[7729a901-cba0-4e59-9bf2-8ba7756398e2] succeeded in 0.005766678004874848s: None
+Received task: terminal.tasks.clean_orphan_session[2a4f97a3-22c4-42c0-8897-6331ec13bed2]  
+Task terminal.tasks.clean_orphan_session[2a4f97a3-22c4-42c0-8897-6331ec13bed2] succeeded in 0.05583379500603769s: None
+Received task: terminal.tasks.delete_terminal_status_period[35c01a87-cc71-4e7b-962e-5049cc03bdad]  
+Task terminal.tasks.delete_terminal_status_period[35c01a87-cc71-4e7b-962e-5049cc03bdad] succeeded in 0.0068223269990994595s: None
+Received task: terminal.tasks.clean_orphan_session[e93df7ca-638a-443c-a8ef-a8c91bdecb75]  
+Task terminal.tasks.clean_orphan_session[e93df7ca-638a-443c-a8ef-a8c91bdecb75] succeeded in 0.004736825998406857s: None
+Received task: terminal.tasks.clean_orphan_session[d1dda5de-5e53-4ff6-9dee-ccd6c81fed55]  
+Task terminal.tasks.clean_orphan_session[d1dda5de-5e53-4ff6-9dee-ccd6c81fed55] succeeded in 0.0045430370009853505s: None
+Received task: terminal.tasks.clean_orphan_session[81907c4c-ee53-4658-a5f1-002f6ad5263f]  
+Task terminal.tasks.clean_orphan_session[81907c4c-ee53-4658-a5f1-002f6ad5263f] succeeded in 0.006733782000083011s: None
+Received task: assets.tasks.test_admin_user_connectivity_period[9cf59b45-a2b1-4abb-961b-3d61aa4a215d]  
+2019-03-08 01:12:36 任务开始: 定期测试管理账号可连接性: linux
+PLAY [定期测试管理账号可连接性: linux] *****************************************************
+TASK [ping] ********************************************************************
+ok: [192.168.127.130]
+2019-03-08 01:12:37 任务结束
+Task assets.tasks.test_admin_user_connectivity_period[9cf59b45-a2b1-4abb-961b-3d61aa4a215d] succeeded in 1.2400910180003848s: None
+Received task: terminal.tasks.clean_orphan_session[d2aa295d-46bb-42f0-8766-ac46d76fde91]  
+Task terminal.tasks.clean_orphan_session[d2aa295d-46bb-42f0-8766-ac46d76fde91] succeeded in 0.0063625510010751896s: None
+Received task: terminal.tasks.clean_orphan_session[cbfa8f92-40c6-420e-959c-5caefc696fa3]  
+Task terminal.tasks.clean_orphan_session[cbfa8f92-40c6-420e-959c-5caefc696fa3] succeeded in 0.0058988809978473s: None
+Received task: terminal.tasks.clean_orphan_session[cb4cd97d-2ea0-4ab1-a954-67ef8d7e7cfb]  
+Task terminal.tasks.clean_orphan_session[cb4cd97d-2ea0-4ab1-a954-67ef8d7e7cfb] succeeded in 0.05981712200446054s: None
+Received task: terminal.tasks.delete_terminal_status_period[8ca6e2cc-2345-4822-852d-8224f91106e9]  
+Task terminal.tasks.delete_terminal_status_period[8ca6e2cc-2345-4822-852d-8224f91106e9] succeeded in 0.007260112004587427s: None
+Received task: terminal.tasks.clean_orphan_session[f05e7d98-ff8e-4e69-bf85-d5d7d9d7c0e3]  
+Task terminal.tasks.clean_orphan_session[f05e7d98-ff8e-4e69-bf85-d5d7d9d7c0e3] succeeded in 0.004725197999505326s: None
+Received task: terminal.tasks.clean_orphan_session[3c521480-1156-414e-9cc8-b25187df953e]  
+Task terminal.tasks.clean_orphan_session[3c521480-1156-414e-9cc8-b25187df953e] succeeded in 0.005511128998477943s: None
+Received task: terminal.tasks.clean_orphan_session[9cc0e071-c981-4875-a0f1-f14b40c369a4]  
+Task terminal.tasks.clean_orphan_session[9cc0e071-c981-4875-a0f1-f14b40c369a4] succeeded in 0.005236621997028124s: None
+Received task: assets.tasks.test_admin_user_connectivity_period[07ba3951-8894-4843-b0b1-42e091972f77]  
+2019-03-08 02:12:36 任务开始: 定期测试管理账号可连接性: linux
+PLAY [定期测试管理账号可连接性: linux] *****************************************************
+TASK [ping] ********************************************************************
+ok: [192.168.127.130]
+2019-03-08 02:12:37 任务结束
+Task assets.tasks.test_admin_user_connectivity_period[07ba3951-8894-4843-b0b1-42e091972f77] succeeded in 0.9148648769987631s: None
+Received task: terminal.tasks.clean_orphan_session[1995c81a-7d79-454e-b7b0-907abeb7758d]  
+Task terminal.tasks.clean_orphan_session[1995c81a-7d79-454e-b7b0-907abeb7758d] succeeded in 0.005221104001975618s: None
+Received task: terminal.tasks.clean_orphan_session[ef7501d7-4a29-4489-8c5a-37909c9156fc]  
+Task terminal.tasks.clean_orphan_session[ef7501d7-4a29-4489-8c5a-37909c9156fc] succeeded in 0.00581768400297733s: None
+Received task: terminal.tasks.clean_orphan_session[3b2de8a6-93b3-4d7b-8b3c-528739df4890]  
+Task terminal.tasks.clean_orphan_session[3b2de8a6-93b3-4d7b-8b3c-528739df4890] succeeded in 0.00543685800221283s: None
+Received task: terminal.tasks.delete_terminal_status_period[0af20620-7d60-4673-ae45-1c7533a7cf7f]  
+Task terminal.tasks.delete_terminal_status_period[0af20620-7d60-4673-ae45-1c7533a7cf7f] succeeded in 0.0066944360005436465s: None
+Received task: terminal.tasks.clean_orphan_session[8b4bd443-ab69-47fa-bbdd-dd693a67df4c]  
+Task terminal.tasks.clean_orphan_session[8b4bd443-ab69-47fa-bbdd-dd693a67df4c] succeeded in 0.05647387300268747s: None
+Received task: terminal.tasks.clean_orphan_session[2dfc756a-d89c-4af6-bfe7-9ccc09f42630]  
+Task terminal.tasks.clean_orphan_session[2dfc756a-d89c-4af6-bfe7-9ccc09f42630] succeeded in 0.005993945000227541s: None
+Received task: terminal.tasks.clean_orphan_session[066452d5-5093-4a7c-b971-30e75f0cd404]  
+Task terminal.tasks.clean_orphan_session[066452d5-5093-4a7c-b971-30e75f0cd404] succeeded in 0.0666707049967954s: None
+Received task: assets.tasks.test_admin_user_connectivity_period[652787fc-2773-41b6-a1c7-d47d78be850f]  
+2019-03-08 03:12:36 任务开始: 定期测试管理账号可连接性: linux
+PLAY [定期测试管理账号可连接性: linux] *****************************************************
+TASK [ping] ********************************************************************
+ok: [192.168.127.130]
+2019-03-08 03:12:37 任务结束
+Task assets.tasks.test_admin_user_connectivity_period[652787fc-2773-41b6-a1c7-d47d78be850f] succeeded in 0.8987524850017508s: None
+Received task: terminal.tasks.clean_orphan_session[8e25b577-b996-4048-b638-cb6750b8f9a4]  
+Task terminal.tasks.clean_orphan_session[8e25b577-b996-4048-b638-cb6750b8f9a4] succeeded in 0.00535793999733869s: None
+Received task: terminal.tasks.clean_orphan_session[e54b6cc6-7161-4f68-8d63-c890627fecb7]  
+Task terminal.tasks.clean_orphan_session[e54b6cc6-7161-4f68-8d63-c890627fecb7] succeeded in 0.00593578699772479s: None
+Received task: terminal.tasks.clean_orphan_session[e1a0558a-11b7-4702-b1fe-d1c067175c72]  
+Task terminal.tasks.clean_orphan_session[e1a0558a-11b7-4702-b1fe-d1c067175c72] succeeded in 0.007235823999508284s: None
+Received task: terminal.tasks.delete_terminal_status_period[e34f6ced-33c7-4b87-924b-a286bf7e90d2]  
+Task terminal.tasks.delete_terminal_status_period[e34f6ced-33c7-4b87-924b-a286bf7e90d2] succeeded in 0.007679397000174504s: None
+Received task: terminal.tasks.clean_orphan_session[cc8b21ec-cdc7-4457-87d6-3205d7387218]  
+Task terminal.tasks.clean_orphan_session[cc8b21ec-cdc7-4457-87d6-3205d7387218] succeeded in 0.005629644001601264s: None
+Received task: terminal.tasks.clean_orphan_session[67a2a962-a884-4056-82bf-5953880c4392]  
+Task terminal.tasks.clean_orphan_session[67a2a962-a884-4056-82bf-5953880c4392] succeeded in 0.01158474799740361s: None
+Received task: celery.backend_cleanup[5f6682ea-c5de-417d-a3ad-11f49d72fd93]  
+Task celery.backend_cleanup[5f6682ea-c5de-417d-a3ad-11f49d72fd93] succeeded in 0.02341831899684621s: None
+Received task: terminal.tasks.clean_orphan_session[6bc6f58d-d7a9-4af7-bcaa-501fa5597b89]  
+Task terminal.tasks.clean_orphan_session[6bc6f58d-d7a9-4af7-bcaa-501fa5597b89] succeeded in 0.00517548099742271s: None
+Received task: assets.tasks.test_admin_user_connectivity_period[f6c92491-1454-4f28-9a15-2e530d257362]  
+2019-03-08 04:12:37 任务开始: 定期测试管理账号可连接性: linux
+PLAY [定期测试管理账号可连接性: linux] *****************************************************
+TASK [ping] ********************************************************************
+ok: [192.168.127.130]
+2019-03-08 04:12:40 任务结束
+Task assets.tasks.test_admin_user_connectivity_period[f6c92491-1454-4f28-9a15-2e530d257362] succeeded in 3.5486955770029454s: None
+Received task: terminal.tasks.clean_orphan_session[86c5aa32-f850-4ab3-9bee-d1578d90886e]  
+Task terminal.tasks.clean_orphan_session[86c5aa32-f850-4ab3-9bee-d1578d90886e] succeeded in 0.005505100998561829s: None
+Received task: terminal.tasks.clean_orphan_session[b4d4969f-4e91-49d4-8b41-8011d03e1a8a]  
+Task terminal.tasks.clean_orphan_session[b4d4969f-4e91-49d4-8b41-8011d03e1a8a] succeeded in 0.0052644480019807816s: None
+Received task: terminal.tasks.clean_orphan_session[7f27a202-c4cf-4944-885b-a9bbab1d2d3b]  
+Task terminal.tasks.clean_orphan_session[7f27a202-c4cf-4944-885b-a9bbab1d2d3b] succeeded in 0.005142688998603262s: None
+Received task: terminal.tasks.delete_terminal_status_period[0569c4cb-7658-4bd6-87f2-b0b7c8a8155a]  
+Task terminal.tasks.delete_terminal_status_period[0569c4cb-7658-4bd6-87f2-b0b7c8a8155a] succeeded in 0.025619200001528952s: None
+Received task: terminal.tasks.clean_orphan_session[f0bfc144-3232-43f3-8fdb-e4b493804637]  
+Task terminal.tasks.clean_orphan_session[f0bfc144-3232-43f3-8fdb-e4b493804637] succeeded in 0.006032650999259204s: None
+Received task: terminal.tasks.clean_orphan_session[4236f2e3-0ab0-47a5-afe8-4e6f63553732]  
+Task terminal.tasks.clean_orphan_session[4236f2e3-0ab0-47a5-afe8-4e6f63553732] succeeded in 0.0042753229936352s: None
+Received task: terminal.tasks.clean_orphan_session[76006134-cfff-4fce-8517-347adafb4414]  
+Task terminal.tasks.clean_orphan_session[76006134-cfff-4fce-8517-347adafb4414] succeeded in 0.004888163006398827s: None
+Received task: assets.tasks.test_admin_user_connectivity_period[bf9d395b-65b5-48ce-bfee-b7192ad0f70e]  
+2019-03-08 05:12:36 任务开始: 定期测试管理账号可连接性: linux
+PLAY [定期测试管理账号可连接性: linux] *****************************************************
+TASK [ping] ********************************************************************
+ok: [192.168.127.130]
+2019-03-08 05:12:37 任务结束
+Task assets.tasks.test_admin_user_connectivity_period[bf9d395b-65b5-48ce-bfee-b7192ad0f70e] succeeded in 0.951454873997136s: None
+Received task: terminal.tasks.clean_orphan_session[553ebe3a-b3ce-438c-969f-4d35aabf09a3]  
+Task terminal.tasks.clean_orphan_session[553ebe3a-b3ce-438c-969f-4d35aabf09a3] succeeded in 0.006194757006596774s: None
+Received task: terminal.tasks.clean_orphan_session[d5583bd7-fe25-484f-a401-81a1ee6ef559]  
+Task terminal.tasks.clean_orphan_session[d5583bd7-fe25-484f-a401-81a1ee6ef559] succeeded in 0.012264504010090604s: None
+Received task: terminal.tasks.clean_orphan_session[cee05995-3d0a-48a4-b9b3-8e60c21f1851]  
+Task terminal.tasks.clean_orphan_session[cee05995-3d0a-48a4-b9b3-8e60c21f1851] succeeded in 0.06819301200448535s: None
+Received task: terminal.tasks.delete_terminal_status_period[f284306b-6078-4b58-8b1b-19edc0733556]  
+Task terminal.tasks.delete_terminal_status_period[f284306b-6078-4b58-8b1b-19edc0733556] succeeded in 0.006876604005810805s: None
+Received task: terminal.tasks.clean_orphan_session[eb67b1fb-623c-41a1-a48f-01c2844eab91]  
+Task terminal.tasks.clean_orphan_session[eb67b1fb-623c-41a1-a48f-01c2844eab91] succeeded in 0.006053983990568668s: None
+Received task: terminal.tasks.clean_orphan_session[b216cace-c333-4536-ad35-3f419dd21dc6]  
+Task terminal.tasks.clean_orphan_session[b216cace-c333-4536-ad35-3f419dd21dc6] succeeded in 0.005851024005096406s: None
+Received task: terminal.tasks.clean_orphan_session[cf1c60a3-9622-4bba-9a2e-f96cbb304afa]  
+Task terminal.tasks.clean_orphan_session[cf1c60a3-9622-4bba-9a2e-f96cbb304afa] succeeded in 0.005643419994157739s: None
+Received task: assets.tasks.test_admin_user_connectivity_period[c2aa8058-7dcf-4301-a64d-dc2bba79dbae]  
+2019-03-08 06:12:36 任务开始: 定期测试管理账号可连接性: linux
+PLAY [定期测试管理账号可连接性: linux] *****************************************************
+TASK [ping] ********************************************************************
+ok: [192.168.127.130]
+2019-03-08 06:12:37 任务结束
+Task assets.tasks.test_admin_user_connectivity_period[c2aa8058-7dcf-4301-a64d-dc2bba79dbae] succeeded in 1.1048238020011922s: None
+Received task: terminal.tasks.clean_orphan_session[caa847cd-6bc0-4685-a640-587fc9f560e2]  
+Task terminal.tasks.clean_orphan_session[caa847cd-6bc0-4685-a640-587fc9f560e2] succeeded in 0.007747066003503278s: None
+Received task: terminal.tasks.clean_orphan_session[2a36a375-2db9-4951-98dd-dcc0b1958103]  
+Task terminal.tasks.clean_orphan_session[2a36a375-2db9-4951-98dd-dcc0b1958103] succeeded in 0.005878347990801558s: None
+Received task: terminal.tasks.clean_orphan_session[2543ec4a-9cae-4e49-89fd-7a320920ee53]  
+Task terminal.tasks.clean_orphan_session[2543ec4a-9cae-4e49-89fd-7a320920ee53] succeeded in 0.004140937002375722s: None
+Received task: terminal.tasks.delete_terminal_status_period[14e6eded-09cf-4311-b0c0-bb82d7b95ff7]  
+Task terminal.tasks.delete_terminal_status_period[14e6eded-09cf-4311-b0c0-bb82d7b95ff7] succeeded in 0.005015585004002787s: None
+Received task: terminal.tasks.clean_orphan_session[999188e1-5392-43ad-8e48-b2a445058000]  
+Task terminal.tasks.clean_orphan_session[999188e1-5392-43ad-8e48-b2a445058000] succeeded in 0.003934193009627052s: None
+Received task: terminal.tasks.clean_orphan_session[f4db0fad-4956-4d2f-b483-6a41287423b0]  
+Task terminal.tasks.clean_orphan_session[f4db0fad-4956-4d2f-b483-6a41287423b0] succeeded in 0.004641079998691566s: None
+Received task: terminal.tasks.clean_orphan_session[e0de3912-3545-4db9-8fe1-e51cb74f8ff2]  
+Task terminal.tasks.clean_orphan_session[e0de3912-3545-4db9-8fe1-e51cb74f8ff2] succeeded in 0.004487680998863652s: None
+Received task: assets.tasks.test_admin_user_connectivity_period[0cb1257b-b817-49b1-ad28-88ed004aa60a]  
+2019-03-08 07:12:36 任务开始: 定期测试管理账号可连接性: linux
+PLAY [定期测试管理账号可连接性: linux] *****************************************************
+TASK [ping] ********************************************************************
+ok: [192.168.127.130]
+2019-03-08 07:12:37 任务结束
+Task assets.tasks.test_admin_user_connectivity_period[0cb1257b-b817-49b1-ad28-88ed004aa60a] succeeded in 0.9739980719896266s: None
+Received task: terminal.tasks.clean_orphan_session[461c3172-c153-41ae-b86c-cc1850b414a7]  
+Task terminal.tasks.clean_orphan_session[461c3172-c153-41ae-b86c-cc1850b414a7] succeeded in 0.0066301850019954145s: None
+Received task: terminal.tasks.clean_orphan_session[553b836b-0766-4cae-aca5-4c090df2b44d]  
+Task terminal.tasks.clean_orphan_session[553b836b-0766-4cae-aca5-4c090df2b44d] succeeded in 0.005300171003909782s: None
+Received task: terminal.tasks.clean_orphan_session[456a82ac-f533-4292-8e48-e7e645830036]  
+Task terminal.tasks.clean_orphan_session[456a82ac-f533-4292-8e48-e7e645830036] succeeded in 0.004261198002495803s: None
+Received task: terminal.tasks.delete_terminal_status_period[d948850e-20d5-4eb5-8b9c-29f74da473dc]  
+Task terminal.tasks.delete_terminal_status_period[d948850e-20d5-4eb5-8b9c-29f74da473dc] succeeded in 0.007336809998378158s: None
+Received task: terminal.tasks.clean_orphan_session[438d1a4f-c6de-435e-9a22-204163ac7883]  
+Task terminal.tasks.clean_orphan_session[438d1a4f-c6de-435e-9a22-204163ac7883] succeeded in 0.0053260779968695715s: None
+Received task: terminal.tasks.clean_orphan_session[004349e6-77c7-45ea-98a3-c78357b3682f]  
+Task terminal.tasks.clean_orphan_session[004349e6-77c7-45ea-98a3-c78357b3682f] succeeded in 0.004220731003442779s: None
+Received task: terminal.tasks.clean_orphan_session[7d2bd937-389a-4029-b8ab-d274e5e4a9ee]  
+Task terminal.tasks.clean_orphan_session[7d2bd937-389a-4029-b8ab-d274e5e4a9ee] succeeded in 0.004247681994456798s: None
+Received task: assets.tasks.test_admin_user_connectivity_period[9ecfcc92-aee4-4519-ab98-a4f5724419b3]  
+2019-03-08 08:12:36 任务开始: 定期测试管理账号可连接性: linux
+PLAY [定期测试管理账号可连接性: linux] *****************************************************
+TASK [ping] ********************************************************************
+ok: [192.168.127.130]
+2019-03-08 08:12:37 任务结束
+Task assets.tasks.test_admin_user_connectivity_period[9ecfcc92-aee4-4519-ab98-a4f5724419b3] succeeded in 0.899761167995166s: None
+Received task: terminal.tasks.clean_orphan_session[c753e9b0-6175-46da-b940-40c382c09ced]  
+Task terminal.tasks.clean_orphan_session[c753e9b0-6175-46da-b940-40c382c09ced] succeeded in 0.006249582002055831s: None
+Received task: terminal.tasks.clean_orphan_session[d52a7317-0161-4b97-b095-ce4a6cc1d0e2]  
+Task terminal.tasks.clean_orphan_session[d52a7317-0161-4b97-b095-ce4a6cc1d0e2] succeeded in 0.005270191002637148s: None
+Received task: terminal.tasks.clean_orphan_session[9dff9a08-a2d9-4227-934d-893cef9899f5]  
+Task terminal.tasks.clean_orphan_session[9dff9a08-a2d9-4227-934d-893cef9899f5] succeeded in 0.0044144940038677305s: None
+Received task: terminal.tasks.delete_terminal_status_period[79ea2162-989a-43ae-8d91-2b809d338209]  
+Task terminal.tasks.delete_terminal_status_period[79ea2162-989a-43ae-8d91-2b809d338209] succeeded in 0.0058405570016475394s: None
+Received task: terminal.tasks.clean_orphan_session[286a4010-a8ab-4a68-aef6-d13ae4f104de]  
+Task terminal.tasks.clean_orphan_session[286a4010-a8ab-4a68-aef6-d13ae4f104de] succeeded in 0.006997738004429266s: None
+Received task: terminal.tasks.clean_orphan_session[a580a773-184b-44b2-8e7d-3d3603d0749d]  
+Task terminal.tasks.clean_orphan_session[a580a773-184b-44b2-8e7d-3d3603d0749d] succeeded in 0.006023360008839518s: None
+Received task: terminal.tasks.clean_orphan_session[d2b4113a-f5fe-473c-a853-3cf724ea99fc]  
+Task terminal.tasks.clean_orphan_session[d2b4113a-f5fe-473c-a853-3cf724ea99fc] succeeded in 0.005980286994599737s: None
+Received task: assets.tasks.test_admin_user_connectivity_period[5f109ddb-b513-40a9-adfe-a63396233ea9]  
+2019-03-08 09:12:36 任务开始: 定期测试管理账号可连接性: linux
+PLAY [定期测试管理账号可连接性: linux] *****************************************************
+TASK [ping] ********************************************************************
+ok: [192.168.127.130]
+2019-03-08 09:12:37 任务结束
+Task assets.tasks.test_admin_user_connectivity_period[5f109ddb-b513-40a9-adfe-a63396233ea9] succeeded in 0.8621502419991884s: None
+Received task: terminal.tasks.clean_orphan_session[f65455e3-5366-4905-90a7-d18ac2782524]  
+Task terminal.tasks.clean_orphan_session[f65455e3-5366-4905-90a7-d18ac2782524] succeeded in 0.0045041700068395585s: None
+Received task: terminal.tasks.clean_orphan_session[693a30c8-3399-49b0-997f-5409533a2918]  
+Task terminal.tasks.clean_orphan_session[693a30c8-3399-49b0-997f-5409533a2918] succeeded in 0.0044476179900811985s: None
+Received task: terminal.tasks.clean_orphan_session[6e0feacf-fed6-4443-9724-bb95dddba7fc]  
+Task terminal.tasks.clean_orphan_session[6e0feacf-fed6-4443-9724-bb95dddba7fc] succeeded in 0.004576057006488554s: None
+Received task: terminal.tasks.delete_terminal_status_period[4dc689d9-3c70-4ee9-9502-1adf9b1e758f]  
+Task terminal.tasks.delete_terminal_status_period[4dc689d9-3c70-4ee9-9502-1adf9b1e758f] succeeded in 0.006625459005590528s: None
+Received task: terminal.tasks.clean_orphan_session[58cf97f9-4da8-4cf4-809a-b1089def8ae7]  
+Task terminal.tasks.clean_orphan_session[58cf97f9-4da8-4cf4-809a-b1089def8ae7] succeeded in 0.006077062993426807s: None
+Received task: terminal.tasks.clean_orphan_session[ea0b54b0-1196-448b-9b7b-ba02bc8f50c3]  
+Task terminal.tasks.clean_orphan_session[ea0b54b0-1196-448b-9b7b-ba02bc8f50c3] succeeded in 0.0044803289929404855s: None
+Received task: users.tasks.check_password_expired[c7c55fe3-4e56-4d22-b147-c60f0dca64ab]  
+Task users.tasks.check_password_expired[c7c55fe3-4e56-4d22-b147-c60f0dca64ab] succeeded in 0.007894751994172111s: None
+Received task: users.tasks.write_login_log_async[25b0b3da-0cb1-425b-aae0-46d5e5452604]  
+Received task: users.tasks.write_login_log_async[73931bbc-70bb-428b-8a8c-8285a5d52cc1]  
+Received task: users.tasks.write_login_log_async[f8c90158-66b0-4d44-902c-dd63c3ce9c76]  
+Received task: users.tasks.write_login_log_async[2fa01533-28f8-467c-a763-27aec5bec3e7]  
+Task users.tasks.write_login_log_async[25b0b3da-0cb1-425b-aae0-46d5e5452604] succeeded in 90.2465183220047s: None
+Task users.tasks.write_login_log_async[73931bbc-70bb-428b-8a8c-8285a5d52cc1] succeeded in 90.36499127199932s: None
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+/opt/py3/lib64/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[2585dbfc-f858-4cb8-adb1-70cd9304fb57]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[88212d5e-2c73-4e1a-b8ba-2e02703cbb4d]  
+Received task: terminal.tasks.delete_terminal_status_period[bdd4573e-c60d-4a95-8960-102b601367ec]  
+Received task: terminal.tasks.clean_orphan_session[b95211a9-7be6-453b-9a0f-f171bd030192]  
+Received task: terminal.tasks.clean_expired_session_period[09739fbe-a695-4150-9dc1-f2c5f9ca1a7b]  
+Scaling up 1 processes.
+Task terminal.tasks.clean_orphan_session[b95211a9-7be6-453b-9a0f-f171bd030192] succeeded in 0.45988609799999836s: None
+Task terminal.tasks.delete_terminal_status_period[bdd4573e-c60d-4a95-8960-102b601367ec] succeeded in 0.47335983499999656s: None
+Task users.tasks.check_password_expired_periodic[2585dbfc-f858-4cb8-adb1-70cd9304fb57] succeeded in 0.7631327579999834s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[88212d5e-2c73-4e1a-b8ba-2e02703cbb4d] succeeded in 1.4502136389999976s: None
+09739fbe-a695-4150-9dc1-f2c5f9ca1a7b terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task terminal.tasks.clean_expired_session_period[09739fbe-a695-4150-9dc1-f2c5f9ca1a7b] succeeded in 0.06152309899999864s: None
+Received task: users.tasks.write_login_log_async[b0c93afb-3afd-425b-a8f8-dcf5198a02f2]  
+Scaling down 1 processes.
+Task users.tasks.write_login_log_async[b0c93afb-3afd-425b-a8f8-dcf5198a02f2] succeeded in 90.13714032999997s: None
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+/opt/py3/lib64/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[567ebcad-3051-4403-8a6c-952cab35ce2b]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[6237357c-b94b-441a-bd25-f562c3ba26ae]  
+Received task: terminal.tasks.delete_terminal_status_period[88831f61-9ed9-45ef-a36f-1a6ed49ebf56]  
+Received task: terminal.tasks.clean_orphan_session[507ef1da-61ce-4832-81d1-932b1fb21640]  
+Task terminal.tasks.delete_terminal_status_period[88831f61-9ed9-45ef-a36f-1a6ed49ebf56] succeeded in 0.11270568399999092s: None
+Received task: terminal.tasks.clean_expired_session_period[b7dac561-9d1f-47bb-8209-2ebcad6ff130]  
+Scaling up 1 processes.
+Task users.tasks.check_password_expired_periodic[567ebcad-3051-4403-8a6c-952cab35ce2b] succeeded in 0.32154790499998853s: None
+b7dac561-9d1f-47bb-8209-2ebcad6ff130 terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task terminal.tasks.clean_expired_session_period[b7dac561-9d1f-47bb-8209-2ebcad6ff130] succeeded in 0.03526396300003398s: None
+Task terminal.tasks.clean_orphan_session[507ef1da-61ce-4832-81d1-932b1fb21640] succeeded in 0.059560250999993514s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[6237357c-b94b-441a-bd25-f562c3ba26ae] succeeded in 0.9521564240000089s: None
+Received task: users.tasks.write_login_log_async[8ef6a825-d371-4232-9299-7d6e693c8441]  
+Task users.tasks.write_login_log_async[8ef6a825-d371-4232-9299-7d6e693c8441] succeeded in 90.14686207400001s: None
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+/opt/py3/lib64/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+celery@localhost.localdomain ready.
+Received task: assets.tasks.test_admin_user_connectivity_period[ae75c60a-df26-46f3-a354-0eb30367877a]  
+Received task: users.tasks.check_password_expired_periodic[452a1bea-1c00-4be6-9474-f56192e99e7d]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[9f65c266-faaf-4c54-89df-85e950e14f22]  
+Received task: terminal.tasks.delete_terminal_status_period[ead01303-8f7e-40c0-9356-7e764f9ea19f]  
+Received task: terminal.tasks.clean_orphan_session[1c7b80b8-dfc4-4587-b860-aa45892f528d]  
+Scaling up 1 processes.
+Task users.tasks.check_password_expired_periodic[452a1bea-1c00-4be6-9474-f56192e99e7d] succeeded in 0.11234136699999908s: None
+Received task: terminal.tasks.clean_expired_session_period[4e355e58-4915-472c-b4b3-f28ff02749cb]  
+Scaling up 1 processes.
+Task terminal.tasks.delete_terminal_status_period[ead01303-8f7e-40c0-9356-7e764f9ea19f] succeeded in 0.03617194200000995s: None
+2019-03-08 10:13:56 任务开始: 定期测试管理账号可连接性: linux
+4e355e58-4915-472c-b4b3-f28ff02749cb terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task terminal.tasks.clean_expired_session_period[4e355e58-4915-472c-b4b3-f28ff02749cb] succeeded in 0.011864340999977685s: None
+Task terminal.tasks.clean_orphan_session[1c7b80b8-dfc4-4587-b860-aa45892f528d] succeeded in 0.019110065999939252s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[9f65c266-faaf-4c54-89df-85e950e14f22] succeeded in 0.49386642699994354s: None
+PLAY [定期测试管理账号可连接性: linux] *****************************************************
+TASK [ping] ********************************************************************
+ok: [192.168.127.130]
+2019-03-08 10:14:00 任务结束
+Task assets.tasks.test_admin_user_connectivity_period[ae75c60a-df26-46f3-a354-0eb30367877a] succeeded in 4.56775415200002s: None
+Received task: users.tasks.write_login_log_async[0261b119-a3dc-451d-93b7-50bb866db069]  
+Received task: users.tasks.write_login_log_async[8b12aa56-2f8e-499e-ad4d-c67fc6134433]  
+Scaling down 2 processes.
+Task users.tasks.write_login_log_async[0261b119-a3dc-451d-93b7-50bb866db069] succeeded in 90.13849332400002s: None
+Received task: users.tasks.write_login_log_async[72186c80-c411-4db9-95be-4e2b3c76fbc3]  
+Task users.tasks.write_login_log_async[8b12aa56-2f8e-499e-ad4d-c67fc6134433] succeeded in 90.10501679200001s: None
+Task users.tasks.write_login_log_async[72186c80-c411-4db9-95be-4e2b3c76fbc3] succeeded in 90.123212147s: None
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+/opt/py3/lib64/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[1ef11048-5f43-4dbd-b2a4-7cce1270364d]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[e27612f4-cd15-4eb0-a124-6bc4f126a599]  
+Received task: terminal.tasks.delete_terminal_status_period[78ae1f04-327f-40fe-a69e-ccbdb38b1fff]  
+Received task: terminal.tasks.clean_orphan_session[204f4fc6-5c1e-448b-840c-b626554e76df]  
+Task terminal.tasks.clean_orphan_session[204f4fc6-5c1e-448b-840c-b626554e76df] succeeded in 0.06263373900003444s: None
+Received task: terminal.tasks.clean_expired_session_period[60475ff6-ff1b-4180-8d32-e47d383de75e]  
+Scaling up 1 processes.
+Task terminal.tasks.delete_terminal_status_period[78ae1f04-327f-40fe-a69e-ccbdb38b1fff] succeeded in 0.0891769419999946s: None
+Task users.tasks.check_password_expired_periodic[1ef11048-5f43-4dbd-b2a4-7cce1270364d] succeeded in 0.25238120100004835s: None
+60475ff6-ff1b-4180-8d32-e47d383de75e terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task terminal.tasks.clean_expired_session_period[60475ff6-ff1b-4180-8d32-e47d383de75e] succeeded in 0.055335518999982014s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[e27612f4-cd15-4eb0-a124-6bc4f126a599] succeeded in 0.5194641360000105s: None
+Scaling down 1 processes.
+Received task: users.tasks.write_login_log_async[09067b1b-6fc2-431d-8e60-bf49bbd213d1]  
+Task users.tasks.write_login_log_async[09067b1b-6fc2-431d-8e60-bf49bbd213d1] succeeded in 90.25590273700004s: None
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+/opt/py3/lib64/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[c8664117-609e-4179-847a-1e6c24e453be]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[4e2df7da-b658-4535-ad24-bb2b7aa8697b]  
+Received task: terminal.tasks.delete_terminal_status_period[7d38d0c7-c2c6-44e5-b5df-634a572ff2e4]  
+Received task: terminal.tasks.clean_orphan_session[1c3cc4bd-7282-4979-a391-cdfd7b17323d]  
+Task users.tasks.check_password_expired_periodic[c8664117-609e-4179-847a-1e6c24e453be] succeeded in 0.24916453600008026s: None
+Task terminal.tasks.clean_orphan_session[1c3cc4bd-7282-4979-a391-cdfd7b17323d] succeeded in 0.05736897100018723s: None
+Received task: terminal.tasks.clean_expired_session_period[4e07e96f-cfcb-485a-9348-08b4ede1345a]  
+Scaling up 1 processes.
+Task terminal.tasks.delete_terminal_status_period[7d38d0c7-c2c6-44e5-b5df-634a572ff2e4] succeeded in 0.10271903399984694s: None
+4e07e96f-cfcb-485a-9348-08b4ede1345a terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task terminal.tasks.clean_expired_session_period[4e07e96f-cfcb-485a-9348-08b4ede1345a] succeeded in 0.017404974999863043s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[4e2df7da-b658-4535-ad24-bb2b7aa8697b] succeeded in 0.6198865549999937s: None
+Scaling down 1 processes.
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+/opt/py3/lib64/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[10a975bf-207d-474c-8709-938f8dbbe0dc]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[364a54dc-6fb8-4ab3-9324-172daab1b9d6]  
+Received task: terminal.tasks.delete_terminal_status_period[3a02a506-8de1-4979-bfe7-05740f295072]  
+Received task: terminal.tasks.clean_orphan_session[b8b52c43-32b9-41a3-95f3-42723b050720]  
+Received task: terminal.tasks.clean_expired_session_period[bd37e7a8-8568-41ac-98bd-4ec149c2fd78]  
+Scaling up 1 processes.
+Task users.tasks.check_password_expired_periodic[10a975bf-207d-474c-8709-938f8dbbe0dc] succeeded in 0.2571232160000818s: None
+Task terminal.tasks.clean_orphan_session[b8b52c43-32b9-41a3-95f3-42723b050720] succeeded in 0.0785092479998184s: None
+Task terminal.tasks.delete_terminal_status_period[3a02a506-8de1-4979-bfe7-05740f295072] succeeded in 0.0986673840000094s: None
+bd37e7a8-8568-41ac-98bd-4ec149c2fd78 terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task terminal.tasks.clean_expired_session_period[bd37e7a8-8568-41ac-98bd-4ec149c2fd78] succeeded in 0.06721383399985825s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[364a54dc-6fb8-4ab3-9324-172daab1b9d6] succeeded in 0.7339795360001062s: None
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+/opt/py3/lib64/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[a12a38a8-36b5-4c81-9cd9-677fcd1e3317]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[6bb0e19b-4514-4761-841d-642f3be3e313]  
+Received task: terminal.tasks.delete_terminal_status_period[d212085d-24c3-430a-b539-5328f82add0f]  
+Task users.tasks.check_password_expired_periodic[a12a38a8-36b5-4c81-9cd9-677fcd1e3317] succeeded in 0.19896247400015454s: None
+Received task: terminal.tasks.clean_orphan_session[5938dba7-82f6-46f6-b957-1bbda6c2122f]  
+Received task: terminal.tasks.clean_expired_session_period[92a416b9-7075-4128-bda5-e05b5724df45]  
+Task terminal.tasks.clean_orphan_session[5938dba7-82f6-46f6-b957-1bbda6c2122f] succeeded in 0.07183738000003359s: None
+Task terminal.tasks.delete_terminal_status_period[d212085d-24c3-430a-b539-5328f82add0f] succeeded in 0.08780050099994696s: None
+92a416b9-7075-4128-bda5-e05b5724df45 terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task terminal.tasks.clean_expired_session_period[92a416b9-7075-4128-bda5-e05b5724df45] succeeded in 0.07799530199986293s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[6bb0e19b-4514-4761-841d-642f3be3e313] succeeded in 0.8797816449998663s: None
+Received task: users.tasks.write_login_log_async[bc42cf98-e1c1-457b-bc46-ccd92d725074]  
+Task users.tasks.write_login_log_async[bc42cf98-e1c1-457b-bc46-ccd92d725074] succeeded in 90.17459010399989s: None
+Received task: terminal.tasks.clean_orphan_session[ac46ba50-f6d6-4bd0-b636-bc90f1e65e0a]  
+Task terminal.tasks.clean_orphan_session[ac46ba50-f6d6-4bd0-b636-bc90f1e65e0a] succeeded in 0.00488026799985164s: None
+Received task: terminal.tasks.clean_orphan_session[a7aec1a8-fa40-4397-86d6-29c625d0244e]  
+Task terminal.tasks.clean_orphan_session[a7aec1a8-fa40-4397-86d6-29c625d0244e] succeeded in 0.005272061999676225s: None
+Received task: terminal.tasks.clean_orphan_session[0193f58e-f1b8-44a5-a29f-e2bc14ddda4f]  
+Task terminal.tasks.clean_orphan_session[0193f58e-f1b8-44a5-a29f-e2bc14ddda4f] succeeded in 0.004995666000013443s: None
+Received task: terminal.tasks.clean_orphan_session[17d8cc3f-dade-426d-92f4-3cee79a1917b]  
+Task terminal.tasks.clean_orphan_session[17d8cc3f-dade-426d-92f4-3cee79a1917b] succeeded in 0.005578562999744463s: None
+Received task: assets.tasks.test_admin_user_connectivity_period[18a02394-04e9-4f8e-8ae7-f06a6a2a5d14]  
+2019-03-08 11:13:53 任务开始: 定期测试管理账号可连接性: linux
+PLAY [定期测试管理账号可连接性: linux] *****************************************************
+TASK [ping] ********************************************************************
+ok: [192.168.127.130]
+2019-03-08 11:13:54 任务结束
+Task assets.tasks.test_admin_user_connectivity_period[18a02394-04e9-4f8e-8ae7-f06a6a2a5d14] succeeded in 1.1248425690000659s: None

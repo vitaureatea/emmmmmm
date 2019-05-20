@@ -1,0 +1,458 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% load bootstrap3 %}
+
+{% block custom_head_css_js %}
+    <link href="{% static 'css/plugins/ztree/awesomeStyle/awesome.css' %}" rel="stylesheet">
+    <script type="text/javascript" src="{% static 'js/plugins/ztree/jquery.ztree.all.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/plugins/ztree/jquery.ztree.exhide.min.js' %}"></script>
+    <script src="{% static 'js/jquery.form.min.js' %}"></script>
+    <link href="{% static 'css/plugins/select2/select2.min.css' %}" rel="stylesheet">
+    <script src="{% static 'js/plugins/select2/select2.full.min.js' %}"></script>
+    <script src="{% static  'js/jquery.cookie.js' %} "></script>
+{% endblock %}
+
+{% block content %}
+    {% csrf_token %}
+<div class="row">
+    {% include 'ops/multitask_host_list_component.html' %}
+    <div class="col-lg-8">
+        <div class="panel">
+            <div class="panel-heading">
+                <h3 class="panel-title">IIS</h3>
+            </div>
+            <div class="panel-body">
+                <form class="form-horizontal" id="create-template" >
+                    <div class="alert alert-warning" role="alert" hidden id="message"><a class="close-link" ><i class="fa fa-times"></i></a></div>
+                <div class="form-group required"><label class="col-md-2 control-label" >任务模块及内容</label>
+                    <div class="row">
+                        <div class="col-lg-8">
+                        <div class="col-lg-8">
+                            <div class="input-group">
+                                <div class="input-group-btn">
+                                    <select class="btn btn-default dropdown-toggle" data-toggle="dropdown" name="modules" id="sel" onchange="placeholder_(this)">
+                                        <ul class="dropdown-menu">
+                                            <option><li><a href="#">iis重启站点</a></li></option>
+                                            <option><li><a href="#">iis创建站点</a></li></option>
+                                        </ul>
+                                    </select>
+                                </div>
+                                <input type="text" class="form-control" name="cmd" placeholder="iis站点名称，多站点用英文逗号分隔" maxlength="255" >
+                            </div>
+                        </div>
+                        <span class="btn btn-default float-left" id="getsite" >获取站点</span>
+                        </div>
+                       <!--<span style="float:left;" class="btn btn-default" type="" onclick="reTask(this)"> 删除任务 </span>-->
+                    </div>
+                </div>
+                    <div id="iisrestart" hidden>
+                        <div class="hr-line-dashed"></div>
+                        <table class="table table-striped table-bordered table-hover " >
+                            <thead>
+                            <tr>
+                                <th class="text-center sorting_disabled"  style="width: 40px;"><input type="checkbox" class="ipt_check_all"></th>
+                                <th class="text-center">站点名</th>
+                                <th class="text-center sorting_disabled"  style="width: 40px;"><input type="checkbox" class="ipt_check_all"></th>
+                                <th class="text-center">站点名</th>
+                                <th class="text-center sorting_disabled"  style="width: 40px;"><input type="checkbox" class="ipt_check_all"></th>
+                                <th class="text-center">站点名</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr role="row" class="odd">
+                            </tr>
+                        </tbody>
+                        </table>
+                    </div>
+                    <div id="iiscreate" hidden >
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group"><label class="col-md-2 control-label">绑定IP</label><div class="col-md-9"><input type="text" class="form-control" name="ip" placeholder="绑定ip,默认*" maxlength="255"></div></div>
+                        <div class="form-group"><label class="col-md-2 control-label">监听端口</label><div class="col-md-9"><input type="text" class="form-control" name="port" placeholder="监听端口，默认80" maxlength="255"></div></div>
+                        <div class="form-group"><label class="col-md-2 control-label">域名</label><div class="col-md-9"><input type="text" class="form-control" name="dom" placeholder="可为空，单站点多域名用英文逗号分隔" maxlength="255"></div></div>
+                        <div class="form-group "><label class="col-md-2 control-label">应用池</label><div class="col-md-9"><input type="text" class="form-control" name="pool" placeholder="默认新建站点同名应用池" maxlength="255"></div></div>
+                        <div class="form-group required"><label class="col-md-2 control-label">物理路径</label><div class="col-md-9"><input type="text" class="form-control" name="pdir" placeholder="目录必须已存在" maxlength="255"></div></div>
+                    </div>
+                    <input type="button" id='post_task_btn'  class="btn btn-success pull-right " value="执行" >
+                    <input type="button" id='create_task_btn' class="btn btn-success pull-right hide" value="执行" >
+                </form>
+            </div>
+        </div>
+
+        <div class="panel">
+            <div class="panel-heading">
+                <h3 class="panel-title">任务结果</h3>
+            </div>
+            <div class="panel-body">
+                <div class="progress hide">
+                    <div id="task_progress" style="width: 0%;color: black" class="progress-bar progress-bar-info" >0.0%</div>
+                </div>
+                <ul id="task_result_container" class="hide" ></ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+
+$('#message').children().click(function () {
+    $('#message').hide()
+});
+
+function placeholder_ (r) {
+    var sel = $(r).find("option:selected").html();
+    var ht = $(r).parent().next();
+    if (sel == 'iis创建站点') {
+        ht.attr('placeholder', 'iis站点名称，仅支持单站点');
+        $('#task_progress').css('width', '0%').html('0%').parent().addClass('hide');
+        $("#task_result_container").addClass('hide');
+        $("#task_result_container").find('li').remove();
+        $("#task_result_container").find('pre').remove();
+        $('#iiscreate').show();
+        $("#post_task_btn").addClass('hide');
+        $("#create_task_btn").removeClass('hide')
+        $("#getsite").hide()
+        $('#iisrestart').hide()
+    }else {
+        ht.attr('placeholder', 'iis站点名称，多站点用英文逗号分隔');
+        $('#task_progress').css('width', '0%').html('0%').parent().addClass('hide');
+        $("#task_result_container").addClass('hide');
+        $("#task_result_container").find('li').remove();
+        $("#task_result_container").find('pre').remove();
+        $('#iiscreate').hide();
+        $("#post_task_btn").removeClass('hide');
+        $("#create_task_btn").addClass('hide');
+        $("#getsite").show()
+        $('#iisrestart').hide()
+    }
+}
+
+function GetTaskResult(task_id, site_list, nowtime, assets) {
+    $.getJSON("{% url 'ops:iis_job_status'  %}", {'task_id': task_id}, function (callback) {
+        var stop = false;
+        var task_counter = 0;
+        $.each(callback.status, function (index, r) {
+            var message = r.message;
+            if (message.length == 0) {
+                console.log('空')
+            } else {
+                $('[bind_host_id]').each(function () {
+                    if ($(this).attr('bind_host_id') == r.host_name[0].hostname + nowtime) {
+                        var message_ = [];
+                        for (var index in message) {
+                            if (JSON.stringify(message[index]).indexOf("Error") != -1 || JSON.stringify(message[index]).indexOf("error")!=-1) {
+                                if (JSON.stringify(message[index]).indexOf("physical_path") != -1) {
+                                    message_.push(JSON.stringify("站点" + message[index].site + ":" + "请检查站点是否存在"));
+                                }else if (JSON.stringify(message[index]).indexOf("Connection refused") != -1) {
+                                    message_.push(JSON.stringify("站点" + message[index].site + ":" + "机器无法连接"));
+                                }else if (JSON.stringify(message[index]).indexOf("Connection timed out") != -1) {
+                                    message_.push(JSON.stringify("站点" + message[index].site + ":" + "机器无法连接"));
+                                }else if (JSON.stringify(message[index]).indexOf("Permission denied") != -1 || JSON.stringify(message[index]).indexOf("permission denied") != -1){
+                                    message_.push(JSON.stringify("站点" + message[index].site + ":" + "Permission denied ！"));
+                                }else {
+                                    message_.push(JSON.stringify("站点" + message[index].site + ":" + "请检查站点名和机器连通性！"));
+                                }
+                                $(this).removeClass('hide');
+                                $(this).next().removeClass('hide');
+                                $(this).parent().removeClass('hide');
+                            }
+                        }
+                        $(this).next().html(message_);
+                        $(this).css('color', 'red');
+                        $(this).next().css('color', 'red');
+                    }
+                });
+            }
+            if (r.status == 2) {
+                stop = true;
+                task_counter += 1
+            } else {
+                stop = false
+            }
+        });
+        var finished_percent = task_counter / task_id.length * 100;
+        $('#task_progress').parent().removeClass('hide');
+        $('#task_progress').css('width', finished_percent.toFixed(1) + '%').html(finished_percent.toFixed(1) + "%");
+
+        if (stop) {
+            clearInterval(ResultRefreshObj);
+            $("#post_task_btn").removeClass("disabled");
+        }
+    })
+}
+
+$("#post_task_btn").click(function (event) {
+    event.preventDefault();
+    var t_data = {};
+    var assets = getSelectedAssetsNode_();
+    var formArray = $('#create-template').serializeArray();
+    $.each(formArray, function () {
+        if (t_data[this.name] !== undefined) {
+            if (!t_data[this.name].push) {
+                t_data[this.name] = [t_data[this.name]];
+            }
+            t_data[this.name].push(this.value || '');
+        } else {
+            t_data[this.name] = this.value || '';
+        }
+    });
+    $.each($('#iisrestart input:checkbox:checked'),function () {
+        t_data.cmd += ($(this).parent().next().html()) + ','
+    });
+    var nowtime = new Date().getTime();
+    if (assets[0].length == 0) {
+        $("#message").show();
+        $('#message').children().children().html('请选择主机');
+        setTimeout('$("#message").hide();',3000)
+    } else {
+        var s1 = true
+    }
+
+    if (t_data.cmd.length == 0) {
+        $('#message').show();
+        $('#message').children().children().html('站点名必填');
+        setTimeout('$("#message").hide();',3000)
+    } else {
+        var s4 = true
+    }
+
+    $('#task_progress').css('width', '0%').html('0%');
+    $("#task_result_container").addClass('hide');
+    $("#task_result_container").find('li').remove();
+    $("#task_result_container").find('pre').remove();
+
+    if (s1 && s4) {
+        $("#post_task_btn").addClass("disabled");
+        var data = JSON.stringify({
+            "host_id": assets[0].map(function (node) {
+                return node.id
+            }), "run_as": assets[1], "t_data": t_data
+        });
+        var csrftokens = $.cookie('csrftoken');
+
+        $.ajax({
+            url: "/ops/play/createjobtemplates/",
+            type: "post",
+            data: data,
+            dataType: 'json',
+            headers: {
+                "X-CSRFToken": csrftokens,
+            },
+            async: true,
+            cache: false,
+            contentType: false,
+            processData: false,
+            success: function (data) {
+                if (data.douhao == 1){
+                    $('#message').show();
+                    $('#message').children().children().html('英文逗号！');
+                    setTimeout('$("#message").hide();',3000)
+                    $("#post_task_btn").removeClass("disabled");
+                }else {
+                $.each(assets[0], function (index, r) {
+                    var li_ele = "<li  class=\"hide\" bind_host_id='" + r.name + nowtime + "'>Host:" + r.name + "----------------<span></span></li><pre  class=\"hide\" >uploading</pre>";
+                    $("#task_result_container").append(li_ele);
+                });
+                $('#task_progress').parent().removeClass('hide');
+
+                ResultRefreshObj = setInterval(function () {
+                    GetTaskResult(data.task_id, data.site_list, nowtime, assets);
+                }, 2000);
+                }
+            },
+            error: function () {
+                $('#message').show();
+                $('#message').children().children().html(' 服务端错误！');
+                $("#post_task_btn").removeClass("disabled");
+            }
+        })
+    }
+});
+
+function GetTaskResult_(task_id, site_list, nowtime, assets) {
+    $.getJSON("{% url 'ops:iis_create_status'  %}", {'task_id': task_id}, function (callback) {
+        var stop = false;
+        var task_counter = 0;
+        $.each(callback.status, function (index, r) {
+            $('[bind_host_id]').each(function () {
+                if ($(this).attr('bind_host_id') == r.host_name[0].hostname + nowtime) {
+                    $(this).next().html(r.message);
+                    var me = $(this).next().html();
+                    if (me.indexOf("Error") != -1 || me.indexOf("error")!=-1) {
+                        if (me.indexOf("physical_path") != -1){
+                            $(this).next().html("物理路径错误");
+                        }else if (me.indexOf("Connection refused") != -1) {
+                            $(this).next().html("机器无法连接");
+                        }else if (me.indexOf("Connection timed out") != -1) {
+                            $(this).next().html("机器无法连接");
+                        }else if (me.indexOf("当文件已存在时，无法创建该文件") != -1){
+                            $(this).next().html("域名：端口已存在");
+                        }else if (me.indexOf("Permission denied") != -1 || me.indexOf("permission denied") != -1) {
+                            $(this).next().html("Permission denied ！");
+                        }else {
+                            $(this).next().html("检查套接字是否冲突以及主机的连通性！");
+                        }
+                        $(this).removeClass('hide');
+                        $(this).next().removeClass('hide');
+                        $(this).parent().removeClass('hide');
+                        $(this).css('color', 'red');
+                        $(this).next().css('color', 'red');
+                    }
+                }
+            });
+            if (r.status == 2) {
+                stop = true;
+                task_counter += 1
+            }else {
+                stop = false
+            }
+        });
+        var finished_percent = task_counter /  task_id.length * 100;
+        $('#task_progress').parent().removeClass('hide');
+        $('#task_progress').css('width',finished_percent.toFixed(1)+'%').html(finished_percent.toFixed(1)+"%");
+
+        if (stop) {
+            clearInterval(ResultRefreshObj);
+            $("#create_task_btn").removeClass("disabled");
+        }
+    });
+}
+
+$("#create_task_btn").click(function (event) {
+    event.preventDefault();
+    var t_data = {};
+    var assets = getSelectedAssetsNode_();
+    var formArray = $('#create-template').serializeArray();
+    $.each(formArray, function () {
+        if (t_data[this.name] !== undefined) {
+            if (!t_data[this.name].push) {
+                t_data[this.name] = [t_data[this.name]];
+            }
+            t_data[this.name].push(this.value || '');
+        } else {
+            t_data[this.name] = this.value || '';
+        }
+    });
+    var nowtime = new Date().getTime();
+
+
+     if (assets[0].length == 0) {
+         $("#message").show();
+         $('#message').children().children().html('请选择主机');
+         setTimeout('$("#message").hide();',3000)
+     } else {
+         var s1 = true
+     }
+
+    if (t_data.cmd.length == 0) {
+        $('#message').show();
+        $('#message').children().children().html('站点名必填');
+        setTimeout('$("#message").hide();',3000)
+    } else {
+        var s4 = true
+    }
+    if (t_data.pdir.length == 0) {
+        $('#message').show();
+        $('#message').children().children().html('物理路径必填');
+        setTimeout('$("#message").hide();',3000)
+    } else {
+        var s2 = true
+    }
+
+    $('#task_progress').css('width', '0%').html('0%');
+    $("#task_result_container").addClass('hide');
+    $("#task_result_container").find('li').remove();
+    $("#task_result_container").find('pre').remove();
+
+    if (s1 && s2 && s4) {
+        $("#create_task_btn").addClass("disabled");
+        var data = JSON.stringify({
+            "host_id": assets[0].map(function (node) {
+                return node.id
+            }), "run_as": assets[1], "t_data": t_data
+        });
+        var csrftokens = $.cookie('csrftoken');
+
+        $.ajax({
+                url: "{% url 'ops:iis_create_website' %}",
+                type: "post",
+                data: data,
+                dataType: 'json',
+                headers: {
+                    "X-CSRFToken": csrftokens,
+                },
+                async: true,
+                cache: false,
+                contentType: false,
+                processData: false,
+                success: function (data) {
+                    if (data.douhao == 1){
+                        $('#message').show();
+                        $('#message').children().children().html('英文逗号！');
+                        setTimeout('$("#message").hide();',3000)
+                        $("#post_task_btn").removeClass("disabled");
+                    }else if (data.douhao == 2){
+                        $('#message').show();
+                        $('#message').children().children().html('仅支持单站点！');
+                        setTimeout('$("#message").hide();',3000)
+                        $("#post_task_btn").removeClass("disabled");
+                    } else {
+                    $.each(assets[0], function (index, r) {
+                        var li_ele = "<li  class=\"hide\" bind_host_id='" + r.name + nowtime + "'>Host:" + r.name + "----------------<span></span></li><pre  class=\"hide\" >uploading</pre>";
+                        $("#task_result_container").append(li_ele);
+                    });
+                    $('#task_progress').parent().removeClass('hide');
+
+                    ResultRefreshObj = setInterval(function () {
+                        GetTaskResult_(data.task_id, data.site_list, nowtime, assets);
+                    }, 2000);
+                    }
+                },
+                error: function () {
+                    $('#message').show();
+                    $('#message').children().children().html(' 服务端错误！');
+                    $("#post_task_btn").removeClass("disabled");
+                }
+            })
+    }
+})
+</script>
+<script>
+    $('#getsite').click(function () {
+        var assets = getSelectedAssetsNode_();
+        var table = $('table > tbody');
+        table.html('');
+        var th_ = '';
+        var th = '';
+        var other_ = '';
+        if (assets[0].length != 0) {
+            $.getJSON("{% url 'ops:iis_getsite' %}", {"host_id": assets[0].map(function (node) {return node.id})}, function (callback) {
+                if (callback.site.length >= 3){
+                    $.each(callback.site, function (key, data) {
+                        th += '<td class="text-center"><input type="checkbox" class="text-center ipt_check"></td><td class="text-center">' + data + '</td>';
+                        if ((key+1)%3 == 0){
+                            th_ += '<tr role="row" class="odd">'+ th + '</tr>';
+                            th = ''
+                        }
+                    });
+                    var other = callback.site.length % 3;
+                    for (var i =1; i <= other; i++){
+                        other_ += '<td class="text-center"><input type="checkbox" class="text-center ipt_check"></td><td class="text-center">'  + callback.site[callback.site.length - i] + '</td>';
+                    }
+                    th_ += '<tr role="row" class="odd">'+ other_ + '</tr>';
+                    table.append(th_)
+                }else {
+                    $.each(callback.site, function (key, data) {
+                         th += '<td class="text-center"><input type="checkbox" class="text-center ipt_check"></td><td class="text-center">' + data + '</td>';
+                    });
+                    th_ += '<tr role="row" class="odd">'+ th + '</tr>';
+                    table.append(th_)
+                }
+            });
+            $('#iisrestart').show()
+        }
+    })
+</script>
+
+{% endblock %}

@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block custom_head_css_js %}
+    <link href="{% static 'css/plugins/datatables/datatables.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/plugins/ztree/awesomeStyle/awesome.css' %}" rel="stylesheet">
+    <script type="text/javascript" src="{% static 'js/plugins/ztree/jquery.ztree.all.min.js' %}"></script>
+    <script src="{% static 'js/jquery.form.min.js' %}"></script>
+    <script src="{% static 'js/plugins/datatables/datatables.min.js' %}"></script>
+    <script src="{% static  'js/jquery.cookie.js' %} "></script>
+{% endblock %}
+
+{% block content %}
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                     <h5>
+                        IDC
+                    </h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="uc pull-left m-r-5"><a class="btn btn-sm btn-primary btn-create-asset" href="/assets/nodeview/createnode/">添加IDC</a></div>
+                    <!--<form action="" method="post" class="form-horizontal">-->
+                    <table class="table table-striped table-bordered table-hover " id="asset_list_table"  >
+                        {% csrf_token %}
+                        <thead>
+                            <tr>
+                                <!--<th class="text-center"><input type="checkbox" class="ipt_check_all"></th>-->
+                                <th hidden>nodeid</th>
+                                <th class="text-center">Name</th>
+                                <th class="text-center">联系人</th>
+                                <th class="text-center">联系电话</th>
+                                <th class="text-center">备注</th>
+                                <th class="text-center">动作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for tem in nodes %}
+                            <tr role="row" class="odd">
+                                <th hidden>{{ tem.id }}</th>
+                                <td class="text-center">{{ tem.node_name.value }}</td>
+                                <td class="text-center">{{ tem.user }}</td>
+                                <td class="text-center">{{ tem.tel }}</td>
+                                <td class="text-center">{{ tem.message }}</td>
+                                <td class="text-center">
+                                    <button class="btn btn-xs btn-info" type="button" onclick="onUpdate(this)" >更新</button>
+                                    <button class="btn btn-xs btn-danger m-l-xs btn_asset_delete" type="button" onclick="onDel(this)">删除</button>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                    <!--</form>-->
+                    <div type="margin:30px auto;">
+                    <!--<div class="xterm-viewport" style="background-color: rgb(31, 27, 27);"><div class="xterm-scroll-area" id="stdout" style="height: 408px;"></div></div>-->
+                    <div class="xterm-viewport" style=" width: 1000px; height:408px; " id="stdout"  disabled="disabled" ></div>
+                </div>
+
+            </div>
+        </div>
+            </div>
+        </div>
+
+
+
+<script>
+    $(document).ready(function() {
+        $("#asset_list_table").dataTable({
+            "bPaginate": true, //是否显示（应用）分页器
+            "bInfo": true, //是否显示页脚信息，DataTables插件左下角显示记录数
+            "sPaginationType": "full_numbers", //详细分页组，可以支持直接跳转到某页
+            "bSort": true, //是否启动各个字段的排序功能
+            //"aaSorting" : [[0, "desc"]], //默认的排序方式，第2列，升序排列
+            "bFilter": true, //是否启动过滤、搜索功能
+        });
+        $('#asset_list_table_length').parent().eq(0).attr('class','col-sm-4');
+        $('#asset_list_table_filter').parent().eq(0).attr('class','col-sm-6');
+    });
+    
+    function onUpdate(r) {
+        var t_id = $(r).parent().siblings().eq(0).html();
+        url = window.location.protocol + "//" + window.location.host + "/assets/nodeview/updatenode/" + t_id + "/";
+        //console.log(url);
+        window.location.href = url
+    }
+
+
+    function onDel(r) {
+        var t_id = $(r).parent().siblings().eq(0).html();
+        url = window.location.protocol + "//" + window.location.host + "/assets/nodeview/nodedel/" + t_id + "/";
+        window.location.href = url
+    }
+</script>
+
+
+{% endblock %}

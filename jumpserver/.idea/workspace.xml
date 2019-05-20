@@ -1,0 +1,1216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/apps/awx/views.py" line="3" />
+    <bookmark url="file://$PROJECT_DIR$/apps/assets/urls/views_urls.py" line="66" />
+    <bookmark url="file://$PROJECT_DIR$/apps/ops/templates/ops/multitask_file_transfer.html" line="116" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f3495fca-10d3-40bd-a450-b00a19b4974d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.dockerignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/assets/forms/asset.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/assets/forms/asset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/assets/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/assets/migrations/0002_auto_20180105_1807.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/assets/migrations/0003_auto_20180109_2331.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/assets/migrations/0004_auto_20180125_1218.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/assets/migrations/0005_auto_20180126_1637.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/assets/migrations/0006_auto_20180130_1502.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/assets/migrations/0007_auto_20180225_1815.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/assets/migrations/0008_auto_20180306_1804.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/assets/migrations/0009_auto_20180307_1212.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/assets/migrations/0010_auto_20180307_1749.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/assets/migrations/0011_auto_20180326_0957.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/assets/migrations/0012_auto_20180404_1302.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/assets/migrations/0013_auto_20180411_1135.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/assets/migrations/0014_auto_20180427_1245.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/assets/migrations/0015_auto_20180510_1235.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/assets/migrations/0016_auto_20180511_1203.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/assets/migrations/0017_auto_20180702_1415.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/assets/migrations/0018_auto_20180807_1116.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/assets/migrations/0019_auto_20180816_1320.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/assets/migrations/0020_auto_20180816_1652.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/assets/migrations/0021_auto_20180903_1132.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/assets/migrations/0022_auto_20181012_1717.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/assets/migrations/0023_auto_20181016_1650.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/assets/migrations/0024_auto_20181219_1614.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/assets/migrations/0025_auto_20190221_1902.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/assets/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/assets/models/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/assets/models/asset.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/assets/models/asset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/assets/models/node.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/assets/models/node.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/assets/tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/assets/tasks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/assets/templates/assets/admin_user_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/assets/templates/assets/admin_user_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/assets/templates/assets/asset_create.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/assets/templates/assets/asset_create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/assets/templates/assets/asset_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/assets/templates/assets/asset_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/assets/templates/assets/asset_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/assets/templates/assets/asset_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/assets/templates/assets/asset_update.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/assets/templates/assets/asset_update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/assets/templates/assets/system_user_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/assets/templates/assets/system_user_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/assets/urls/views_urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/assets/urls/views_urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/assets/views/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/assets/views/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/assets/views/system_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/assets/views/system_user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/audits/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/audits/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/audits/urls/view_urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/audits/urls/view_urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/audits/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/audits/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/jumpserver/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/jumpserver/conf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/jumpserver/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/jumpserver/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/jumpserver/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/jumpserver/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/jumpserver/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/jumpserver/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/ops/ansible/callback.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/ops/ansible/callback.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/ops/ansible/runner.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/ops/ansible/runner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/ops/api/command.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/ops/api/command.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/ops/celery/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/ops/celery/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/ops/inventory.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/ops/inventory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/ops/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/ops/models/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/ops/models/adhoc.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/ops/models/adhoc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/ops/models/command.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/ops/models/command.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/ops/templates/ops/command_execution_create.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/ops/templates/ops/command_execution_create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/ops/urls/api_urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/ops/urls/api_urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/ops/urls/view_urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/ops/urls/view_urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/ops/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/ops/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/ops/views/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/ops/views/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/ops/views/command.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/ops/views/command.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/perms/templates/perms/asset_permission_create_update.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/perms/templates/perms/asset_permission_create_update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/perms/urls/views_urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/perms/urls/views_urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/perms/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/perms/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/animate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/bootstrap-style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/colorbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/images/jbox-button1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/images/jbox-close.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/images/jbox-icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/jumpserver.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/login-style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/otp.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/patterns/congruent_pentagon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/patterns/header-profile-skin-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/patterns/header-profile-skin-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/patterns/header-profile-skin-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/patterns/header-profile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/patterns/otis_redding.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/patterns/shattered.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/patterns/triangular.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/codemirror/ambiance.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/codemirror/codemirror.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/cropper/cropper.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/datatables/datatables.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/datatables/datatables.min.css.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/datepicker/datepicker3.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/daterangepicker/daterangepicker.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/dropzone/basic.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/dropzone/dropzone.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/footable/fonts/footable.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/footable/fonts/footable.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/footable/fonts/footable.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/footable/fonts/footable.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/footable/footable.core.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/fullcalendar/fullcalendar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/fullcalendar/fullcalendar.print.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/iCheck/custom.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/iCheck/green.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/iCheck/green@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/images/bootstrap-colorpicker/alpha-horizontal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/images/bootstrap-colorpicker/alpha.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/images/bootstrap-colorpicker/hue-horizontal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/images/bootstrap-colorpicker/hue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/images/bootstrap-colorpicker/saturation.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/images/sort.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/images/sort_asc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/images/sort_desc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/images/sprite-skin-flat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/images/sprite-skin-flat2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/images/sprite-skin-nice.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/images/sprite-skin-simple.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/images/spritemap.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/images/spritemap@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/inputTags.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/jstree/32px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/jstree/39px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/jstree/40px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/jstree/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/jstree/style.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/jstree/throbber.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/layer/default/icon-ext.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/layer/default/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/layer/default/loading-0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/layer/default/loading-1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/layer/default/loading-2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/layer/layer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/select2/select2.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/steps/jquery.steps.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/sweetalert/sweetalert.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/toastr/toastr.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/vaildator/images/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/vaildator/images/validator_default.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/vaildator/images/validator_simple.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/vaildator/jquery.validator.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/ztree/awesomeStyle/awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/ztree/awesomeStyle/awesome.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/ztree/awesomeStyle/fa.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/ztree/awesomeStyle/fa.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/ztree/awesomeStyle/img/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/ztree/demo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/ztree/metroStyle/img/line_conn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/ztree/metroStyle/img/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/ztree/metroStyle/img/metro.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/ztree/metroStyle/img/metro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/ztree/metroStyle/metroStyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/ztree/ztreestyle/img/diy/1_close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/ztree/ztreestyle/img/diy/1_open.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/ztree/ztreestyle/img/diy/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/ztree/ztreestyle/img/diy/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/ztree/ztreestyle/img/diy/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/ztree/ztreestyle/img/diy/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/ztree/ztreestyle/img/diy/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/ztree/ztreestyle/img/diy/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/ztree/ztreestyle/img/diy/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/ztree/ztreestyle/img/diy/9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/ztree/ztreestyle/img/line_conn.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/ztree/ztreestyle/img/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/ztree/ztreestyle/img/zTreeStandard.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/ztree/ztreestyle/img/zTreeStandard.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/plugins/ztree/ztreestyle/ztreestyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/fonts/font_otp/iconfont.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/fonts/font_otp/iconfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/fonts/font_otp/iconfont.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/fonts/font_otp/iconfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/fonts/font_otp/iconfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/fonts/font_otp/iconfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/img/authenticator_android.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/img/authenticator_iphone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/img/avatar/admin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/img/avatar/user.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/img/facio.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/img/header-profile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/img/login/login-image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/img/logo-text.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/img/otp_auth.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/img/root.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/angular-route.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/angular.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/bootstrap-dialog.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/inspinia.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/jquery-2.1.1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/jquery-ui-1.10.4.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/jquery-ui.custom.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/jquery.colorbox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/jquery.form.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/jquery.shiftcheckbox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/jumpserver.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/mindmup-editabletable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/codemirror/codemirror.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/codemirror/mode/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/codemirror/mode/meta.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/codemirror/mode/shell/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/codemirror/mode/shell/shell.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/codemirror/mode/shell/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/cropper/cropper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/datatables/datatables.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/datatables/i18n/English.lang" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/datatables/i18n/zh-hans.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/datatables/pdfmake.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/datepicker/bootstrap-datepicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/daterangepicker/daterangepicker.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/daterangepicker/moment.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/demo/peity-demo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/dropzone/dropzone.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/echarts/chart/bar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/echarts/chart/chord.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/echarts/chart/eventRiver.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/echarts/chart/force.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/echarts/chart/funnel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/echarts/chart/gauge.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/echarts/chart/heatmap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/echarts/chart/k.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/echarts/chart/line.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/echarts/chart/map.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/echarts/chart/pie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/echarts/chart/radar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/echarts/chart/scatter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/echarts/chart/tree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/echarts/chart/treemap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/echarts/chart/venn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/echarts/chart/wordCloud.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/echarts/echarts-all.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/echarts/echarts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/footable/footable.all.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/footable/footable.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/fullcalendar/fullcalendar.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/fullcalendar/moment.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/highcharts/adapters/standalone-framework.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/highcharts/adapters/standalone-framework.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/highcharts/highcharts-3d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/highcharts/highcharts-3d.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/highcharts/highcharts-all.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/highcharts/highcharts-more.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/highcharts/highcharts-more.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/highcharts/highcharts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/highcharts/highcharts.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/highcharts/modules/canvas-tools.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/highcharts/modules/canvas-tools.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/highcharts/modules/data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/highcharts/modules/data.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/highcharts/modules/drilldown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/highcharts/modules/drilldown.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/highcharts/modules/exporting.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/highcharts/modules/exporting.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/highcharts/modules/funnel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/highcharts/modules/funnel.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/highcharts/modules/heatmap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/highcharts/modules/heatmap.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/highcharts/modules/no-data-to-display.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/highcharts/modules/no-data-to-display.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/highcharts/modules/solid-gauge.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/highcharts/modules/solid-gauge.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/highcharts/themes/dark-blue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/highcharts/themes/dark-green.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/highcharts/themes/dark-unica.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/highcharts/themes/gray.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/highcharts/themes/grid-light.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/highcharts/themes/grid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/highcharts/themes/sand-signika.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/highcharts/themes/skies.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/iCheck/icheck.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/inputTags.jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/jstree/jstree.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/layer/layer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/layer/skin/default/icon-ext.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/layer/skin/default/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/layer/skin/default/loading-0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/layer/skin/default/loading-1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/layer/skin/default/loading-2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/layer/skin/layer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/magnific/jquery.magnific-popup.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/metisMenu/jquery.metisMenu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/pace/pace.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/peity/jquery.peity.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/qrcode/qrcode.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/select2/select2.full.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/slimscroll/jquery.slimscroll.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/slimscroll/jquery.slimscroll.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/steps/jquery.steps.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/sweetalert/sweetalert.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/toastr/toastr.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/validate/jquery.validate.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/validator/images/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/validator/images/validator_default.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/validator/images/validator_simple.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/validator/jquery.validator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/validator/zh_CN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/xterm/addons/attach/attach.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/xterm/addons/attach/attach.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/xterm/addons/fit/fit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/xterm/addons/fit/fit.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/xterm/addons/fullscreen/fullscreen.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/xterm/addons/fullscreen/fullscreen.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/xterm/addons/fullscreen/fullscreen.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/xterm/addons/search/search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/xterm/addons/search/search.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/xterm/addons/terminado/terminado.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/xterm/addons/terminado/terminado.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/xterm/addons/webLinks/webLinks.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/xterm/addons/webLinks/webLinks.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/xterm/addons/winptyCompat/winptyCompat.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/xterm/addons/winptyCompat/winptyCompat.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/xterm/addons/zmodem/zmodem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/xterm/addons/zmodem/zmodem.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/xterm/xterm.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/xterm/xterm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/xterm/xterm.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/ztree/jquery-1.4.4.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/ztree/jquery.ztree.all.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/plugins/ztree/jquery.ztree.exhide.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/pwstrength-bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/record.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/socket.io.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/term.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/webterminal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/js/wssh.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/css/elfinder-bootstrap-theme.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/css/elfinder.full.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/css/elfinder.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/css/theme-gray.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/css/theme-gray.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/css/theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/css/theme.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/elfinder.full.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/elfinder.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/extras/editors.default.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/extras/editors.default.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/extras/quicklook.googledocs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/extras/quicklook.googledocs.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/i18n/elfinder.LANG.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/i18n/elfinder.ar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/i18n/elfinder.bg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/i18n/elfinder.ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/i18n/elfinder.cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/i18n/elfinder.da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/i18n/elfinder.de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/i18n/elfinder.el.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/i18n/elfinder.es.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/i18n/elfinder.fa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/i18n/elfinder.fallback.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/i18n/elfinder.fo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/i18n/elfinder.fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/i18n/elfinder.he.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/i18n/elfinder.hr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/i18n/elfinder.hu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/i18n/elfinder.id.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/i18n/elfinder.it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/i18n/elfinder.ja.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/i18n/elfinder.ko.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/i18n/elfinder.nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/i18n/elfinder.no.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/i18n/elfinder.pl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/i18n/elfinder.pt_BR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/i18n/elfinder.ro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/i18n/elfinder.ru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/i18n/elfinder.si.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/i18n/elfinder.sk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/i18n/elfinder.sl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/i18n/elfinder.sr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/i18n/elfinder.sv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/i18n/elfinder.tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/i18n/elfinder.ug_CN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/i18n/elfinder.uk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/i18n/elfinder.vi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/i18n/elfinder.zh_CN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/i18n/elfinder.zh_TW.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/i18n/help/cs.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/i18n/help/en.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/i18n/help/es.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/i18n/help/ja.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/i18n/help/ko.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/i18n/help/pl.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/i18n/help/ru.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/i18n/help/sk.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/icons/material.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/icons/material.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/icons/material.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/icons/material.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/icons/material.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/images/icons-big.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/images/icons-small.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/images/loading.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/img/resize.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/static/plugins/elfinder/proxy/elFinderSupportVer1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/templates/_base_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/templates/_base_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/templates/_copyright.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/templates/_copyright.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/templates/_footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/templates/_footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/templates/_header_bar.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/templates/_header_bar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/templates/_nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/templates/_nav.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/templates/_nav_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/templates/_nav_user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/templates/_user_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/templates/_user_profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/templates/flash_message_standalone.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/templates/flash_message_standalone.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/users/templates/users/_base_otp.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/users/templates/users/_base_otp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/users/templates/users/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/users/templates/users/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/media/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_static/img/logo-text.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_static/img/logo-text.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entrypoint.sh" beforeDir="false" afterPath="$PROJECT_DIR$/entrypoint.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jms" beforeDir="false" afterPath="$PROJECT_DIR$/jms" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/backup_db.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utils/backup_db.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/clean_migrations.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utils/clean_migrations.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/make_migrations.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utils/make_migrations.sh" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/apps/doc/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="968">
+              <caret line="79" column="11" selection-start-line="79" selection-start-column="11" selection-end-line="79" selection-end-column="11" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/doc/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="11" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/doc/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="Jupyter Notebook" />
+        <option value="Python Unit Test" />
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>proxy</find>
+      <find>me</find>
+      <find>help</find>
+      <find>iisbind</find>
+      <find>get_host_crontab</find>
+      <find>url</find>
+      <find>simpleAlertShelter</find>
+      <find>shelter</find>
+      <find>diff</find>
+      <find>push_system_user_util</find>
+      <find>push_system_user_to_assets</find>
+      <find>org</find>
+      <find>initTable()</find>
+      <find>#asset_list_table</find>
+      <find>task</find>
+      <find>created_by</find>
+      <find>system_user</find>
+      <find>AdHocRunner</find>
+      <find>run</find>
+      <find>win_shell</find>
+      <find>item</find>
+      <find>variable_manager</find>
+      <find>become_info</find>
+      <find>update_or_create_ansible_task</find>
+      <find>sudo</find>
+      <find>BaseHost</find>
+      <find>host_manager_class</find>
+      <find>become</find>
+      <find>create</find>
+      <find>c</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/apps/ops/crontab/__init__.py" />
+        <option value="$PROJECT_DIR$/apps/perms/templates/perms/asset_permission_create_update.html" />
+        <option value="$PROJECT_DIR$/apps/assets/views/network.py" />
+        <option value="$PROJECT_DIR$/apps/assets/models/user.py" />
+        <option value="$PROJECT_DIR$/apps/ops/migrations/0033_auto_20190418_1832.py" />
+        <option value="$PROJECT_DIR$/apps/ops/migrations/0032_auto_20190418_1820.py" />
+        <option value="$PROJECT_DIR$/jms" />
+        <option value="$PROJECT_DIR$/apps/assets/views/system_user.py" />
+        <option value="$PROJECT_DIR$/apps/assets/templates/assets/network_list.html" />
+        <option value="$PROJECT_DIR$/apps/templates/_base_list.html" />
+        <option value="$PROJECT_DIR$/apps/assets/models/asset.py" />
+        <option value="$PROJECT_DIR$/apps/assets/templates/assets/asset_list.html" />
+        <option value="$PROJECT_DIR$/apps/jumpserver/settings.py" />
+        <option value="$PROJECT_DIR$/apps/assets/api/asset.py" />
+        <option value="$PROJECT_DIR$/apps/assets/templates/assets/asset_update.html" />
+        <option value="$PROJECT_DIR$/apps/assets/forms/asset.py" />
+        <option value="$PROJECT_DIR$/apps/assets/templates/assets/asset_create.html" />
+        <option value="$PROJECT_DIR$/apps/ops/templates/ops/crontab_update_task.html" />
+        <option value="$PROJECT_DIR$/apps/audits/templates/audits/upfile_log_list.html" />
+        <option value="$PROJECT_DIR$/apps/audits/templates/audits/iis_log_list.html" />
+        <option value="$PROJECT_DIR$/apps/audits/urls/view_urls.py" />
+        <option value="$PROJECT_DIR$/apps/audits/views.py" />
+        <option value="$PROJECT_DIR$/apps/audits/templates/audits/crontab_log_list.html" />
+        <option value="$PROJECT_DIR$/apps/assets/templates/assets/system_user_list.html" />
+        <option value="$PROJECT_DIR$/apps/audits/models.py" />
+        <option value="$PROJECT_DIR$/data/static/css/simpleAlert.css" />
+        <option value="$PROJECT_DIR$/apps/ops/templates/ops/crontab_create_task.html" />
+        <option value="$PROJECT_DIR$/apps/perms/views.py" />
+        <option value="$PROJECT_DIR$/apps/assets/templates/assets/admin_user_list.html" />
+        <option value="$PROJECT_DIR$/apps/ops/utils.py" />
+        <option value="$PROJECT_DIR$/apps/ops/templates/ops/crontab_view_list.html" />
+        <option value="$PROJECT_DIR$/apps/assets/tasks.py" />
+        <option value="$PROJECT_DIR$/data/static/js/simpleAlert.js" />
+        <option value="$PROJECT_DIR$/apps/ops/crontab/mine_ansible.py" />
+        <option value="$PROJECT_DIR$/apps/ops/models/adhoc.py" />
+        <option value="$PROJECT_DIR$/apps/ops/inventory.py" />
+        <option value="$PROJECT_DIR$/apps/ops/ansible/inventory.py" />
+        <option value="$PROJECT_DIR$/apps/ops/models/crontab.py" />
+        <option value="$PROJECT_DIR$/apps/ops/ansible/runner.py" />
+        <option value="$PROJECT_DIR$/apps/ops/views/crontab.py" />
+        <option value="$PROJECT_DIR$/apps/ops/templates/ops/multitask_host_list_component.html" />
+        <option value="$PROJECT_DIR$/apps/ops/an_que.py" />
+        <option value="$PROJECT_DIR$/apps/ops/crontab/task_crontab.py" />
+        <option value="$PROJECT_DIR$/apps/ops/views/playbook.py" />
+        <option value="$PROJECT_DIR$/apps/ops/urls/view_urls.py" />
+        <option value="$PROJECT_DIR$/apps/templates/_nav.html" />
+        <option value="$PROJECT_DIR$/apps/ops/templates/ops/multitask_file_transfer.html" />
+        <option value="$PROJECT_DIR$/apps/ops/templates/ops/create_job_templates.html" />
+        <option value="$PROJECT_DIR$/apps/doc/urls.py" />
+        <option value="$PROJECT_DIR$/apps/doc/models.py" />
+        <option value="$PROJECT_DIR$/apps/doc/views.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="119" />
+    <option name="y" value="69" />
+    <option name="width" value="1589" />
+    <option name="height" value="1034" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="eazyops" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jumpserver" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eazyops" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jumpserver" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eazyops" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jumpserver" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="doc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eazyops" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jumpserver" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="ops" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eazyops" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jumpserver" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/resource/课程实战案例资料包/class-framework" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\jumpserver\data\static\loading" />
+      <recent name="D:\jumpserver\apps\ops\crontab" />
+      <recent name="D:\jumpserver\apps\ops" />
+      <recent name="D:\jumpserver\apps\assets\views" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\jumpserver\data\static\img" />
+      <recent name="D:\jumpserver\data\static\css" />
+      <recent name="D:\jumpserver\data\static\js" />
+      <recent name="D:\jumpserver\apps\audits\templates\audits" />
+      <recent name="D:\jumpserver\apps\static\css\plugins\spread" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f3495fca-10d3-40bd-a450-b00a19b4974d" name="Default Changelist" comment="" />
+      <created>1552015588049</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1552015588049</updated>
+      <workItem from="1552015590442" duration="6000" />
+      <workItem from="1552015645419" duration="2081000" />
+      <workItem from="1552017783671" duration="110803000" />
+      <workItem from="1552444260894" duration="18122000" />
+      <workItem from="1552473595467" duration="1948000" />
+      <workItem from="1552529056181" duration="97000" />
+      <workItem from="1552529377396" duration="231942000" />
+      <workItem from="1553307412339" duration="103266000" />
+      <workItem from="1553750168665" duration="96578000" />
+      <workItem from="1554173623352" duration="2620000" />
+      <workItem from="1554186311058" duration="1710000" />
+      <workItem from="1554275451167" duration="51131000" />
+      <workItem from="1554457965116" duration="45925000" />
+      <workItem from="1554779382155" duration="73583000" />
+      <workItem from="1555055647973" duration="12260000" />
+      <workItem from="1555129845908" duration="19652000" />
+      <workItem from="1555297446919" duration="62427000" />
+      <workItem from="1555466543356" duration="12538000" />
+      <workItem from="1555479130073" duration="8849000" />
+      <workItem from="1555488005702" duration="18386000" />
+      <workItem from="1555560249648" duration="20581000" />
+      <workItem from="1555581894136" duration="13672000" />
+      <workItem from="1555648738771" duration="97000" />
+      <workItem from="1555648852348" duration="210000" />
+      <workItem from="1555649083451" duration="86000" />
+      <workItem from="1555649196485" duration="45000" />
+      <workItem from="1555649258590" duration="26862000" />
+      <workItem from="1555732154780" duration="41582000" />
+      <workItem from="1555916128523" duration="87982000" />
+      <workItem from="1556244217655" duration="57428000" />
+      <workItem from="1556518500102" duration="14951000" />
+      <workItem from="1556687871362" duration="100755000" />
+      <workItem from="1557296881413" duration="4518000" />
+      <workItem from="1557379117537" duration="11311000" />
+      <workItem from="1557906816363" duration="5058000" />
+      <workItem from="1557977039859" duration="12896000" />
+      <workItem from="1558081736487" duration="1825000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1273783000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1641791" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946696" visible="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.329718" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.27982646" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5042644" side_tool="true" weight="0.03253796" />
+      <window_info anchor="bottom" id="Python Console" order="11" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="File Transfer" order="13" sideWeight="0.49573562" weight="0.96641386" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Remote Host" order="3" />
+      <window_info anchor="right" id="SciView" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23347548" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946696" visible="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.329718" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.27982646" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5042644" side_tool="true" weight="0.03253796" />
+      <window_info anchor="bottom" id="Python Console" order="11" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="File Transfer" order="13" sideWeight="0.49573562" weight="0.96641386" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Remote Host" order="3" />
+      <window_info anchor="right" id="SciView" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+      <path value="$PROJECT_DIR$/jumpserver" />
+    </ignored-roots>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/apps/assets/hands.py</url>
+          <line>13</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/.PyCharm2018.3/system/remote_sources/1859015443/1442905159/pytz/__init__.py</url>
+          <line>10</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/.PyCharm2018.3/system/remote_sources/1859015443/1442905159/django/db/models/aggregates.py</url>
+          <line>3</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/apps/assets/urls/views_urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-686" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/audits/urls/view_urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="19" column="83" lean-forward="true" selection-start-line="19" selection-start-column="67" selection-end-line="19" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/audits/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2109">
+          <caret line="118" column="35" selection-start-line="118" selection-start-column="35" selection-end-line="118" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/static/img/loading.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/static/css/simpleAlert.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="47" lean-forward="true" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/perms/tasks.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/perms/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/perms/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="78" column="15" selection-start-line="78" selection-start-column="15" selection-end-line="78" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/perms/forms.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/assets/models/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/remote_sources/1859015443/1369805001/django/db/models/query.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="489" column="8" selection-start-line="489" selection-start-column="8" selection-end-line="489" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/assets/templates/assets/admin_user_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-475">
+          <caret line="26" column="56" lean-forward="true" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/assets/templates/assets/system_user_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="32" column="60" lean-forward="true" selection-start-line="32" selection-start-column="60" selection-end-line="32" selection-end-column="60" />
+          <folding>
+            <element signature="n#style#0;n#font#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/assets/templates/assets/network_node_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="64" column="32" lean-forward="true" selection-start-line="39" selection-start-column="24" selection-end-line="64" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/static/js/jumpserver.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5799">
+          <caret line="517" selection-start-line="517" selection-end-line="517" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#li#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/static/js/plugins/datatables/datatables.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="217" column="202" selection-start-line="217" selection-start-column="202" selection-end-line="217" selection-end-column="202" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/static/js/plugins/ztree/jquery.ztree.all.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="108" column="433" selection-start-line="108" selection-start-column="433" selection-end-line="108" selection-end-column="433" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/assets/templates/assets/asset_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="442" column="5" lean-forward="true" selection-start-line="442" selection-start-column="5" selection-end-line="442" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/assets/models/user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-932">
+          <caret line="121" column="39" selection-start-line="121" selection-start-column="39" selection-end-line="121" selection-end-column="39" />
+          <folding>
+            <element signature="e#49#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/assets/views/system_user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="52" column="17" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/ops/tasks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-456" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/ops/templates/ops/crontab_view_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/static/js/simpleAlert.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="31" column="28" lean-forward="true" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/ops/crontab/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/ops/crontab/mine_ansible.py" />
+    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/1859015443/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="2842" column="8" selection-start-line="2842" selection-start-column="8" selection-end-line="2842" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/remote_sources/1859015443/1442905159/ansible/executor/task_queue_manager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="70" column="50" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/ops/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+          <folding>
+            <element signature="e#24#79#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/ops/ansible/inventory.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="55" column="37" lean-forward="true" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
+          <folding>
+            <element signature="e#24#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/ops/inventory.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="63" column="31" lean-forward="true" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
+          <folding>
+            <element signature="e#27#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/ops/ansible/callback.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-241">
+          <caret line="78" column="49" lean-forward="true" selection-start-line="78" selection-start-column="49" selection-end-line="78" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/ops/ansible/runner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="142" column="49" lean-forward="true" selection-start-line="142" selection-start-column="49" selection-end-line="142" selection-end-column="49" />
+          <folding>
+            <element signature="e#25#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/assets/tasks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="128" column="17" lean-forward="true" selection-start-line="128" selection-start-column="17" selection-end-line="128" selection-end-column="17" />
+          <folding>
+            <element signature="e#24#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/ops/models/adhoc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="201" column="30" lean-forward="true" selection-start-line="201" selection-start-column="30" selection-end-line="201" selection-end-column="30" />
+          <folding>
+            <element signature="e#25#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/ops/templates/ops/crontab_create_task.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="116" column="12" selection-start-line="116" selection-start-column="12" selection-end-line="116" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/ops/templates/ops/multitask_host_list_component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1292">
+          <caret line="68" column="29" selection-start-line="68" selection-start-column="29" selection-end-line="68" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/ops/crontab/task_crontab.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="30" column="48" lean-forward="true" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/static/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1729">
+          <caret line="232" column="31" lean-forward="true" selection-start-line="232" selection-start-column="31" selection-end-line="232" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/ops/urls/view_urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="36" column="74" selection-start-line="36" selection-start-column="74" selection-end-line="36" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/ops/models/crontab.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="28" column="51" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/ops/an_que.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="607">
+          <caret line="214" column="4" selection-start-line="214" selection-start-column="4" selection-end-line="214" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/ops/templates/ops/multitask_file_transfer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="84" column="45" selection-start-line="84" selection-start-column="40" selection-end-line="84" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/ops/views/crontab.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1">
+          <caret line="162" selection-start-line="162" selection-end-line="162" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/ops/views/playbook.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="305" column="8" lean-forward="true" selection-start-line="305" selection-start-column="8" selection-end-line="305" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/templates/_nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1349">
+          <caret line="71" column="99" selection-start-line="71" selection-start-column="99" selection-end-line="71" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/ops/templates/ops/create_job_templates.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
+          <folding>
+            <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#2;n#tr#0;n#thead#0;n#table#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#4;n#tr#0;n#thead#0;n#table#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/doc/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="968">
+          <caret line="79" column="11" selection-start-line="79" selection-start-column="11" selection-end-line="79" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/doc/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="11" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/doc/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

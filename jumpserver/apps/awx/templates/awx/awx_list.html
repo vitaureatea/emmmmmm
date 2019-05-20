@@ -1,0 +1,161 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block custom_head_css_js %}
+    <link href="{% static 'css/plugins/datatables/datatables.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/plugins/ztree/awesomeStyle/awesome.css' %}" rel="stylesheet">
+    <script type="text/javascript" src="{% static 'js/plugins/ztree/jquery.ztree.all.min.js' %}"></script>
+    <script src="{% static 'js/jquery.form.min.js' %}"></script>
+    <script src="{% static 'js/plugins/datatables/datatables.min.js' %}"></script>
+    <script src="{% static  'js/jquery.cookie.js' %} "></script>
+{% endblock %}
+
+{% block content %}
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                     <h5>
+                        任务列表
+                    </h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                    <table class="table table-striped table-bordered table-hover " id="asset_list_table" >
+                        {% csrf_token %}
+                        <thead>
+                            <tr>
+                                <!--<th class="text-center"><input type="checkbox" class="ipt_check_all"></th>-->
+                                <th class="text-center">任务ID</th>
+                                <th class="text-center">任务名称</th>
+                                <th class="text-center">上次成功时间</th>
+                                <th class="text-center">执行结果</th>
+                                <th class="text-center">动作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for tem in templates %}
+                            <tr role="row" class="odd">
+                                <td class="text-center">{{ tem.id }}</td>
+                                <td class="text-center"><a href="">{{ tem.name }}</a></td>
+                                <td class="text-center">{{ tem.last_stime }}</td>
+                                <td class="text-center">{{ tem.status }}</td>
+                                <td class="text-center">
+                                    <button class="btn btn-xs btn-info" type="button" onclick="toManager(this)" >运行</button>
+                                    <button class="btn btn-xs btn-danger m-l-xs btn_asset_delete" type="button" onclick="notManager(this)">取消</button>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                <div type="margin:30px auto;">
+                    <!--<div class="xterm-viewport" style="background-color: rgb(31, 27, 27);"><div class="xterm-scroll-area" id="stdout" style="height: 408px;"></div></div>-->
+                    <textarea class="xterm-viewport" style="background-color: rgb(31, 27, 27); width: 1000px; height:408px; overflow:scroll;" id="stdout"  disabled="disabled" >返回值：</textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        $("#asset_list_table").dataTable({
+            "bPaginate": true, //是否显示（应用）分页器
+            "bInfo": true, //是否显示页脚信息，DataTables插件左下角显示记录数
+            "sPaginationType": "full_numbers", //详细分页组，可以支持直接跳转到某页
+            "bSort": true, //是否启动各个字段的排序功能
+            //"aaSorting" : [[0, "desc"]], //默认的排序方式，第2列，升序排列
+            "bFilter": true, //是否启动过滤、搜索功能
+        });
+    })
+</script>
+
+<script>
+function toManager(r){
+     //var clickRow = r.parentNode.parentNode.rowIndex;//获取button行所在table的index
+     //alert(clickRow);
+    var t_name = $(r).parent().siblings().eq(1).html();  //rcode为另一td的id
+    var t_id = $(r).parent().siblings().eq(0).html();  //rcode为另一td的id
+
+    $(r).parent().siblings().eq(3).html("running");
+     //获取被点击button的td标签值
+    var csrftokens = $.cookie('csrftoken');
+    var data = JSON.stringify({"templates_name" : t_name , "templates_id" : t_id});
+
+     $.ajax({
+         url: "/awx/run/",
+         type: "post",
+         data: data,
+         datatype: 'json',
+         timeout : 1800000,
+          headers: {
+            Accept: "application/json; charset=utf-8",
+              "X-CSRFToken": csrftokens,
+          },
+         async: true,
+         cache: false,
+         contentType: false,
+         processData: false,
+         success: function (data) {
+            if (data.job_stauts == "successful") {
+                $(r).parent().siblings().eq(3).html("successful");
+            } else if (data.job_stauts == "failed") {
+                $(r).parent().siblings().eq(3).html("failed");
+            } else if (data.job_stauts == "canceled") {
+                 $(r).parent().siblings().eq(3).html("canceled");
+            }
+             console.log("1",data.job_stauts);
+             $('#stdout').append(data.awx_status);
+             $(r).parent().siblings().eq(2).html(data.last_stime);
+         },
+         error:function(request){//请求失败之后的操作
+         }
+     });
+}
+
+</script>
+
+<script>
+    function notManager(r) {
+    var rcode = $(r).parent().siblings().eq(0).html();
+    $(r).parent().siblings().eq(3).html("canceling");
+    var csrftokens = $.cookie('csrftoken');
+    var data = JSON.stringify({"templates_id" : rcode});
+
+    $.ajax({
+         url: "/awx/stop/",
+         type: "post",
+         data: data,
+         datatype: 'json',
+          headers: {
+            Accept: "application/json; charset=utf-8",
+              "X-CSRFToken": csrftokens,
+          },
+         async: true,
+         cache: false,
+         contentType: false,
+         processData: false,
+         success: function (data) {
+             console.log("2",data.job_stauts)
+             $('#stdout').append(data.job_stauts);
+             $(r).parent().siblings().eq(3).html("canceled");
+         },
+        error:function(request){//请求失败之后的操作
+             //alert('嗯哼!')
+         }
+    })
+}
+</script>
+
+{% endblock %}

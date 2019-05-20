@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+<div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>创建资产</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <form  method="post" class="form-horizontal">
+                            {% if message %}
+                            <div class="alert alert-warning" role="alert">{{ message }}</div>
+                            {% endif %}
+                            {% csrf_token %}
+                            <!--<input type="hidden" name="csrfmiddlewaretoken" value="k8VF8IQfiY5VQGNeWyn72U82p8rl8BrYF26vFzbZJhgFqN7betBXw406nKHQRX1p">-->
+                            <h3>基本</h3>
+                            <div class="form-group required"><label class="col-md-2 control-label" >设备名称</label><div class="col-md-9"><input type="text" name="name" maxlength="128" class="form-control" title="" value="{{ lable.net_name }}" disabled></div></div>
+                            <div class="form-group required"><label class="col-md-2 control-label" >设备类型</label><div class="col-md-9"><input type="text" name="type" class="form-control" title="" value="{{ lable.sub_asset_type }}" disabled></div></div>
+                            <div class="form-group required"><label class="col-md-2 control-label" >标识IP1</label><div class="col-md-9"><input name="IP1" class="form-control" title="" value="{{ lable.ip1 }}" disabled></div></div>
+                            <div class="form-group required"><label class="col-md-2 control-label">标识IP2</label><div class="col-md-9"><input type="text" name="IP2"  class="form-control" title="" value="{{ lable.ip2 }}" disabled></div></div>
+                            <div class="form-group required"><label class="col-md-2 control-label">端口数</label><div class="col-md-9"><input type="text" name="port_num"  class="form-control" title=""  value="{{ lable.port_num }}" disabled></div></div>
+
+                            <div class="hr-line-dashed"></div>
+                            <h3>节点</h3>
+                             {% for nod in lable_node %}
+                                    <h6 hidden>{{ nod.value }}</h6>
+                                {% endfor %}
+
+                            <div class="form-group required"><label class="col-md-2 control-label">节点</label><div class="col-md-9">
+                                <input type="text" name="port_num"  class="form-control" title=""  value="" id="node_list" disabled>
+                            </div>
+                            </div>
+
+                            <div class="hr-line-dashed"></div>
+                            <h3>详细配置</h3>
+                            <div class="form-group ">
+                                <label  class="col-md-2 control-label">详细配置</label>
+                                <div class="col-md-9">
+                                        <div class="col-md-9"><textarea name="config" cols="40" rows="10" maxlength="128" class="form-control" title="" disabled>{{ lable.device_detail }}</textarea></div>
+                                </div>
+                            </div>
+
+                            <div class="hr-line-dashed"></div>
+                            <h3>其它</h3>
+                            <div class="form-group"><label class="col-md-2 control-label">备注</label><div class="col-md-9"><textarea name="comment" cols="40" rows="10" maxlength="128" class="form-control" title="" disabled>{{ lable.message }}</textarea></div></div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <div class="col-sm-4 col-sm-offset-2">
+                                    <!--<button id="submit_button" class="btn btn-primary" type="submit" ><a style="color: white" href="../../">返回</a></button>-->
+                                </div>
+                            </div>
+                            </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+
+<script>
+ $(document).ready(function() {
+
+    var nod = $('h6');
+    for (var i=0,len=nod.length; i<len; i++) {
+        var value1 = nod.eq(i).html();
+        $("#node_list").val($("#node_list").val() + value1 + ",");
+    }
+ });
+</script>
+
+{% endblock %}

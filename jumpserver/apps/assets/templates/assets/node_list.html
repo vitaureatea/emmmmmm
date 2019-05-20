@@ -1,0 +1,143 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block custom_head_css_js %}
+    <link href="{% static 'css/plugins/ztree/awesomeStyle/awesome.css' %}" rel="stylesheet">
+{#    <link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet">#}
+    <script type="text/javascript" src="{% static 'js/plugins/ztree/jquery.ztree.all.min.js' %}"></script>
+    <script src="{% static 'js/jquery.form.min.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+<div class="wrapper wrapper-content">
+   <div class="row">
+       <div class="col-lg-3" id="split-left" style="padding-left: 3px">
+           <div class="ibox float-e-margins">
+               <div class="ibox-content mailbox-content" style="padding-top: 0;padding-left: 1px">
+                   <div class="file-manager ">
+                       <div id="assetTree" class="ztree">
+                           <ul>
+                                <li>
+                                <ul class="nav-trunk">
+                                <li   ><a  class="item-name c-f" href="/assets/network/"><i></i>
+                                 <span id="root_change" title="" class="button level0 switch root_open" ></span>
+                                 <span title=""  class="button ico_open" style=""></span>
+                                 <span  class="node_name">Default</span>
+                                </a></li>
+                                <ul id="bajimenu" class="nav-trunk fold " >
+                                    {% for item in nodes %}
+                                    <li  ><a  class="item-name c-f" href="/assets/network/nodelist/{{ item.value }}/"><i></i><span class="pull-left  button level0 switch root_open"><div class="checkbox"></div></span><span class="pull-left filename button ico_close" > {{ item.value }}</span></a></li>
+                                    {% endfor %}
+                                </ul>
+                                </ul>
+                                </li>
+                           </ul>
+                       </div>
+                       <div class="clearfix"></div>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <div class="col-lg-9 animated fadeInRight" id="split-right">
+           <div class="tree-toggle">
+               <div class="btn btn-sm btn-primary tree-toggle-btn" onclick="toggle()">
+                   <i class="fa fa-angle-left fa-x" id="toggle-icon"></i>
+               </div>
+           </div>
+           <div class="mail-box-header">
+               <div class="uc pull-left m-r-5"><a class="btn btn-sm btn-primary btn-create-asset"  href="/assets/network/listcreate/">创建资产</a></div>
+               <table class="table table-striped table-bordered table-hover " id="asset_list_table" style="width: 100%" >
+                   <thead>
+                       <tr>
+                           <th hidden></th>
+                           <th class="text-center">设备名称</th>
+                           <th class="text-center">设备类型</th>
+                           <th class="text-center">标识IP1</th>
+                           <th class="text-center">标识IP2</th>
+                           <th class="text-center">动作</th>
+                       </tr>
+                   </thead>
+                   <tbody>
+                   {% for tem in lables %}
+                            <tr role="row" class="odd">
+                                <td hidden>{{ tem.id }}</td>
+                                <td class="text-center"><a onclick="onView(this)">{{ tem.net_name }}</a></td>
+                                <td class="text-center">{{ tem.sub_asset_type }}</td>
+                                <td class="text-center">{{ tem.ip1 }}</td>
+                                <td class="text-center">{{ tem.ip2 }}</td>
+                                <td class="text-center">
+                                     <button class="btn btn-xs btn-info" type="button"  onclick="onUpdate(this)">更新</button>
+                                    <button class="btn btn-xs btn-danger m-l-xs btn_asset_delete" type="button" onclick="onDel(this)">删除</button>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                   </tbody>
+               </table>
+
+           </div>
+       </div>
+   </div>
+</div>
+
+
+
+<script>
+    $(document).ready(function() {
+        $("#asset_list_table").dataTable({
+            "bPaginate": true, //是否显示（应用）分页器
+            "bInfo": true, //是否显示页脚信息，DataTables插件左下角显示记录数
+            "sPaginationType": "full_numbers", //详细分页组，可以支持直接跳转到某页
+            "bSort": true, //是否启动各个字段的排序功能
+            //"aaSorting" : [[0, "desc"]], //默认的排序方式，第2列，升序排列
+            "bFilter": true, //是否启动过滤、搜索功能
+        });
+        $('#asset_list_table_length').parent().eq(0).attr('class','col-sm-4');
+        $('#asset_list_table_filter').parent().eq(0).attr('class','col-sm-6');
+    })
+</script>
+
+<script>
+var show = 0;
+
+
+function toggle() {
+    if (show === 0) {
+        $("#split-left").hide(500, function () {
+            $("#split-right").attr("class", "col-lg-12");
+            $("#toggle-icon").attr("class", "fa fa-angle-right fa-x");
+            show = 1;
+        });
+    } else {
+        $("#split-right").attr("class", "col-lg-9");
+        $("#toggle-icon").attr("class", "fa fa-angle-left fa-x");
+        $("#split-left").show(500);
+        show = 0;
+    }
+}
+
+function onUpdate(r) {
+        var t_id = $(r).parent().siblings().eq(0).html();
+        url = window.location.protocol + "//" + window.location.host + "/assets/network/updatenetwork/" + t_id + "/";
+        console.log(url);
+        window.location.href = url
+    }
+
+
+function onView(r) {
+    var t_id = $(r).parent().siblings().eq(0).html();
+    url = window.location.protocol + "//" + window.location.host + "/assets/network/networkdetail/" + t_id + "/";
+    window.location.href = url
+}
+
+function onDel(r) {
+        var t_id = $(r).parent().siblings().eq(0).html();
+        url = window.location.protocol + "//" + window.location.host + "/assets/network/networkdel/" + t_id + "/";
+        window.location.href = url
+}
+
+</script>
+
+{% include 'assets/_asset_import_modal.html' %}
+{% include 'assets/_asset_list_modal.html' %}
+
+{% endblock %}

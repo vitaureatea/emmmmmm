@@ -1,0 +1,93 @@
+
+
+
+<div class="sample-tutorial">
+        <div class="sample-spreadsheets" style="overflow: auto;">
+            <label style="font:bold 10pt arial">Source:</label>
+            <div id="ss" ></div>
+            <br/>
+            <label style="font:bold 10pt arial">Target:</label>
+            <div id="ss1" ></div>
+        </div>
+        <div class="options-container">
+            <div class="option-row">
+                <label >Click button to serialize the JSON from the source workbook to the target workbook, with and without the binding source data.</label>
+            </div>
+            <div class="option-row">
+                <input type="checkbox" id="includeBindingSource" checked="checked"/>
+                <label for="includeBindingSource">includeBindingSource</label>
+
+                <input type="button" value="Json Serialize" id="fromtoJsonBtn" title="Serialize source spread to JSON and restore from JSON to target spread."/>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<script>
+     window.onload = function () {
+            var spread = new GC.Spread.Sheets.Workbook(document.getElementById("ss"), { sheetCount: 2 });
+            var spread2 = new GC.Spread.Sheets.Workbook(document.getElementById("ss1"), { sheetCount: 1 });
+            initSpread(spread);
+        };
+
+        function initSpread(spread) {
+            spread.suspendPaint();
+            spread.options.tabStripRatio = 0.6;
+
+            //Sheet data source
+            var sd = dataSource;
+
+            var sheet1 = spread.getSheet(0);
+            sheet1.name("Sheet data source");
+            if (sd.length > 0) {
+                sheet1.setDataSource(sd);
+            }
+            sheet1.setColumnWidth(0, 150);
+            sheet1.setColumnWidth(1, 150);
+            sheet1.setColumnWidth(2, 80);
+            sheet1.setColumnWidth(3, 150);
+            sheet1.setColumnWidth(4, 80);
+            spread.resumePaint();
+            //Table data source
+            sd = [
+                { name: "Yang", age: 24 },
+                { name: "Wang", age: 35 },
+                { name: "Zhang", age: 20 }
+            ];
+            var sheet2 = spread.getSheet(1);
+            sheet2.name("Table data source");
+            sheet2.setDataSource(new GC.Spread.Sheets.Bindings.CellBindingSource({
+                name: "Yang",
+                age: 24,
+                country: "China",
+                city: "Xi'an",
+                ds: $.extend(true, [], sd)
+            }));
+            sheet2.setBindingPath(0, 1, "name");
+            sheet2.setBindingPath(1, 1, "age");
+            sheet2.setBindingPath(2, 1, "country");
+            sheet2.setBindingPath(3, 1, "city");
+            var table = sheet2.tables.add("table1", 4, 1, 1, 1);
+            table.bindingPath("ds");
+            sheet2.tables.addFromDataSource("table2", 9, 1, $.extend(true, [], sd));
+
+            sheet2.options.allowCellOverflow = true;
+            sheet2.setValue(4, 4, "Table binding to data source");
+            sheet2.setValue(9, 4, "Table created from data source");
+
+
+            document.getElementById("fromtoJsonBtn").addEventListener('click',function() {
+                //ToJson
+                var spread1 = GC.Spread.Sheets.findControl(document.getElementById('ss'));;
+                var jsonStr = JSON.stringify(spread1.toJSON({
+                    includeBindingSource: document.getElementById("includeBindingSource").checked
+                }));
+
+                //FromJson
+                var spread2 = GC.Spread.Sheets.findControl(document.getElementById('ss1'));
+                spread2.fromJSON(JSON.parse(jsonStr));
+            });
+        }
+</script>

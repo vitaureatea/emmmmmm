@@ -1,0 +1,203 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% load bootstrap3 %}
+
+{% block custom_head_css_js %}
+    <link href="{% static 'css/plugins/ztree/awesomeStyle/awesome.css' %}" rel="stylesheet">
+    <script type="text/javascript" src="{% static 'js/plugins/ztree/jquery.ztree.all.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/plugins/ztree/jquery.ztree.exhide.min.js' %}"></script>
+    <script src="{% static 'js/jquery.form.min.js' %}"></script>
+    <link href="{% static 'css/plugins/select2/select2.min.css' %}" rel="stylesheet">
+    <script src="{% static 'js/plugins/select2/select2.full.min.js' %}"></script>
+    <script src="{% static  'js/jquery.cookie.js' %} "></script>
+{% endblock %}
+
+{% block content %}
+
+    {% csrf_token %}
+
+<div class="row">
+    {% include 'ops/multitask_host_list_component.html' %}
+    <div class="col-lg-8">
+
+        <div class="panel">
+            <div class="panel-heading">
+                <h3 class="panel-title">文件分发</h3>
+            </div>
+            <div class="panel-body">
+                <div class="alert alert-warning" role="alert" hidden id="message"><a class="close-link" ><i class="fa fa-times"></i></a></div>
+                <select onchange="SelectFileTransferType(this)" class="form-control" style="color: #3dc7ab;font-weight:bold" name="file_transfer_type">
+                    <option  value="send" >发送文件到远程</option>
+                    <!--<option  value="get">从远程下载文件</option>-->
+
+                </select>
+
+                <input class="form-control" type="file"  id="local_file_path" placeholder="本地文件路径">
+                <input class="form-control"  type="text"  id="remote_file_path" placeholder="远程文件路径">
+                <input type="button" id='post_task_btn'  onclick="PostTask(this)" class="btn btn-success pull-right" value="执行" >
+
+            </div>
+        </div>
+
+
+        <div class="panel">
+            <div class="panel-heading">
+                <h3 class="panel-title">任务结果</h3>
+            </div>
+            <div class="panel-body">
+                <div class="progress hide">
+                    <div id="task_progress" style="width: 0%;color: black" class="progress-bar progress-bar-info" >0.0%</div>
+                </div>
+                <ul id="task_result_container" class="hide" ></ul>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</div>
+
+<script>
+ $('#message').children().click(function () {
+    $('#message').hide()
+});
+
+ function SelectFileTransferType(ele) {
+        if ($(ele).val() == 'get'){
+            $("#local_file_path").addClass("hide");
+        }else {
+            $("#local_file_path").removeClass("hide");
+        }
+    }
+
+function GetTaskResult(task_id,nowtime,assets) {
+    $.getJSON( "{% url 'ops:multitask_file_transfer_status'  %}" ,{'task_id':task_id},function(callback) {
+        var stop = false;
+        var task_counter = 0;
+        $.each(callback.status ,function (index,r){
+            $('[bind_host_id]').each(function () {
+                if ($(this).attr('bind_host_id') == r.host_name[0].hostname + nowtime) {
+                    $(this).next().html(r.message);
+                    var me = $(this).next().html();
+                    if (me.indexOf("Error")!=-1 || me.indexOf("error")!=-1) {
+                        if (me.indexOf("Permission denied")!=-1 || me.indexOf("permission denied")!=-1){
+                            $(this).next().html("Permission denied ！");
+                        }else {
+                            $(this).next().html("检查路径以及主机的连通性！");
+                        }
+                        $(this).removeClass('hide');
+                        $(this).next().removeClass('hide');
+                        $(this).parent().removeClass('hide');
+                        $(this).css('color','red');
+                        $(this).next().css('color','red');
+                    }
+                }
+            });
+
+            if (r.status == 2) {
+                stop = true;
+                task_counter += 1
+            }else {
+                stop = false
+            }
+        });
+        var finished_percent = task_counter /  task_id.length * 100;
+        $('#task_progress').parent().removeClass('hide');
+        $('#task_progress').css('width',finished_percent.toFixed(1) + '%').html(finished_percent.toFixed(1) + "%");
+
+        if (stop) {
+            clearInterval(ResultRefreshObj);
+            $("#post_task_btn").removeClass("disabled");
+        }
+    })
+}
+
+function PostTask(ele) {
+    var assets = getSelectedAssetsNode_();
+    var file_transfer_type = $("select[name='file_transfer_type']").val();
+    var remote_file_path = $("#remote_file_path").val().trim();
+    var local_file_path = $("#local_file_path").val().trim();
+    var nowtime = new Date().getTime();
+
+    $('#task_progress').css('width','0%').html('0%');
+    $("#task_result_container").addClass('hide');
+    $("#task_result_container").find('li').remove();
+    $("#task_result_container").find('pre').remove();
+
+    if (file_transfer_type == "send"){
+        if (local_file_path.length == 0){
+            // $("#task_result_container").removeClass('hide')
+            // $('#task_result_container').html('<li>Error !<span></span></li><pre>文件！</pre>')
+            // $("#task_result_container").css('color','red')
+            $('#message').show();
+            $('#message').children().children().html('请添加文件');
+            setTimeout('$("#message").hide();',3000)
+        }else {
+            var s1 = true
+        }
+        if (remote_file_path.length == 0){
+            $('#message').show();
+            $('#message').children().children().html('路径必填');
+            setTimeout('$("#message").hide();',3000)
+        }else {
+            var s2 = true
+        }
+        if (assets[0].length == 0){
+            $('#message').show();
+            $('#message').children().children().html('请选择主机');
+            setTimeout('$("#message").hide();',3000)
+        }else {
+            var s3 = true
+        }
+
+        if (s1 && s2 && s3) {
+            $(ele).addClass("disabled");
+            var formData = new FormData();
+            formData.append("crowd_file",$('#local_file_path')[0].files[0]);
+            formData.append("remote_path",remote_file_path);
+            formData.append("host_id",assets[0].map(function (node) {
+            return node.id }));
+            formData.append("run_as",assets[1]);
+            var csrftokens = $.cookie('csrftoken');
+
+
+
+            $.ajax({
+                url: "{% url 'ops:multitask_file_transfer_up'  %}",
+                type: "post",
+                data: formData,
+                // datatype: 'json',
+                headers: {
+                    "X-CSRFToken": csrftokens,
+                },
+                async: true,
+                cache: false,
+                contentType: false,
+                processData: false,
+                success: function (data) {
+                    $.each(assets[0] ,function (index,r) {
+                        var li_ele = "<li class=\"hide\" bind_host_id='"+  r.name + nowtime + "'>Host:" + r.name + "----------------<span></span></li><pre class=\"hide\" >uploading</pre>" ;
+                        $("#task_result_container").append(li_ele);
+                    });
+                    $('#task_progress').parent().removeClass('hide');
+
+                    ResultRefreshObj = setInterval(function () {
+                        GetTaskResult(data.task_id,nowtime,assets);
+                    },2000);
+                },
+                error:function(){
+                    $('#message').show();
+                    $('#message').children().children().html(' 服务端错误！');
+                    $("#post_task_btn").removeClass("disabled");
+                }
+            })
+        }
+    }
+}
+
+
+</script>
+
+{% endblock %}

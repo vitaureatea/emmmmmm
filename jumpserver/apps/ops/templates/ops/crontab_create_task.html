@@ -1,0 +1,207 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block custom_head_css_js %}
+    <link href="{% static 'css/plugins/ztree/awesomeStyle/awesome.css' %}" rel="stylesheet">
+    <link href="{% static 'css/simpleAlert.css' %}" rel="stylesheet">
+    <script type="text/javascript" src="{% static 'js/plugins/ztree/jquery.ztree.all.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/plugins/ztree/jquery.ztree.exhide.min.js' %}"></script>
+    <script src="{% static 'js/jquery.form.min.js' %}"></script>
+    <link href="{% static 'css/plugins/select2/select2.min.css' %}" rel="stylesheet">
+    <script src="{% static 'js/plugins/select2/select2.full.min.js' %}"></script>
+    <script src="{% static  'js/jquery.cookie.js' %} "></script>
+    <script src="{% static 'js/simpleAlert.js' %}"></script>
+{% endblock %}
+
+
+{% block content %}
+    {% csrf_token %}
+<div class="row">
+    {% include 'ops/multitask_host_list_component.html' %}
+    <div class="col-lg-8">
+        <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                    <div class="ibox-title">
+                        <h5>创建定时任务</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <form class="form-horizontal" id="create-template">
+                            <div class="alert alert-warning" role="alert" hidden id="message"><a class="close-link" ><i class="fa fa-times"></i></a></div>
+                            <h3>基本</h3>
+                            <div class="form-group required"><label class="col-md-2 control-label" >任务名称</label><div class="col-md-9"><input type="text" name="name" maxlength="128" class="form-control" title="" ></div></div>
+                            <div class="form-group required"><label class="col-md-2 control-label" >定时</label>
+                                <div class="col-md-9">
+                              <div class="col-lg-2" ><!-- col-lg-1.5 -->
+                                <div class="input-group">
+                                  <span class="input-group-addon">分</span>
+                                  <input type="text" name="time_minute" class="form-control" placeholder=" *">
+                                </div><!-- /input-group -->
+                              </div><!-- /.col-lg-6 -->
+                              <div class="col-lg-2">
+                                <div class="input-group">
+                                  <span class="input-group-addon">时</span>
+                                  <input type="text" name="time_hour" class="form-control" placeholder=" *">
+                                </div><!-- /input-group -->
+                              </div><!-- /.col-lg-6 -->
+                                <div class="col-lg-2">
+                                <div class="input-group">
+                                  <span class="input-group-addon">日</span>
+                                  <input type="text" name="time_day" class="form-control" placeholder=" *">
+                                </div><!-- /input-group -->
+                              </div><!-- /.col-lg -->
+                                <div class="col-lg-2">
+                                <div class="input-group">
+                                  <span class="input-group-addon">月</span>
+                                  <input type="text" name="time_month" class="form-control" placeholder=" *">
+                                </div><!-- /input-group -->
+                              </div><!-- /.col-lg-6 -->
+                                <div class="col-lg-2">
+                                <div class="input-group">
+                                  <span class="input-group-addon">周</span>
+                                  <input type="text" name="time_week" class="form-control" placeholder=" *">
+                                </div><!-- /input-group -->
+                              </div><!-- /.col-lg-6 -->
+                            </div><!-- /.row -->
+                            </div>
+
+                            <div class="hr-line-dashed"></div>
+                            <h3>脚本</h3>
+                            <div class="form-group required">
+                                <label  class="col-md-2 control-label">ShellScripts</label>
+                                <div class="col-md-9">
+                                    <div class="col-md-9"><textarea name="config"   title="" style="background-color:black;min-height:150px;height:500px;width:300px;color:rgb(45,232,29)" >#!/bin/bash&#10;</textarea></div>
+                                </div>
+                            </div>
+
+                            <div class="hr-line-dashed"></div>
+                            <!--<h3>其它</h3>-->
+                            <!--<div class="form-group"><label class="col-md-2 control-label">备注</label><div class="col-md-9"><textarea name="comment" cols="40" rows="10" maxlength="128" class="form-control" title="" ></textarea></div></div>-->
+                            <!--<div class="hr-line-dashed"></div>-->
+                            <div class="form-group">
+                                <div class="col-sm-4 col-sm-offset-2">
+                                    <button class="btn btn-default" type="reset"> 重置</button>
+                                    <button id="submit_button" class="btn btn-primary" type="submit">保存</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+<script>
+$('#message').children().click(function () {
+    $('#message').hide()
+});
+
+function GetTaskResult(task_id, assets){
+    $.getJSON( "{% url 'ops:crontab-getstatus'  %}" ,{'task_id':task_id},function(callback) {
+        var stop = false;
+        var task_counter = 0;
+        $.each(callback.status ,function (index,r){
+            if (r.status == 2) {
+                stop = true;
+                task_counter += 1
+            }else {
+                stop = false
+            }
+        });
+        // var finished_percent = task_counter /  task_id.length * 100;
+        // $('#task_progress').css('width',finished_percent+'%').html(finished_percent+"%");
+        if (stop) {
+            clearInterval(ResultRefreshObj);
+            var url = window.location.protocol + "//" + window.location.host + "/ops/crontab/view" + "/";
+            window.location.href = url
+        }
+    })
+
+}
+
+$('#submit_button').click(function () {
+    event.preventDefault();
+    var t_data = {};
+    var assets = getSelectedAssetsNode_();
+    var formArray = $('#create-template').serializeArray();
+
+    $.each(formArray, function () {
+        if (t_data[this.name] !== undefined) {
+            if (!t_data[this.name].push) {
+                t_data[this.name] = [t_data[this.name]];
+            }
+            t_data[this.name].push(this.value || '');
+        } else {
+            t_data[this.name] = this.value || '';
+        }
+    });
+    if (assets[0].length == 0) {
+        $("#message").show();
+        $('#message').children().children().html('请选择主机');
+        setTimeout('$("#message").hide();',3000)
+    } else {
+        var s1 = true
+    }
+     if (t_data.name == 0) {
+         $('#message').show();
+         $('#message').children().children().html('请填写任务名称');
+         setTimeout('$("#message").hide();',3000)
+     } else {
+         var s4 = true
+     }
+    if (s4 && s1) {
+        var data = JSON.stringify({
+            "host_id": assets[0].map(function (node) {
+                return node.id
+            }), "run_as": assets[1], "t_data": t_data
+        });
+        console.log(data);
+
+        var csrftokens = $.cookie('csrftoken');
+
+        $.ajax({
+            url: "{% url 'ops:crontab-create' %}",
+            type: "post",
+            data: data,
+            dataType: 'json',
+            headers: {
+                "X-CSRFToken": csrftokens,
+            },
+            async: true,
+            cache: false,
+            contentType: false,
+            processData: false,
+            success: function (data) {
+                if (data.status == '1') {
+                    wating();
+                    ResultRefreshObj = setInterval(function () {
+                        GetTaskResult(data.task_id, assets);
+                    },2000);
+                }else {
+                    $('#message').show();
+                    $('#message').children().children().html(' 好像有点不对呢！');
+                    $("#post_task_btn").removeClass("disabled");
+                }
+            }, error: function () {
+                $('#message').show();
+                $('#message').children().children().html(' 服务端错误！');
+                $("#post_task_btn").removeClass("disabled");
+            }
+        })
+    }
+})
+
+function wating() {
+    var onlyChoseAlert = simpleAlert({
+        "content":"setting..",
+        "buttons":{
+            "确定":function () {
+                onlyChoseAlert.close();
+            }
+        },
+    })
+}
+</script>
+
+{% endblock %}

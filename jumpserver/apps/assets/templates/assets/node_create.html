@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+<div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>创建IDC资产</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <form action="/assets/nodeview/createnode/" method="post" class="form-horizontal">
+                            {% if message %}
+                            <div class="alert alert-warning" role="alert">{{ message }}</div>
+                            {% endif %}
+                            {% csrf_token %}
+                            <!--<input type="hidden" name="csrfmiddlewaretoken" value="k8VF8IQfiY5VQGNeWyn72U82p8rl8BrYF26vFzbZJhgFqN7betBXw406nKHQRX1p">-->
+                            <h3>基本</h3>
+                            <div class="form-group required"><label class="col-md-2 control-label" >IDC名称</label><div class="col-md-9"><input type="text" name="name" maxlength="128" class="form-control" title="" ></div></div>
+                            <div class="form-group required"><label class="col-md-2 control-label" >机房联系人</label><div class="col-md-9"><input type="text" name="user" maxlength="128" class="form-control" title="" ></div></div>
+                            <div class="form-group required"><label class="col-md-2 control-label" >联系电话</label><div class="col-md-9"><input type="text" name="tel" maxlength="128" class="form-control" title="" ></div></div>
+                            <div class="form-group required"><label class="col-md-2 control-label" >机房地址</label><div class="col-md-9"><input type="text" name="addr" maxlength="128" class="form-control" title="" ></div></div>
+
+                            <div class="hr-line-dashed"></div>
+
+                            <div class="hr-line-dashed"></div>
+                            <h3>其它</h3>
+                            <div class="form-group"><label class="col-md-2 control-label">备注</label><div class="col-md-9"><textarea name="comment" cols="40" rows="10" maxlength="128" class="form-control" title="" ></textarea></div></div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <div class="col-sm-4 col-sm-offset-2">
+                                    <button class="btn btn-default" type="reset"> 重置</button>
+                                    <button id="submit_button" class="btn btn-primary" type="submit">提交</button>
+                                </div>
+                            </div>
+                            </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,140 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block custom_head_css_js %}
+    <link href="{% static 'css/plugins/spread/gc.spread.sheets.excel2013white.11.0.0.css' %}" rel="stylesheet">
+    <script src="{% static 'js/plugins/spread/gc.spread.sheets.all.11.0.0.min.js' %}"></script>
+    <script src="{% static 'js/plugins/spread/gc.spread.sheets.resources.zh.11.0.0.min.js' %}"></script>
+    <script src="{% static  'js/jquery.cookie.js' %} "></script>
+{% endblock %}
+
+
+{% block content %}
+{% csrf_token %}
+
+<div class="panel">
+    <div class="panel-body">
+        <div class="row">
+            <div class="alert alert-warning " hidden style="width: 70%;" role="alert"  id="message"><a class="close-link" ><i class="fa fa-times"> </i></a></div>
+            <div class="col-lg-12">
+                <button type="button" class="btn btn-info" id="btnMerge">合并单元格</button>
+                <button type="button" class="btn btn-success" id="btnUnMerge">取消合并</button>
+                <button type="button" class="btn btn-primary pull-right" onclick="upSpread()" id="save" >保存</button>
+                <h6 hidden></h6>
+            </div>
+        </div>
+        <div style="height: 10px"></div>
+        <div class="row">
+            <div id="spread" style="width:100%; height:700px;border: 1px solid gray;"></div>
+        </div>
+    </div>
+</div>
+<script>
+
+
+$('#message').children().click(function () {
+    $('#message').hide()
+});
+
+
+//合并单元格
+function initSpread(spread) {
+    document.getElementById('btnMerge').addEventListener('click', function () {
+        var sheet = spread.getActiveSheet();
+
+        var sel = sheet.getSelections();
+        if (sel.length > 0) {
+            sel = getActualCellRange(sel[sel.length - 1], sheet.getRowCount(), sheet.getColumnCount());
+            sheet.addSpan(sel.row, sel.col, sel.rowCount, sel.colCount);
+        }
+    });
+    document.getElementById('btnUnMerge').addEventListener('click', function () {
+        var sheet = spread.getActiveSheet();
+
+        var sel = sheet.getSelections();
+        if (sel.length > 0) {
+            sel = getActualCellRange(sel[sel.length - 1], sheet.getRowCount(), sheet.getColumnCount());
+            sheet.suspendPaint();
+            for (var i = 0; i < sel.rowCount; i++) {
+                for (var j = 0; j < sel.colCount; j++) {
+                    sheet.removeSpan(i + sel.row, j + sel.col);
+                }
+            }
+            sheet.resumePaint();
+        }
+    });
+}
+
+function getActualCellRange(cellRange, rowCount, columnCount) {
+        var spreadNS = GC.Spread.Sheets;
+        if (cellRange.row == -1 && cellRange.col == -1) {
+            return new spreadNS.Range(0, 0, rowCount, columnCount);
+        } else if (cellRange.row == -1) {
+            return new spreadNS.Range(0, cellRange.col, rowCount, cellRange.colCount);
+        } else if (cellRange.col == -1) {
+            return new spreadNS.Range(cellRange.row, 0, cellRange.rowCount, columnCount);
+        }
+
+        return cellRange;
+}
+
+//json序列化
+    function upSpread() {
+        var serializationOption = {
+          // ignoreFormula: true,
+          // ignoreStyle: true,
+          // rowHeadersAsFrozenColumns: true,
+          // columnHeadersAsFrozenRows: true,
+          includeBindingSource: true,
+        };
+        var spread1 = GC.Spread.Sheets.findControl(document.getElementById('spread'));
+        var jsonStr = JSON.stringify(spread1.toJSON(serializationOption));
+        var last_time = $('h6').html()
+        var csrftokens = $.cookie('csrftoken');
+        var t_data = JSON.stringify({'last_time': last_time, 'jsonStr': jsonStr});
+
+        $.ajax({
+                url: "{% url 'doc:doc-up' %}",
+                type: "post",
+                data: t_data,
+                dataType: 'json',
+                headers: {
+                    "X-CSRFToken": csrftokens,
+                },
+                async: true,
+                cache: false,
+                contentType: false,
+                processData: false,
+                success: function (data) {
+                    if (data.status == '1') {
+                        location.reload()
+                    }
+                    if (data.status == '2'){
+                        $('#message').show();
+                        $('#message').children().children().html('用户: ' + data.update_user + ' 已做了最新改动，请备份当前修改，刷新后提交。');
+                        $('#save').attr('disabled', true)
+                    }
+                },
+                error: function () {
+                    $('#message').show();
+                    $('#message').children().children().html(' 服务端错误！')
+                }
+            })
+    }
+
+
+
+
+$(document).ready(function () {
+
+    var spread = new GC.Spread.Sheets.Workbook(document.getElementById('spread'));
+    initSpread(spread);
+
+   $.getJSON("{% url 'doc:doc-get' %}", function (callback) {
+        var spread_ = GC.Spread.Sheets.findControl(document.getElementById('spread'));
+        spread_.fromJSON(callback.dataSource);
+        $('h6').html(callback.last_time)
+    });
+});
+</script>
+{% endblock %}

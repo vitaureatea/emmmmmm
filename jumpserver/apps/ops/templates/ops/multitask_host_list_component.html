@@ -1,0 +1,137 @@
+    <div class="col-lg-4">
+        <div class="panel">
+            <div class="panel-heading">
+                <h3 class="panel-title">主机列表</h3>
+            </div>
+            <div class="panel-body">
+                    <div class="list-group bord-no">
+                        <div id="assetTree" class="ztree"></div>
+                    </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-heading">
+                <h3 class="panel-title">系统用户</h3>
+
+            </div>
+            <div class="panel-body">
+                <div class="col-lg-8">
+                    <select class="select2 form-control" id="system-users-select">
+                        {% for s in system_users %}
+                            {% if type == 'win' %}
+                                {% if s.protocol == 'rdp' and s.login_mode == 'auto' %}
+                                    <option value="{{ s.id }}">{{ s }}</option>
+                                {% endif %}
+                            {% else %}
+                                {% if type == 'lin' %}
+                                    {% if s.protocol == 'ssh' and s.login_mode == 'auto' %}
+                                        <option value="{{ s.id }}">{{ s }}</option>
+                                    {% endif %}
+                                {% else %}
+                                    {% if s.login_mode == 'auto' %}
+                                        <option value="{{ s.id }}">{{ s }}</option>
+                                    {% endif %}
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}
+                    </select>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+<script>
+
+var zTree, show = 0;
+var systemUserId = null;
+
+function initTree() {
+    var setting = {
+        check: {
+            enable: true
+        },
+        view: {
+            dblClickExpand: false,
+            showLine: true
+        },
+        data: {
+            simpleData: {
+                enable: true
+            }
+        },
+        edit: {
+            enable: true,
+			showRemoveBtn: false,
+			showRenameBtn: false,
+            drag: {
+                isCopy: true,
+                isMove: true
+            }
+        },
+        // callback: {
+        //     onCheck: onCheck
+        // }
+    };
+    var url = "{% url 'api-perms:my-nodes-assets-as-tree' %}";
+    if (systemUserId) {
+        url += '?system_user=' + systemUserId
+    }
+
+    $.get(url, function(data, status){
+        $.fn.zTree.init($("#assetTree"), setting, data);
+        zTree = $.fn.zTree.getZTreeObj("assetTree");
+    });
+}
+
+function getSelectedAssetsNode_() {
+    var nodes = zTree.getCheckedNodes(true);
+    var assetsNodeId = [];
+	var assetsNode = [];
+	var run_as = systemUserId;
+	nodes.forEach(function (node) {
+	    if (node.meta.type === 'asset' && !node.isHidden) {
+	        if (assetsNodeId.indexOf(node.id) === -1) {
+	            assetsNodeId.push(node.id);
+                assetsNode.push(node)
+
+            }
+        }
+    });
+	var assets=[];
+    assets.push(assetsNode);
+    assets.push(run_as);
+	return assets;
+}
+
+var editor;
+$(document).ready(function(){
+    systemUserId = $('#system-users-select').val();
+    $(".select2").select2({
+        dropdownAutoWidth : true,
+    }).on('select2:select', function(evt) {
+         var data = evt.params.data;
+         systemUserId = data.id;
+         initTree();
+    });
+    // editor = CodeMirror.fromTextArea(document.getElementById("command-text"), {
+    //     lineNumbers: true,
+    //     lineWrapping: true,
+    //     mode: "shell"
+    // });
+    // editor.setSize(600, 100);
+    // var charWidth = editor.defaultCharWidth(), basePadding = 4;
+    // editor.on("renderLine", function(cm, line, elt) {
+    //     var off = CodeMirror.countColumn(line.text, null, cm.getOption("tabSize")) * charWidth;
+    //     elt.style.textIndent = "-" + off + "px";
+    //     elt.style.paddingLeft = (basePadding + off) + "px";
+    // });
+    // editor.refresh();
+    initTree();
+
+   // initResultTerminal();
+})//.on('click', '.btn-execute', function () {
+  //  execute()
+//})
+</script>
